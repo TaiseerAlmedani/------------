@@ -72,19 +72,22 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
   .prev,
   .next,
   .text {
     font-size: 11px
   }
-  .slideshow-container{
+
+  .slideshow-container {
     height: 200px;
   }
-.mySlides , .mySlides img{
-  height: 100%;
-}  
+
+  .mySlides,
+  .mySlides img {
+    height: 100%;
+  }
 }
 
 /* end slid */
@@ -130,11 +133,11 @@ footer {
 footer::after {
   display: block;
   content: '';
-  background-image: url('assets/footer-bg.png');
+  background-image: url('assets/footer-bg.svg');
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -152,22 +155,67 @@ footer::after {
 .has-side-background::after {
   display: block;
   content: '';
-  width: 300px;
-  height: 300px;
-  background-image: url('assets/hero-bg-side.png');
+  width: 407px;
+  height: 437px;
+  background-image: url('assets/hero-bg.svg');
   background-position: left;
   background-repeat: no-repeat;
   position: absolute;
-  top: 75%;
+  top: 70%;
   margin-left: -50%;
   left: 50%;
 }
 
-@media screen and (max-width:500px) {
+
+.visible-on-mobile {
+  display: none;
+}
+
+
+.nav-custom-item {
+  position: relative;
+  left: 25vw;
+}
+
+@media screen and (min-width:500px) and (max-width:850px) {
+  .visible-on-mobile {
+    display: block;
+  }
+
+  .nav-custom-item {
+    left: 35vw;
+  }
+    .hidden-on-tablet {
+      display: none;
+    }
 
   #navMenu {
     color: white !important;
     background-color: transparent !important;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .visible-on-mobile {
+    display: block;
+  }
+  .hidden-on-mobile{
+    display: none;
+  }
+  .pb-mobile-0{
+    padding-bottom: 0;
+  }
+  .mb-mobile-0{
+    margin-bottom: 0;
+  }
+
+  #navMenu {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  .has-side-background::after{
+    max-width: 100vw;
   }
 }
 
@@ -189,7 +237,21 @@ footer::after {
 .has-overlay:hover {
   opacity: 0.8;
 }
-.has-z{
+
+.has-z {
   position: relative;
   z-index: 2;
+}
+.navbar-burger:hover , .navbar-burger:active{
+  background-color: rgba(255, 255, 255, 0.153) !important;
+}
+::placeholder{
+  color: rgba(0, 0, 0, 0.487) !important;
+}
+.control.has-icons-left .input:focus~.icon
+{
+  color: black !important;
+}
+input:focus{
+  box-shadow: 0 0 0 1px black !important;
 }

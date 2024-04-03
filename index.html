@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>РГК Афродита</title>
+  <link rel="icon" href="assets/logo-nav.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- navbar section -->
+  <nav class="navbar has-background-color" role="navigation" aria-label="main navigation">
+    <div class="container py-1">
+      <div class="navbar-brand">
+        <a href="#"><img class="ml-6" src="assets/logo 2.svg" alt="website logo" /></a>
+
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+          data-target="navMenu">
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+        </a>
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end has-text-center">
+          <a class="navbar-item has-custom-radius on-hover-black is-expanded has-text-white">
+            Гостиница
+          </a>
+
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Летний ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Караоке
+          </a>
+          <div class="navbar-item">
+            <input class="input is-small has-custom-radius" type="text" placeholder="Доставка еды" />
+          </div>
+          <div class="navbar-item has-custom-radius">
+            <a href="#">
+              <span class="icon has-text-white">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- slider section -->
+  <section class="section has-side-background">
+    <h2 class="title is-1 is-size-3-mobile">Доставка еды</h2>
+    <!-- start slid -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+
+        <img src="assets/hero-bg.png" style="width:100%">
+
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="assets/hero-bg.png" style="width:100%">
+
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="assets/hero-bg.png" style="width:100%">
+
+      </div>
+    </div>
+    <br>
+    <div class="dots" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- end slid -->
+  </section>
+ <!-- menu search -->
+  <div class="container is-clipped">
+    <div class="columns is-mobile mt-6 is-centered is-multiline is-mobile is-vcentered">
+      <div class="column is-3-desktop is-12-mobile">
+        <div class="columns is-mobile is-centered is-vcentered">
+          <div class="column is-10-desktop is-8-mobile">
+            <div class="control has-icons-left">
+              <input class="input has-custom-radius has-background-transparent has-border-black" type="text"
+                placeholder="искать еду" />
+              <span class="icon is-medium is-left">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </div>
+          <div class="column is-1-desktop is-2-mobile">
+            <button class="button has-hover-effect has-background-transparent has-border-black">
+              <span class="icon is-small">
+                <i class="fas fa-align-center"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-9-desktop">
+        <div class="columns is-mobile is-multiline is-centered is-vcentered">
+
+          <div class="column mx-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-hamburger"></i>
+              </span>
+            </button>
+            <p>фастфуд</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-pizza-slice"></i>
+              </span>
+            </button>
+            <p>пицца</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-fish"></i>
+              </span>
+            </button>
+            <p>фастфуд</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-hamburger"></i>
+              </span>
+            </button>
+            <p>фастфуд</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-coffee"></i>
+              </span>
+            </button>
+            <p>напитки</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-pizza-slice"></i>
+              </span>
+            </button>
+            <p>пицца</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-fish"></i>
+              </span>
+            </button>
+            <p>фастфуд</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-pizza-slice"></i>
+              </span>
+            </button>
+            <p>фастфуд</p>
+          </div>
+          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+            <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+              <span class="icon is-large">
+                <i class="fas fa-fish"></i>
+              </span>
+            </button>
+            <p>напитки</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- gallery items -->
+  <section class="section pt-6 mt-4 is-medium">
+    <div class="container">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius  full-width" src="assets/food1.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">пицца</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food2.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">стейк</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food3.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">салат</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food1.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">пицца</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food2.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">стейк</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food3.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">салат</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food1.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">пицца</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food2.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">стейк</div>
+          </div>
+        </div>
+        <div class="column is-4 my-3">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/food3.png" alt="Placeholder image" />
+            </a>
+            <div class="has-n-margin has-text-white ml-4">салат</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="section is-small has-background-color">
+    <div class="container">
+      <div class="columns is-vcentered is-centered">
+        <div class="column is-4 has-text-center">
+          <img src="assets/footer-img.png" alt="logo" />
+        </div>
+        <div class="column has-text-center has-background-transparent is-4 ">
+          <div class="has-z">
+            <span class="icon is-medium has-text-white">
+              <i class="fas fa-envelope"></i> </span><a class="has-text-white"
+              href="mailto:oooargo2012@mail.ru">oooargo2012@mail.ru</a>
+          </div>
+          <div class="has-z">
+            <span class="icon is-medium has-text-white">
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <a class="has-text-white" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
+          </div>
+          <div class="has-z">
+            <span class="icon is-medium has-text-white">
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <a class="has-text-white" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="has-text-white has-text-center">
+            Вы также можете найти нас на этих платформах!
+          </div>
+          <div class="has-text-center mt-3 has-z">
+            <a href="#">
+              <span class="icon is-medium has-text-white">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+            </a>
+            <a href="#">
+              <span class="icon is-medium has-text-white">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+            </a>
+
+            <a href="#">
+              <span class="icon is-medium has-text-white">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </span>
+            </a>
+            <a href="#">
+              <span class="icon is-medium has-text-white">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="has-text-white has-text-centered">
+      <p>&copy; 2024 Афродита ❤️ от Roinext</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+
+  <!-- slid script -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <!-- end slid script -->
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

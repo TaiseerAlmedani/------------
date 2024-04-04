@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>РГК Афродита</title>
   <link rel="icon" href="assets/logo-nav.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
     integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="bulma/css/bulma.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -65,46 +67,45 @@
   <!-- End of navbar section -->
 
   <!-- start of the slider section -->
-  <section class="section pl-3 pr-3 slider has-side-background">
-    <div class="container">
-      <h2 class="title is-1 mt-6 p-0 is-size-3-mobile mb-mobile-0">Доставка еды</h2>
-      <!-- start slid -->
-      <div class="slideshow-container ">
-      
-        <div class="mySlides fade">
-      
-          <img src="assets/slider.png" style="height: 100%; width:100%">
-      
-        </div>
-      
-        <div class="mySlides fade">
-      
-          <img src="assets/slider.png" style="height: 100%; width:100%">
-      
-        </div>
-      
-        <div class="mySlides fade">
-      
-          <img src="assets/slider.png" style="height: 100%; width:100%">
-      
-        </div>
+  <!-- start slid -->
+  <div class="container hero-with-background has-side-background">
+    <h2 class="title is-1 mt-6 pt-6 pl-5 is-size-3-mobile mb-mobile-0">Доставка еды</h2>
+    <div class="slideshow-container ">
+
+      <div class="mySlides fade">
+
+        <img src="assets/slider.png" style="height: 100%; width:100%">
+
       </div>
-      <br>
-      <div class="dots has-text-centered">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+
+      <div class="mySlides fade">
+
+        <img src="assets/slider.png" style="height: 100%; width:100%">
+
       </div>
-      <!-- end slid -->
+
+      <div class="mySlides fade">
+
+        <img src="assets/slider.png" style="height: 100%; width:100%">
+
+      </div>
     </div>
-  </section>
+    <br>
+    <div class="dots has-text-centered">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+  <!-- end slid -->
+
   <!-- end of the slider section -->
 
   <!--start of menu search section-->
-  <div class="container is-clipped">
+  <div class="container is-clipped mt-6 pt-2">
     <div class="columns is-centered is-multiline is-mobile is-vcentered">
-      <div class="column is-3-desktop is-12-mobile is-12-tablet">
-        <div class="columns is-mobile is-centered is-vcentered">
+      <div class="column is-4-desktop is-12-mobile is-12-tablet pt-0 has-padding-mobile">
+        <div class="columns is-mobile is-centered is-vcentered mb-0">
           <div class="column is-10-desktop is-6-tablet is-10-mobile">
             <div class="control has-icons-left">
               <input class="input has-custom-radius has-background-transparent has-border-black" type="text"
@@ -116,85 +117,85 @@
           </div>
           <span
             class="icon mr-3 icon-costum is-medium has-hover-effect has-background-transparent has-border has-border-black">
-            <ion-icon name="filter-outline"></ion-icon>
+            <ion-icon name="filter-outline" style="font-size: 30px;"></ion-icon>
           </span>
         </div>
       </div>
-
-      <div class="column is-9-desktop is-10-tablet" style=" overflow-x: auto;">
-        <div class="columns is-mobile is-centered is-vcentered">
-
-          <div class="column pl-0 is-offset-7-mobile has-text-center is-1-desktop">
+      <div class="column is-7-desktop is-10-tablet" style=" overflow-x: auto;">
+        <div
+          class="columns is-mobile is-centered-desktop is-vcentered is-justify-content-space-evenly is-justify-center-tablet"
+          style="gap: 11px;">
+          <div class="column mr-2  has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-hamburger"></i>
               </span>
             </button>
-            <p>фастфуд</p>
+            <div>фастфуд</div>
           </div>
-          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+          <div class="column mr-2 has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-pizza-slice"></i>
               </span>
             </button>
-            <p>пицца</p>
+            <div>пицца</div>
           </div>
-          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+          <div class="column mr-2 has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-fish"></i>
               </span>
             </button>
-            <p>фастфуд</p>
+            <div>фастфуд</div>
           </div>
-          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+          <div class="column mr-2 has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-hamburger"></i>
               </span>
             </button>
-            <p>фастфуд</p>
+            <div>фастфуд</div>
           </div>
-          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+          <div class="column mr-2 has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-coffee"></i>
               </span>
             </button>
-            <p>напитки</p>
+            <div>напитки</div>
           </div>
-          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+          <div class="column mr-2 has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-pizza-slice"></i>
               </span>
             </button>
-            <p>пицца</p>
+            <div>пицца</div>
           </div>
-          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+          <div class="column mr-2 has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-fish"></i>
               </span>
             </button>
-            <p>фастфуд</p>
+            <div>фастфуд</div>
           </div>
-          <div class="column  px-0 has-text-center is-1-desktop">
+          <div class="column mr-2 has-text-center is-1-desktop menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-pizza-slice"></i>
               </span>
             </button>
-            <p>фастфуд</p>
+            <div>фастфуд</div>
           </div>
-          <div class="column has-text-center is-1-desktop">
+          <div class="column has-text-center is-1-desktop  menu-item">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-fish"></i>
               </span>
             </button>
-            <p>напитки</p>
+            <div>напитки</div>
           </div>
         </div>
       </div>
@@ -203,7 +204,7 @@
   <!--end of menu search section-->
 
   <!--start of gallery items section-->
-  <section class="section pt-6 mt-4 is-medium has-z">
+  <section class="section pt-6 gallery mt-4 is-medium has-z">
     <div class="container">
       <div class="columns is-vcentered is-multiline">
         <div class="column is-4 my-3">
@@ -294,20 +295,20 @@
       <div class="column has-text-center has-background-transparent is-4 ">
         <div>
           <span class="icon is-medium has-text-white ">
-            <i class="fas fa-envelope"></i> </span><a class="has-text-white"
-            href="mailto:oooargo2012@mail.ru">oooargo2012@mail.ru</a>
+            <i class="fas fa-envelope"></i> </span>
+          <a class="has-text-white footer-link" href="mailto:oooargo2012@mail.ru">oooargo2012@mail.ru</a>
         </div>
         <div>
           <span class="icon is-medium has-text-white ">
             <i class="fas fa-phone-alt"></i>
           </span>
-          <a class="has-text-white" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
+          <a class="has-text-white footer-link" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
         </div>
         <div>
           <span class="icon is-medium has-text-white ">
             <i class="fas fa-phone-alt"></i>
           </span>
-          <a class="has-text-white" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
+          <a class="has-text-white footer-link" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
         </div>
       </div>
       <div class="column is-2">
@@ -316,31 +317,32 @@
         </div>
         <div class="has-text-center mt-3">
           <a href="#">
-            <span class="icon is-medium has-text-white">
-              <i class="fas fa-phone-alt"></i>
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-whatsapp"></i>
             </span>
           </a>
           <a href="#">
-            <span class="icon is-medium has-text-white">
-              <i class="fas fa-phone-alt"></i>
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-telegram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-vk"></i>
             </span>
           </a>
 
-          <a href="#">
-            <span class="icon is-medium has-text-white">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </span>
-          </a>
-          <a href="#">
-            <span class="icon is-medium has-text-white">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </span>
-          </a>
+
         </div>
       </div>
     </div>
     <div class="has-text-white has-text-centered">
-      <p>&copy; 2024 Афродита 🤍 от Roinext</p>
+      <div>&copy; 2024 Афродита 🤍 от Roinext</div>
     </div>
   </footer>
   <!-- start of footer section -->

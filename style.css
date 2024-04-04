@@ -152,7 +152,7 @@ body {
 
 
 .has-border {
-  border-radius: 12px;
+  border-radius: 10px;
   border: solid 1px black;
 }
 
@@ -263,6 +263,10 @@ footer.has-side-background::after {
   .hidden-on-desktop{
     display: none !important; 
   }
+  .has-padding {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
 }
 
 @media screen and (min-width:850px) and (max-width:1367px) {
@@ -303,6 +307,8 @@ footer.has-side-background::after {
   }
 }
 
+/*?? media */
+/*?? phone */
 @media screen and (max-width:500px) {
   .has-padding-mobile{
     padding-top: 12px !important;
@@ -321,7 +327,10 @@ footer.has-side-background::after {
   .pb-mobile-0 {
     padding-bottom: 0;
   }
-
+.px-0-mobile{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
   .mb-mobile-0 {
     margin-bottom: 0;
   }
@@ -355,7 +364,7 @@ footer.has-side-background::after {
     margin-top: -50px;
     gap: 30px;
   }
-  .slideshow-container::before {
+  .pricing-slider::before {
     content: 'пицца';
     display: block;
     position: relative;
@@ -466,7 +475,16 @@ body>div.container.is-clipped.mt-6.pt-2>div>div.column.is-4-desktop.is-12-mobile
 
 body>section>div>div.field.has-addons.m-2{
   justify-content: flex-end !important;
+  margin-right: -10px !important;
 }
 .colored-text-on-hover:hover{
   color:var(--warning-color);
+}
+h2.fs-36{
+  font-size: 36px !important;
+}
+.nav-title{
+ margin-top: 75px !important;
+ padding-top: 25px !important;
+ padding-bottom: 5px;
 }

@@ -14,12 +14,12 @@
 </head>
 
 <body>
-  <!-- navbar section -->
+  <!--start of navbar section -->
   <nav class="navbar is-fixed-top has-background-color is-clipped" role="navigation" aria-label="main navigation">
     <div class="container py-1">
       <div class="navbar-brand">
         <a href="#">
-          <img class="ml-6" src="assets/logo 2.svg" alt="website logo" />
+          <img class="ml-1" src="assets/logo 2.svg" width="70px" height="70px" alt="website logo" />
         </a>
         <a href="#" class="navbar-burger has-text-white nav-custom-item">
           <i class="fas fa-shopping-cart visible-on-mobile"></i></a>
@@ -49,7 +49,7 @@
             Караоке
           </a>
           <div class="navbar-item">
-            <input class="input is-small has-custom-radius" type="text" placeholder="Доставка еды" />
+            <button class="button">Доставка еды</button>
           </div>
           <div class="navbar-item has-custom-radius hidden-on-mobile hidden-on-tablet">
             <a href="#">
@@ -62,40 +62,45 @@
       </div>
     </div>
   </nav>
+  <!-- End of navbar section -->
 
-  <!-- slider section -->
-  <section class="section has-side-background pb-mobile-0">
-    <h2 class="title is-1 mt-6 p-0 is-size-3-mobile mb-mobile-0">Доставка еды</h2>
-    <!-- start slid -->
-    <div class="slideshow-container hidden-on-mobile">
-
-      <div class="mySlides fade">
-
-        <img src="assets/hero-bg.png" style="width:100%">
-
+  <!-- start of the slider section -->
+  <section class="section pl-3 pr-3 slider has-side-background">
+    <div class="container">
+      <h2 class="title is-1 mt-6 p-0 is-size-3-mobile mb-mobile-0">Доставка еды</h2>
+      <!-- start slid -->
+      <div class="slideshow-container ">
+      
+        <div class="mySlides fade">
+      
+          <img src="assets/slider.png" style="height: 100%; width:100%">
+      
+        </div>
+      
+        <div class="mySlides fade">
+      
+          <img src="assets/slider.png" style="height: 100%; width:100%">
+      
+        </div>
+      
+        <div class="mySlides fade">
+      
+          <img src="assets/slider.png" style="height: 100%; width:100%">
+      
+        </div>
       </div>
-
-      <div class="mySlides fade">
-
-        <img src="assets/hero-bg.png" style="width:100%">
-
+      <br>
+      <div class="dots has-text-centered">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-
-      <div class="mySlides fade">
-
-        <img src="assets/hero-bg.png" style="width:100%">
-
-      </div>
+      <!-- end slid -->
     </div>
-    <br>
-    <div class="dots hidden-on-mobile has-text-centered">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <!-- end slid -->
   </section>
-  <!-- menu search -->
+  <!-- end of the slider section -->
+
+  <!--start of menu search section-->
   <div class="container is-clipped">
     <div class="columns is-centered is-multiline is-mobile is-vcentered">
       <div class="column is-3-desktop is-12-mobile is-12-tablet">
@@ -109,13 +114,10 @@
               </span>
             </div>
           </div>
-          <div class="column is-1-desktop is-2-mobile is-2-tablet">
-            <button class="button has-hover-effect has-background-transparent has-border-black">
-              <span class="icon is-small">
-                <i class="fas fa-align-center"></i>
-              </span>
-            </button>
-          </div>
+          <span
+            class="icon mr-3 icon-costum is-medium has-hover-effect has-background-transparent has-border has-border-black">
+            <ion-icon name="filter-outline"></ion-icon>
+          </span>
         </div>
       </div>
 
@@ -178,7 +180,7 @@
             </button>
             <p>фастфуд</p>
           </div>
-          <div class="column mr-2 px-0 has-text-center is-1-desktop">
+          <div class="column  px-0 has-text-center is-1-desktop">
             <button class="button has-hover-effect is-large has-background-transparent has-border-black">
               <span class="icon is-large">
                 <i class="fas fa-pizza-slice"></i>
@@ -198,9 +200,10 @@
       </div>
     </div>
   </div>
+  <!--end of menu search section-->
 
-  <!-- gallery items -->
-  <section class="section pt-6 mt-4 is-medium">
+  <!--start of gallery items section-->
+  <section class="section pt-6 mt-4 is-medium has-z">
     <div class="container">
       <div class="columns is-vcentered is-multiline">
         <div class="column is-4 my-3">
@@ -280,8 +283,10 @@
       </div>
     </div>
   </section>
+  <!--start of gallery items section-->
 
-  <footer class="section is-small has-background-color">
+  <!-- start of footer section -->
+  <footer class="section has-side-background is-small has-background-color">
     <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
       <div class="column is-2 has-text-center">
         <img src="assets/footer-img.png" alt="logo" />
@@ -338,6 +343,7 @@
       <p>&copy; 2024 Афродита 🤍 от Roinext</p>
     </div>
   </footer>
+  <!-- start of footer section -->
 
   <script src="index.js"></script>
 
@@ -372,6 +378,7 @@
   </script>
   <!-- end slid script -->
 
+  <!-- ionicon cdn library -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 

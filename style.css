@@ -562,3 +562,20 @@ h2.fs-36 {
   width: 50%;
 }
 
+@media screen and (max-width: 1024px) {
+  #navMenu {
+    display: block;
+    height: 0;
+    padding: 0;
+    transition: height 0.3s ease;
+  }
+
+  #navMenu.is-active {
+    opacity: 1;
+    height: 242px;
+    transition: height 0.3s ease;
+  }
+}
+.br-20{
+  border-radius: 20px;
+}

@@ -1,0 +1,89 @@
+@import url(colors.css);
+*{
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.border-section {
+  border: solid 1px var(--warning-color);
+  border-radius: 20px;
+}
+
+.p-38 {
+  padding: 38px 44px !important;
+}
+
+.counter-btn {
+  background-color: var(--warning-color);
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+}
+
+#counter {
+  width: 25px;
+  text-align: center;
+}
+
+.colored-text-on-hover:hover i {
+  color: var(--warning-color) !important;
+}
+
+#plus,
+#minus {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 500px) {
+  .only-on-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0>div>img {
+    width: 144px;
+  }
+
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0>div>div>div.is-flex.is-justify-content-space-between {
+    flex-direction: column-reverse;
+  }
+
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0>div>div>div.is-flex.is-justify-content-space-between>div {
+    width: 50%;
+    align-self: end;
+  }
+
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.column.border-section.is-4.p-38.mb-6 {
+    border: none;
+  }
+
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0>div>div>div.is-flex.is-align-items-start>button {
+    display: none;
+  }
+
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0>div {
+    justify-content: start !important;
+  }
+
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0>div>div>div.is-flex.is-align-items-start>div {
+    font-size: 16px;
+  }
+
+  body>section {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+    body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.column.border-section.is-4.p-38.mb-6 , body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0{
+      padding-left: 26px !important;
+      padding-right: 26px !important;
+    }
+}

@@ -23,14 +23,7 @@ button.has-warning-bg-c {
   background: rgba(0, 0, 0, 0.442);
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  /* Additional styling for the sticky navbar */
-  background-color: #333;
-  color: #fff;
-  /* Add any other styles you want */
-}
+
 
 .has-background-color {
   transition: all 500ms;

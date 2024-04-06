@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>РГК Афродита</title>
+  <link rel="icon" href="assets/logo-nav.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dish.css">
+</head>
+
+<body>
+  <!--start of navbar section -->
+  <nav class="navbar is-fixed-top has-background-color is-clipped" role="navigation" aria-label="main navigation">
+    <div class="container has-padding py-1">
+      <div class="navbar-brand">
+        <a href="#">
+          <img class="ml-1" src="assets/logo 2.svg" width="70px" height="70px" alt="website logo" />
+        </a>
+        <a href="#" class="navbar-burger has-text-white nav-custom-item">
+          <i class="fas fa-shopping-cart visible-on-mobile"></i></a>
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+          data-target="navMenu">
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+        </a>
+
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end has-text-center">
+          <a class="navbar-item has-custom-radius on-hover-black is-expanded has-text-white">
+            Гостиница
+          </a>
+
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Летний ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Караоке
+          </a>
+          <div class="navbar-item">
+            <button class="button">Доставка еды</button>
+          </div>
+          <div class="navbar-item has-custom-radius hidden-on-mobile hidden-on-tablet">
+            <a href="#">
+              <span class="icon has-text-white">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End of navbar section -->
+
+
+  <section class="section mt-6">
+    <div class="container">
+      <div class="title is-1 pb-6 mb-6">
+        Корзина
+      </div>
+
+      <div class="is-flex only-on-mobile is-justify-content-center my-6">
+        <button>
+          <span class="icon colored-text-on-hover mr-2">
+            <i class="fa-solid fa-trash" style="color: rgb(30, 30, 30, 64%);"></i>
+          </span>
+        </button>
+        <h1 class="title is-5">
+          Очистить корзину
+        </h1>
+      </div>
+
+      <div class="columns is-align-items-flex-start is-justify-content-space-between">
+        <div class="is-5-widescreen column is-6-desktop pt-0">
+          <div class="is-flex is-justify-content-space-between">
+            <img class="br-20 mr-4" src="assets/popup.png" width="216" height="228" alt="img">
+            <div class="is-flex is-flex-direction-column is-justify-content-space-between">
+              <div class="is-flex is-align-items-start">
+                <div class="title is-4">Мидии в
+                  тайском стиле</div>
+                <button>
+                  <span class="icon colored-text-on-hover">
+                    <i class="fa-solid fa-trash" style="color: rgb(30, 30, 30, 64%);"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="is-flex is-justify-content-space-between">
+                <div class="is-flex is-justify-content-space-between is-align-items-center">
+                  <button class="button has-text-white counter-btn mr-2" 
+                  onclick="modifyCount(-1)" id="minus">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <div id="counter">0</div>
+                  <button class="button ml-2 has-text-white counter-btn" 
+                  onclick="modifyCount(1)" id="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+
+                </div>
+                <h1>650 p</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column border-section is-4 p-38 mb-6">
+          <div class="title is-4  mb-5">резюме</div>
+          <div class="is-flex is-justify-content-space-between mb-2">
+            <div class="is-size-6">Сумма заказа</div>
+            <div class="is-size-6 has-text-weight-bold has-text-weight-bold">650 Р</div>
+          </div>
+          <div class="is-flex is-justify-content-space-between mb-2">
+            <div class="is-size-6">Скидка 20%</div>
+            <div class="is-size-6 has-text-weight-bold">99,2 Р</div>
+          </div>
+          <div class="is-flex is-justify-content-space-between">
+            <div class="is-size-6">Сервисный сбор</div>
+            <div class="is-size-6 has-text-weight-bold">0 Р</div>
+          </div>
+          <div class="is-flex is-justify-content-space-between mt-5">
+            <div class=" title is-4">Итого</div>
+            <div class="title is-4 has-text-weight-bold">750 Р</div>
+          </div>
+          <button class="button py-3 mb-1 is-size-6 has-text-white has-warning-bg-c br-10 has-background is-fullwidth">
+            Оформить заказ
+          </button>
+          <button class="button py-3 has-text-white is-size-6 has-warning-bg-c br-10 has-background is-fullwidth">
+            Назад к покупкам
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- start of footer section -->
+  <footer class="section  is-small has-background-color">
+    <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
+
+      <div class="column is-2 has-text-center">
+        <img src="assets/footer-img.png" alt="logo" />
+      </div>
+
+      <div class="column has-text-center has-background-transparent is-4 ">
+        <div>
+          <span class="icon ml-3 is-medium has-text-white ">
+            <i class="fa-regular fa-envelope"></i> </span><a class="has-text-white footer-link"
+            href="mailto:oooargo2012@mail.ru">oooargo2012@mail.ru</a>
+        </div>
+        <div>
+          <span class="icon is-medium has-text-white ">
+            <i class="fas fa-phone-alt"></i>
+          </span>
+          <a class="has-text-white footer-link" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
+        </div>
+        <div>
+          <span class="icon is-medium has-text-white ">
+            <i class="fas fa-phone-alt"></i>
+          </span>
+          <a class="has-text-white footer-link" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
+        </div>
+      </div>
+
+      <div class="column is-2">
+        <div class="has-text-white has-text-center">
+          Вы также можете найти нас на этих платформах!
+        </div>
+        <div class="has-text-center mt-3">
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-whatsapp"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-telegram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-vk"></i>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="has-text-white has-text-centered">
+      <div>&copy; 2024 Афродита 🤍 от Roinext</div>
+    </div>
+  </footer>
+  <!-- start of footer section -->
+
+  <script src="index.js"></script>
+
+
+  <!-- counter script -->
+<script>
+  function modifyCount(val) {
+    const counter = document.getElementById('counter');
+    const currentValue = parseInt(counter.innerHTML);
+    const result = currentValue + val;
+
+    // Prevent counting below zero
+    if (result >= 0) {
+      counter.innerHTML = result;
+    }
+  }
+</script>
+
+</html>

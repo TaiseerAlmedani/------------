@@ -1,0 +1,134 @@
+@import url(colors.css);
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #7b552678;
+  backdrop-filter: blur(7px);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  width: 70%;
+  position: absolute;
+  top: 10vh !important;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 500s ease-in-out;
+  border-radius: 20px;
+}
+
+
+.popup .right,
+.popup .left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #dfc5979a;
+  text-align: center;
+}
+
+.popup .left {
+  right: 0;
+  left: 20px;
+}
+
+.popup .right:hover,
+.popup .left:hover {
+  color: #ffffff;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  #navMenu {
+    display: block;
+    height: 0;
+    padding: 0;
+    transition: height 0.3s ease;
+  }
+
+  #navMenu.is-active {
+    opacity: 1;
+    height: 242px;
+    transition: height 0.3s ease;
+  }
+}
+
+.br-20 {
+  border-radius: 20px !important;
+}
+
+#popup1>div>div>div.p-4>div.has-text-center>button {
+  width: 100%;
+  border-radius: 20px !important;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: var(--warning-color);
+}
+
+.btn-active {
+  color: var(--warning-color) !important;
+}
+
+
+@media screen and (min-width: 700px) and (max-width:1366) {
+  .is-justify-content-space-between-on-lg {
+    justify-content: space-between !important;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  .is-justify-content-center-on-xl {
+    justify-content: center !important;
+    column-gap: 40px !important;
+  }
+  .popup{
+    width: 60%;   
+  }
+    #popup1>div>div>div.p-4>div.title.is-3.py-4{
+      width: 50%;
+      padding-top: 30px !important;
+    }
+}

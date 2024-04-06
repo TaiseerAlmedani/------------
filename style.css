@@ -435,8 +435,11 @@ footer.has-side-background::after {
 
 .control.has-icons-left .input:focus~.icon {
   color: black !important;
-}
 
+}
+.control.has-icons-left .icon.is-left{
+  z-index: 1;
+}
 input:focus {
   box-shadow: 0 0 0 1px black !important;
 }
@@ -555,3 +558,7 @@ h2.fs-36 {
 .lh-39{
   line-height: 39px;
 }
+#popup1>div>div>div:nth-child(2){
+  width: 50%;
+}
+

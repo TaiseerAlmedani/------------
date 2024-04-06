@@ -30,6 +30,7 @@ const detils = document.querySelectorAll('.detils');
 const priceSection = document.querySelectorAll('.priceSection');
 const menuCardPrice = document.querySelectorAll('.menu-card-price');
 const detilsTable = document.querySelectorAll('.detilsTable');
+const btnList = document.querySelector('.btnList');
 
 listViewButton.onclick = function () {
   listItem.forEach(element => {
@@ -67,4 +68,8 @@ gridViewButton.onclick = function () {
   menuCardPrice.forEach(element => {
     element.classList.add('full-width', 'small-f-on-mobile', 'lh-39');
   });
+  btnList.classList.remove('btn-active')
 }
+
+
+

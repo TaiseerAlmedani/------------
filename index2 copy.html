@@ -13,6 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="bulma/css/bulma.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
@@ -204,7 +205,8 @@
 
       <div class="field has-addons m-2 mb-5 hidden-on-desktop hidden-on-tablet">
         <p class="control has-text-right">
-          <button class="button list-view-button is-medium has-background-transparent has-border-black has-text-black">
+          <button
+            class="button btnList btn-active is-selected list-view-button is-medium has-background-transparent has-border-black has-text-black">
             <span class="icon colored-text-on-hover is-medium">
               <i class="fas fa-bars"></i>
             </span>
@@ -218,18 +220,93 @@
           </button>
         </p>
       </div>
-
       <div class="columns list-items is-mobile is-justify-content-space-between is-vcentered is-multiline">
 
+
+
+
+
+        
         <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div id="popup1" class="overlay" onclick="openInNewTab('index.html')">
+            <div class="popup">
+              <div class="is-flex is-justify-content-space-between-on-lg is-justify-content-center-on-xl">
+                <div><img class="br-20" src="assets/popup.png" alt="img"></div>
+                <div class="p-4">
+                  <div class="small">
+                    <span>фастфуд</span>
+                    <i class="fa-solid fa-chevron-right fs-10 ml-2"></i>
+                  </div>
+                  <div class="title is-3 py-4">
+                    Мидии в тайском стиле
+                  </div>
+                  <div class="title is-5 my-3">
+                    Подробности
+                  </div>
+                  <div class="subtitle is-6">
+                    в соусе из кокосового молока с тайскими травами, сервируются в соусе из кокосового молока с тайскими
+                    травами,
+                    сервируются.
+                  </div>
+                  <div class="detils  mt-2">
+                    <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+                      <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
+                      </div>
+                      <div class="is-flex is-justify-content-space-between has-gap detilsTable py-4">
+                        <div>
+                          <div>Вес</div>
+                          <div>200 г</div>
+                        </div>
+
+                        <div>
+                          <div>Ккал</div>
+                          <div>476</div>
+                        </div>
+
+                        <div>
+                          <div>Б / Ж / У</div>
+                          <div>23.5 г / 20.8 г / 48.7 г</div>
+                        </div>
+                        <div><img src="assets/image 5.svg" alt="logo"></div>
+                      </div>
+                    </div>
+                    <div class=" priceSection">
+                      <div class="has-text-weight-bolder is-size-4 menu-card-price py-4 is-size-4">p 650</div>
+                    </div>
+                  </div>
+                  <div class="has-text-center">
+                    <button class="button is-size-5 has-text-white  has-border has-warning-bg-c">
+                      <span class="icon">
+                        <i class="fas fa-shopping-bag"></i>
+                      </span>
+                      <span>
+                        добавить в корзину
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+              <a class="close" href="#">&times;</a>
+              <a class="right" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+              <a class="left" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+            </div>
+          </div>
+
+
+
+
           <div class="has-overlay">
-            <a href="#">
+            <a href="#popup1">
               <img class="has-custom-radius full-width" src="assets/Mask group.png" alt="Placeholder image" />
             </a>
           </div>
           <div class="detils  mt-2 is-flex is-justify-content-space-between">
             <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
-              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">Мидии в тайском стиле</div>
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
+                <a class="has-text-black" href="#popup1">Мидии в тайском стиле</a>
+              </div>
               <div class="is-flex is-justify-content-space-between has-gap detilsTable">
                 <div>
                   <div>Вес</div>
@@ -260,6 +337,38 @@
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
           <div class="has-overlay">
@@ -466,7 +575,7 @@
   <!--start of gallery items section-->
 
   <!-- start of footer section -->
-  <footer class="section has-side-background is-small has-background-color">
+  <footer class="section has-side-background is-small has-background-color has-z">
     <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
       <div class="column is-2 has-text-center">
         <img src="assets/footer-img.png" alt="logo" />
@@ -474,20 +583,20 @@
       <div class="column has-text-center has-background-transparent is-4 ">
         <div>
           <span class="icon ml-3 is-medium has-text-white ">
-            <i class="fa-regular fa-envelope"></i> </span><a class="has-text-white footer-link"
+            <i class="fa-regular fa-envelope"></i> </span><a class="has-text-white"
             href="mailto:oooargo2012@mail.ru">oooargo2012@mail.ru</a>
         </div>
         <div>
           <span class="icon is-medium has-text-white ">
             <i class="fas fa-phone-alt"></i>
           </span>
-          <a class="has-text-white footer-link" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
+          <a class="has-text-white" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
         </div>
         <div>
           <span class="icon is-medium has-text-white ">
             <i class="fas fa-phone-alt"></i>
           </span>
-          <a class="has-text-white footer-link" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
+          <a class="has-text-white" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
         </div>
       </div>
       <div class="column is-2">

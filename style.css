@@ -239,7 +239,9 @@ footer.has-side-background::after {
   position: relative;
   left: 31vw;
 }
-
+body>div.container.is-clipped.mt-6.pt-2>div>div.column.is-4-desktop.is-12-mobile.is-12-tablet.pt-0.has-padding-mobile>div>span:hover , body>div>div.container.is-clipped.mt-6.pt-2>div>div.column.is-4-desktop.is-12-mobile.is-12-tablet.pt-0.has-padding-mobile>div>span:hover{
+cursor: pointer;
+}
 .has-gap {
   column-gap: 30px !important;
 }
@@ -320,9 +322,16 @@ footer.has-side-background::after {
   }
 }
 
+
+
+
+
 /*?? media */
 /*?? phone */
 @media screen and (max-width:500px) {
+  body>footer>div.container.columns.my-3.has-z.is-justify-content-space-around.is-vcentered.is-centered>div:nth-child(3)>div.has-text-center.mt-3 {
+      padding-bottom: 41px !important;
+    }
   footer::before {
     background-image: url('assets/footer-bg-mobile.svg');
   }
@@ -581,4 +590,7 @@ h2.fs-36 {
 }
 .br-10{
   border-radius: 10px !important;
+}
+.btn-active {
+  color: var(--warning-color) !important;
 }

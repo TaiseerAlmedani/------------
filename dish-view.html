@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>РГК Афродита</title>
+  <link rel="icon" href="assets/logo-nav.ico" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <!--start of navbar section -->
+  <nav class="navbar is-fixed-top has-background-color is-clipped" role="navigation" aria-label="main navigation">
+    <div class="container has-padding py-1">
+      <div class="navbar-brand">
+        <a href="#">
+          <img class="ml-1" src="assets/logo 2.svg" width="70px" height="70px" alt="website logo" />
+        </a>
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+          data-target="navMenu">
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+        </a>
+
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end has-text-center">
+          <a class="navbar-item has-custom-radius on-hover-black is-expanded has-text-white">
+            Гостиница
+          </a>
+
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Летний ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Караоке
+          </a>
+          <div class="navbar-item">
+            <button class="button">Доставка еды</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End of navbar section -->
+  <h2 class="container title fs-36 nav-title pl-5 is-size-3-mobile mb-mobile-0">Доставка еды</h2>
+
+  <div class="reverse-on-mobile">
+    <div class="container hero-with-background">
+      <div class="slideshow-container pricing-slider">
+
+        <div class="mySlides fade">
+
+          <img src="assets/slider.png" style="height: 100%; width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="assets/slider.png" style="height: 100%; width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="assets/slider.png" style="height: 100%; width:100%">
+
+        </div>
+      </div> <br>
+      <div class="dots pricing-dots has-text-centered">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <!-- end slid -->
+
+    <!-- end of the slider section -->
+
+    <!--start of menu search section-->
+    <div class="container is-clipped mt-6 pt-2">
+      <div class="columns is-centered is-multiline is-mobile is-vcentered">
+        <div class="column is-4-desktop is-12-mobile is-12-tablet pt-0 has-padding-mobile">
+          <div class="columns is-mobile is-centered is-vcentered mb-0">
+            <div class="column is-10-desktop is-6-tablet is-10-mobile">
+              <div class="control has-icons-left">
+                <input class="input has-custom-radius has-background-transparent has-border-black" type="text"
+                  placeholder="искать еду" />
+                <span class="icon is-medium is-left">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </div>
+            <span
+              class="icon mr-3 icon-costum is-medium has-hover-effect has-background-transparent has-border has-border-black">
+              <ion-icon name="filter-outline" style="font-size: 30px;"></ion-icon>
+            </span>
+          </div>
+        </div>
+        <div class="column is-7-desktop is-10-tablet" style=" overflow-x: auto;">
+          <div
+            class="columns is-mobile is-centered-desktop is-vcentered is-justify-content-space-evenly is-justify-center-tablet"
+            style="gap: 11px;">
+            <div class="column mr-2  has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-hamburger"></i>
+                </span>
+              </button>
+              <div>фастфуд</div>
+            </div>
+            <div class="column mr-2 has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-pizza-slice"></i>
+                </span>
+              </button>
+              <div>пицца</div>
+            </div>
+            <div class="column mr-2 has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-fish"></i>
+                </span>
+              </button>
+              <div>фастфуд</div>
+            </div>
+            <div class="column mr-2 has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-hamburger"></i>
+                </span>
+              </button>
+              <div>фастфуд</div>
+            </div>
+            <div class="column mr-2 has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-coffee"></i>
+                </span>
+              </button>
+              <div>напитки</div>
+            </div>
+            <div class="column mr-2 has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-pizza-slice"></i>
+                </span>
+              </button>
+              <div>пицца</div>
+            </div>
+            <div class="column mr-2 has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-fish"></i>
+                </span>
+              </button>
+              <div>фастфуд</div>
+            </div>
+            <div class="column mr-2 has-text-center is-1-desktop menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-pizza-slice"></i>
+                </span>
+              </button>
+              <div>фастфуд</div>
+            </div>
+            <div class="column has-text-center is-1-desktop  menu-item">
+              <button class="button has-hover-effect is-large has-background-transparent has-border-black">
+                <span class="icon is-large">
+                  <i class="fas fa-fish"></i>
+                </span>
+              </button>
+              <div>напитки</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--start of gallery items section-->
+  <section class="section pt-4 mt-4 is-medium has-z">
+    <div class="container">
+      <div class="title is-1 mb-6 hidden-on-mobile">
+        пицца
+      </div>
+
+
+      <div class="field has-addons m-2 mb-5 hidden-on-desktop hidden-on-tablet">
+        <p class="control has-text-right">
+          <button
+            class="button btnList btn-active is-selected list-view-button is-medium has-background-transparent has-border-black has-text-black">
+            <span class="icon colored-text-on-hover is-medium">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+        </p>
+        <p class="control">
+          <button class="button is-medium grid-view-button has-background-transparent has-border-black has-text-black">
+            <span class="icon is-medium colored-text-on-hover">
+              <ion-icon name="grid-outline"></ion-icon>
+            </span>
+          </button>
+        </p>
+      </div>
+      <div class="columns list-items is-mobile is-justify-content-space-between is-vcentered is-multiline">
+
+
+
+
+
+        
+        <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div id="popup1" class="overlay" onclick="openInNewTab('index.html')">
+            <div class="popup">
+              <div class="is-flex is-justify-content-space-between-on-lg is-justify-content-center-on-xl">
+                <div><img class="br-20" src="assets/popup.png" alt="img"></div>
+                <div class="p-4">
+                  <div class="small">
+                    <span>фастфуд</span>
+                    <i class="fa-solid fa-chevron-right fs-10 ml-2"></i>
+                  </div>
+                  <div class="title is-3 py-4">
+                    Мидии в тайском стиле
+                  </div>
+                  <div class="title is-5 my-3">
+                    Подробности
+                  </div>
+                  <div class="subtitle is-6">
+                    в соусе из кокосового молока с тайскими травами, сервируются в соусе из кокосового молока с тайскими
+                    травами,
+                    сервируются.
+                  </div>
+                  <div class="detils  mt-2">
+                    <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+                      <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
+                      </div>
+                      <div class="is-flex is-justify-content-space-between has-gap detilsTable py-4">
+                        <div>
+                          <div>Вес</div>
+                          <div>200 г</div>
+                        </div>
+
+                        <div>
+                          <div>Ккал</div>
+                          <div>476</div>
+                        </div>
+
+                        <div>
+                          <div>Б / Ж / У</div>
+                          <div>23.5 г / 20.8 г / 48.7 г</div>
+                        </div>
+                        <div><img src="assets/image 5.svg" alt="logo"></div>
+                      </div>
+                    </div>
+                    <div class=" priceSection">
+                      <div class="has-text-weight-bolder is-size-4 menu-card-price py-4 is-size-4">p 650</div>
+                    </div>
+                  </div>
+                  <div class="has-text-center">
+                    <button class="button is-size-5 has-text-white  has-border has-warning-bg-c">
+                      <span class="icon">
+                        <i class="fas fa-shopping-bag"></i>
+                      </span>
+                      <span>
+                        добавить в корзину
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+              <a class="close" href="#">&times;</a>
+              <a class="right" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+              <a class="left" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+            </div>
+          </div>
+
+
+
+
+          <div class="has-overlay">
+            <a href="#popup1">
+              <img class="has-custom-radius full-width" src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
+                <a class="has-text-black" href="#popup1">Мидии в тайском стиле</a>
+              </div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius  full-width" src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">Мидии в тайском стиле</div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price is-size-4">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius  full-width" src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">Мидии в тайском стиле</div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price is-size-4">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius  full-width" src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">Мидии в тайском стиле</div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price is-size-4">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius  full-width" src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">Мидии в тайском стиле</div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price is-size-4">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius  full-width" src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">Мидии в тайском стиле</div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price is-size-4">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--start of gallery items section-->
+
+  <!-- start of footer section -->
+  <footer class="section has-side-background is-small has-background-color has-z">
+    <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
+      <div class="column is-2 has-text-center">
+        <img src="assets/footer-img.png" alt="logo" />
+      </div>
+      <div class="column has-text-center has-background-transparent is-4 ">
+        <div>
+          <span class="icon ml-3 is-medium has-text-white ">
+            <i class="fa-regular fa-envelope"></i> </span><a class="has-text-white"
+            href="mailto:oooargo2012@mail.ru">oooargo2012@mail.ru</a>
+        </div>
+        <div>
+          <span class="icon is-medium has-text-white ">
+            <i class="fas fa-phone-alt"></i>
+          </span>
+          <a class="has-text-white" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
+        </div>
+        <div>
+          <span class="icon is-medium has-text-white ">
+            <i class="fas fa-phone-alt"></i>
+          </span>
+          <a class="has-text-white" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
+        </div>
+      </div>
+      <div class="column is-2">
+        <div class="has-text-white has-text-center">
+          Вы также можете найти нас на этих платформах!
+        </div>
+        <div class="has-text-center mt-3">
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-whatsapp"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-telegram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-vk"></i>
+            </span>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="has-text-white has-text-centered">
+      <p>&copy; 2024 Афродита 🤍 от Roinext</p>
+    </div>
+  </footer>
+  <!-- start of footer section -->
+
+  <script src="index.js"></script>
+
+  <!-- slid script -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <!-- end slid script -->
+
+  <!-- ionicon cdn library -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

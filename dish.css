@@ -16,7 +16,9 @@
 .p-38 {
   padding: 38px 44px !important;
 }
-
+.p-54{
+  padding-bottom: 54px !important;
+}
 .counter-btn {
   background-color: var(--warning-color);
   border-radius: 50%;

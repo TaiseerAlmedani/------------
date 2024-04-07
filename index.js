@@ -70,6 +70,3 @@ gridViewButton.onclick = function () {
   });
   btnList.classList.remove('btn-active')
 }
-
-
-

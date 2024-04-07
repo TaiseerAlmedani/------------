@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>РГК Афродита</title>
+  <link rel="icon" href="assets/logo-nav.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+  <!--start of navbar section -->
+  <nav class="navbar is-fixed-top has-background-color is-clipped" role="navigation" aria-label="main navigation">
+    <div class="container has-padding py-1">
+      <div class="navbar-brand">
+        <a href="#">
+          <img class="ml-1" src="assets/logo 2.svg" width="70px" height="70px" alt="website logo" />
+        </a>
+        <a href="#" class="navbar-burger has-text-white nav-custom-item">
+          <i class="fa">&#xf07a;</i>
+          <span class='badge badge-warning' id='lblCartCount'> 1 </span>
+        </a>
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+          data-target="navMenu">
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-white"></span>
+        </a>
+
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end has-text-center">
+          <a class="navbar-item has-custom-radius on-hover-black is-expanded has-text-white">
+            Гостиница
+          </a>
+
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Летний ресторан
+          </a>
+          <a class="navbar-item has-custom-radius on-hover-black has-text-white is-expanded">
+            Караоке
+          </a>
+          <div class="navbar-item">
+            <button class="button">Доставка еды</button>
+          </div>
+          <div class="navbar-item has-custom-radius hidden-on-mobile hidden-on-tablet">
+            <a href="#">
+
+
+
+
+              <span class="icon has-text-white">
+                <i class="fa">&#xf07a;</i>
+                <span class='badge badge-warning' id='lblCartCount'> 1 </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End of navbar section -->
+
+
+  <section class="section mt-6">
+    <div class="container mt-5">
+      <div class="columns is-justify-content-space-between">
+        <div class="column is-7">
+          <div class="title is-1 fs-30-mobile">
+            Оформление заказа
+          </div>
+        </div>
+        <div class="column is-4">
+          <table class="mb-6">
+            <tr>
+              <td><a href="#" class="mr-2 bordered">1</a><span class="mr-5">Корзина</span></td>
+              <td><a href="#" class="ml-5 bordered">1</a><span class="ml-2">Оформление</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container pb-6 mb-6">
+      <div class="columns is-justify-content-space-between">
+        <div class="column is-7">
+          <form class="columns is-mobile is-multiline">
+
+            <div class="column br-10 is-6">
+              <div class="field">
+                <label class="label">Имя *</label>
+                <div class="control">
+                  <input class="input colored-borde has-background-transparent  br-10" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label class="label">Телефон *</label>
+                <div class="control">
+                  <input class="input has-background-transparent  br-10" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="column is-6-desktop is-12-mobile">
+              <div class="select is-fullwidth has-background-transparent">
+                <select class=" br-10">
+                  <option class="m-5 p-5">Select</option>
+                  <option class="m-5 p-5">With options</option>
+                </select>
+              </div>
+            </div>
+            <div class="column is-6-desktop is-12-mobile">
+              <button class="button  br-10 is-fullwidth has-warning-bg-c has-text-white">
+                определить мое местоположение
+              </button>
+            </div>
+            <div class="column is-12">
+              <label class="label">адрес *</label>
+              <textarea class="textarea has-background-transparent  br-10" rows="3"></textarea>
+            </div>
+            <div class="column is-12">
+              <label class="label">Детали</label>
+              <textarea class="textarea has-background-transparent  br-10" rows="3"
+                placeholder="Примечания к вашему заказу, например, особые пожелания отделу доставки."></textarea>
+            </div>
+            <div class="column py-0 mb-3 is-12">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" class="mr-3" name="answer" />
+                  Оплата при доставке
+                </label>
+              </div>
+            </div>
+            <div class="column is-flex is-align-items center py-0 is-12">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" class="mr-3" name="answer" />
+                  Банковская карта
+                </label>
+              </div>
+              <img class="ml-3" src="assets/image 6.png" alt="logos">
+            </div>
+          </form>
+          <div class="ml-6 mt-4">
+            <img class="mr-4" src="assets/visa 1.png" alt="logo">
+            <img class="mr-4" src="assets/masterCard 1.png" alt="logo">
+            <img class="mr-4" src="assets/paypal 1.png" alt="logo">
+            <img src="assets/mir 1.png" alt="logo">
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="border-section is-4 p-5 mb-6">
+            <div class="title is-5  mb-5">Ваш заказ</div>
+            <div class="is-flex is-justify-content-space-between mb-2">
+              <div class="is-size-6">В корзине</div>
+              <div class="is-size-6 has-text-weight-bold has-text-weight-bold">2 товара</div>
+            </div>
+            <div class="is-flex is-justify-content-space-between mb-2">
+              <div class="is-size-6">Итого</div>
+              <div class="is-size-6 has-text-weight-bold">1580 ₽</div>
+            </div>
+            <button class="button py-3 has-text-white is-size-6 has-warning-bg-c br-10 has-background is-fullwidth">
+              Подтвердить заказ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- start of footer section -->
+  <footer class="section  is-small has-background-color">
+    <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
+
+      <div class="column is-2 has-text-center">
+        <img src="assets/footer-img.png" alt="logo" />
+      </div>
+
+      <div class="column has-text-center has-background-transparent is-4 ">
+        <div>
+          <span class="icon ml-3 is-medium has-text-white ">
+            <i class="fa-regular fa-envelope"></i> </span><a class="has-text-white footer-link"
+            href="mailto:oooargo2012@mail.ru">oooargo2012@mail.ru</a>
+        </div>
+        <div>
+          <span class="icon is-medium has-text-white ">
+            <i class="fas fa-phone-alt"></i>
+          </span>
+          <a class="has-text-white footer-link" href="tel:o+7 (918) 0 777 200">o+7 (918) 0 777 200</a>
+        </div>
+        <div>
+          <span class="icon is-medium has-text-white ">
+            <i class="fas fa-phone-alt"></i>
+          </span>
+          <a class="has-text-white footer-link" href="tel:+7 (861) 553-30-70">+7 (861) 553-30-70</a>
+        </div>
+      </div>
+
+      <div class="column is-2">
+        <div class="has-text-white has-text-center">
+          Вы также можете найти нас на этих платформах!
+        </div>
+        <div class="has-text-center mt-3">
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-whatsapp"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-telegram"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="icon is-small mr-4 is-size-4 has-text-white">
+              <i class="fa-brands fa-vk"></i>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="has-text-white has-text-centered">
+      <div>&copy; 2024 Афродита 🤍 от Roinext</div>
+    </div>
+  </footer>
+  <!-- start of footer section -->
+
+  <script src="index.js"></script>

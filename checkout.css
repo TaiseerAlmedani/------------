@@ -1,0 +1,119 @@
+@import url(colors.css);
+
+.input,
+.textarea {
+  border-color: var(--warning-color) !important;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--warning-color);
+  box-shadow: 0 0 0 1px var(--warning-color) !important;
+}
+
+.select:not(.is-multiple):not(.is-loading):after {
+  display: none;
+}
+
+select {
+  background-color: transparent !important;
+  border-color: var(--warning-color) !important;
+  text-align: center;
+  font-family: "Bellota", system-ui !important;
+}
+
+::placeholder {
+  font-family: "Bellota", system-ui !important;
+}
+
+select:focus {
+  box-shadow: 0 0 0 1px var(--warning-color) !important;
+}
+
+option {
+  background-color: var(--secandery-color);
+}
+
+select:active {
+  color: var(--warning-color) !important;
+}
+
+
+select:focus-within {
+  color: var(--warning-color) !important;
+}
+
+option {
+  background-color: var(--secandery-color) !important;
+}
+
+input[type=radio] {
+  transform: scale(1.5);
+  accent-color: var(--warning-color);
+}
+
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: var(--warning-color);
+}
+
+#lblCartCount {
+  width: 17px !important;
+  height: 17px !important;
+  font-size: 12px;
+  background: var(--warning-color);
+  vertical-align: top;
+  margin-left: -10px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:1023px) {
+
+  #lblCartCount {
+    text-align: center;
+    padding: 0;
+    font-size: 12px !important;
+    margin-left: 14px;
+    margin-top: -14px;
+    margin-bottom: 0;
+    height: 18px !important;
+    width: 18px !important;
+  }
+
+  .navbar-burger.is-active span:nth-child(2) {
+    transform: rotate(0) !important;
+  }
+}
+
+.bordered {
+  display: inline-block;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+  background-color: var(--normal-icon-color) !important;
+}
+
+.bordered:hover {
+  background-color: var(--hovered-icon-color) !important;
+}
+
+.border-section {
+  border: solid 1px var(--warning-color);
+  border-radius: 20px;
+}
+
+@media screen and (max-width:500px) {
+  .fs-30-mobile {
+    font-size: 30px !important;
+  }
+
+  body>section {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

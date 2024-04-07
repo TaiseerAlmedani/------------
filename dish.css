@@ -1,10 +1,7 @@
 @import url(colors.css);
-*{
+
+* {
   box-sizing: border-box;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .br-10 {
@@ -82,8 +79,10 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-    body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.column.border-section.is-4.p-38.mb-6 , body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0{
-      padding-left: 26px !important;
-      padding-right: 26px !important;
-    }
+
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.column.border-section.is-4.p-38.mb-6,
+  body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0 {
+    padding-left: 26px !important;
+    padding-right: 26px !important;
+  }
 }

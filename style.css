@@ -579,3 +579,6 @@ h2.fs-36 {
 .br-20{
   border-radius: 20px;
 }
+.br-10{
+  border-radius: 10px !important;
+}

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="bulma/css/bulma.min.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
@@ -223,16 +224,123 @@
       <div class="columns list-items is-mobile is-justify-content-space-between is-vcentered is-multiline">
 
 
-
-
-
-        
         <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
-          <div id="popup1" class="overlay" onclick="openInNewTab('index.html')">
-            <div class="popup">
-              <div class="is-flex is-justify-content-space-between-on-lg is-justify-content-center-on-xl">
-                <div><img class="br-20" src="assets/popup.png" alt="img"></div>
-                <div class="p-4">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius full-width" src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
+                <a class="has-text-black" href="#popup1">Мидии в тайском стиле</a>
+              </div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="column  listItem mb-5 px-0-mobile is-4-desktop is-6-tablet">
+          <div class="has-overlay">
+            <a href="#">
+              <img class="has-custom-radius img-trigger js-modal-trigger  full-width" data-target="modal-js-example"
+                src="assets/Mask group.png" alt="Placeholder image" />
+            </a>
+          </div>
+
+
+          <div class="detils  mt-2 is-flex is-justify-content-space-between">
+            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
+              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">Мидии в тайском стиле</div>
+              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
+                <div>
+                  <div>Вес</div>
+                  <div>200 г</div>
+                </div>
+
+                <div>
+                  <div>Ккал</div>
+                  <div>476</div>
+                </div>
+
+                <div>
+                  <div>Б / Ж / У</div>
+                  <div>23.5 г / 20.8 г / 48.7 г</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
+              <div class="has-text-weight-bolder is-size-4 menu-card-price is-size-4">1650 Р</div>
+              <div>
+                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="modal" id="modal-js-example">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+
+            <!-- <a class="close" href="#">&times;</a> -->
+            <a class="right" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+            <a class="left" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+
+            <section class="modal-card-body for-desktop">
+              <div class="is-flex columns is-justify-content-space-between-on-lg is-justify-content-center-on-xl">
+                <div class="column is-6-desktop is-5-widescreen"><img class="br-20" src="assets/popup.png" alt="img">
+                </div>
+                <div class="p-4 column is-6-desktop is-5-widescreen">
                   <div class="small">
                     <span>фастфуд</span>
                     <i class="fa-solid fa-chevron-right fs-10 ml-2"></i>
@@ -286,72 +394,72 @@
                   </div>
                 </div>
               </div>
-
-
-              <a class="close" href="#">&times;</a>
-              <a class="right" href="#"><i class="fa-solid fa-chevron-right"></i></a>
-              <a class="left" href="#"><i class="fa-solid fa-chevron-left"></i></a>
-            </div>
-          </div>
+            </section>
 
 
 
 
-          <div class="has-overlay">
-            <a href="#popup1">
-              <img class="has-custom-radius full-width" src="assets/Mask group.png" alt="Placeholder image" />
-            </a>
-          </div>
-          <div class="detils  mt-2 is-flex is-justify-content-space-between">
-            <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
-              <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
-                <a class="has-text-black" href="#popup1">Мидии в тайском стиле</a>
-              </div>
-              <div class="is-flex is-justify-content-space-between has-gap detilsTable">
-                <div>
-                  <div>Вес</div>
-                  <div>200 г</div>
+            <section class="card-body-body for-mobile">
+              <img src="assets/popup.png" class="mobile-overlay h-500" alt="img">
+              <div class="has-right-background is-cl">
+                <div class="container main-container">
+                  <div class="px-5 pb-5 mb-5">
+                    <div class="has-text-center">
+                      <button class="button m-15-n py-3 is-rounded has-warning-bg-c has-text-white">
+                        <span>фастфуд</span>
+                        <i class="fa-solid fa-chevron-right fs-10 ml-3"></i>
+                      </button>
+                    </div>
+                    <div class="title w-70 is-3 pt-5">
+                      Мидии в тайском стиле
+                    </div>
+                    <div class="title is-5 my-3">
+                      Подробности
+                    </div>
+                    <div class="subtitle is-6">
+                      в соусе из кокосового молока с тайскими травами, сервируются в соусе из кокосового молока с
+                      тайскими
+                      травами,
+                      сервируются.
+                    </div>
+                    <div class="detils  mt-2">
+                      <div class="is-flex  mt-0 is-justify-content-space-between is-align-items-end">
+                        <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
+                        </div>
+                        <div>
+                          <div>Вес</div>
+                          <div>200 г</div>
+                        </div>
+                        <div>
+                          <div>Ккал</div>
+                          <div>476</div>
+                        </div>
+                        <div>
+                          <div>Б / Ж / У</div>
+                          <div>23.5 г / 20.8 г / 48.7 г</div>
+                        </div>
+                        <div><img src="assets/image 5.svg" alt="logo"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-5 pb-5">
+                    <button class="button py-4 has-text-white pr-20 has-warning-bg-c">
+                      p 650
+                    </button>
+                    <button class="button pr-20 py-4 px-5 ml-1 has-text-white has-warning-bg-c w-75">
+                      <span class="icon mr-4">
+                        <i class="fas fa-shopping-bag"></i>
+                      </span>
+                      <span>
+                        добавить в корзину
+                      </span>
+                    </button>
+                  </div>
                 </div>
-
-                <div>
-                  <div>Ккал</div>
-                  <div>476</div>
-                </div>
-
-                <div>
-                  <div>Б / Ж / У</div>
-                  <div>23.5 г / 20.8 г / 48.7 г</div>
-                </div>
               </div>
-            </div>
-            <div
-              class="is-flex is-flex-direction-column priceSection is-justify-content-space-between is-align-items-flex-end">
-              <div class="has-text-weight-bolder is-size-4 menu-card-price">1650 Р</div>
-              <div>
-                <button class="button is-size-5 has-text-white has-border has-border has-warning-bg-c btn-card p-0">
-                  <span class="icon">
-                    <i class="fas fa-shopping-bag"></i>
-                  </span>
-                </button>
-              </div>
-            </div>
+            </section>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -667,7 +775,79 @@
     }
   </script>
   <!-- end slid script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Functions to open and close a modal
+      function openModal($el) {
+        $el.classList.add('is-active');
+      }
 
+      function closeModal($el) {
+        $el.classList.remove('is-active');
+      }
+
+      function closeAllModals() {
+        (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+          closeModal($modal);
+        });
+      }
+
+      // Add a click event on buttons to open a specific modal
+      (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+        const modal = $trigger.dataset.target;
+        const $target = document.getElementById(modal);
+
+        $trigger.addEventListener('click', () => {
+          openModal($target);
+        });
+      });
+
+      // Add a click event on various child elements to close the parent modal
+      (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+        const $target = $close.closest('.modal');
+
+        $close.addEventListener('click', () => {
+          closeModal($target);
+        });
+      });
+
+      // Add a keyboard event to close all modals
+      document.addEventListener('keydown', (event) => {
+        if (event.key === "Escape") {
+          closeAllModals();
+        }
+      });
+    });
+  </script>
+  <script>
+    var modelElement = document.querySelector('.img-trigger');
+    var navElement = document.querySelector('.navbar');
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    modelElement.addEventListener('click', function () {
+
+    })
+    document.addEventListener('keyup', addMobileClass)
+    document.addEventListener('click', addMobileClass)
+
+    function addMobileClass() {
+      var modelElement = document.querySelector('#modal-js-example');
+      if (modelElement && screenWidth < 1020) {
+        navElement.classList.remove('has-background-color');
+        navElement.classList.add('mobile-menu')
+        if (modelElement.classList.contains('is-active')) {
+        } else {
+          navElement.classList.add('has-background-color');
+        }
+      }
+    }
+
+    // Initial call to set the class on page load
+    addMobileClass();
+
+    // Call the function on window resize
+    window.addEventListener('resize', addMobileClass);
+
+  </script>
   <!-- ionicon cdn library -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>

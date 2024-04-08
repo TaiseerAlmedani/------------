@@ -19,22 +19,9 @@
   opacity: 1;
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  width: 75%;
-  position: absolute;
-  top: 10vh !important;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 500s ease-in-out;
-  border-radius: 20px;
-}
 
-
-.popup .right,
-.popup .left {
+ .right,
+ .left {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -52,17 +39,17 @@
   text-align: center;
 }
 
-.popup .left {
+ .left {
   right: 0;
   left: 20px;
 }
 
-.popup .right:hover,
-.popup .left:hover {
+ .right:hover,
+.left:hover {
   color: #ffffff;
 }
 
-.popup .content {
+ .content {
   max-height: 30%;
   overflow: auto;
 }
@@ -73,12 +60,8 @@
   border-radius: 20px !important;
 }
 
-#popup1>div>div>div.p-4>div.has-text-center>button {
-  width: 100%;
-  border-radius: 20px !important;
-}
 
-.popup .close {
+ .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -89,7 +72,7 @@
   color: #333;
 }
 
-.popup .close:hover {
+ .close:hover {
   color: var(--warning-color);
 }
 
@@ -109,11 +92,46 @@
     justify-content: center !important;
     column-gap: 40px !important;
   }
-  .popup{
-    width: 60%;   
+   
+}
+
+@media screen and (min-width: 800px) {
+      .modal-card {
+          width: 75%;
+          border-radius: 20px;
+        }
+      
+        .modal-card-head,
+        .modal-card-foot {
+          display: none;
+        }
+}
+button.has-warning-bg-c{
+  width: 100%;
+}
+@media screen and (min-width: 801px){
+  .for-desktop{
+    display: block !important;
   }
-    #popup1>div>div>div.p-4>div.title.is-3.py-4{
-      width: 50%;
-      padding-top: 30px !important;
+  .for-mobile{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 800px){
+  .left , .right , .colse{
+    display: none;
+  }
+  .for-desktop {
+      display: none !important;
     }
+  .for-mobile{
+    display: block !important;
+  }
+    #modal-js-example{
+    margin-top: -40px !important;
+  }
+}
+.modal-background{
+  background-color:rgba(166, 118, 60, 47%);
+  backdrop-filter: blur(6px);
 }

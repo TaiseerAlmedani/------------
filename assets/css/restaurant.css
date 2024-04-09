@@ -1,13 +1,11 @@
 @import url(colors.css);
 
 body {
-  background-color: var(--ligh-gray) !important;
+  background-color: var(--light) !important;
   font-family: "Bellota", system-ui !important;
 }
 
-.has-background-color{
-  background-color: var(--gray) !important;
-}
+
 
 #lblCartCount {
   width: 17px !important;
@@ -23,7 +21,7 @@ body {
 
 .horo-title {
   margin-top: 126px;
-  margin-bottom:90px;
+  margin-bottom: 101px;
 }
 
 .img-icon {
@@ -31,7 +29,7 @@ body {
   height: 162px;
   border-radius: 50%;
   /* background-color: red; */
-  background-image: url('assets/rounded-hero.png');
+  background-image: url('assets/images/rounded-hero.png');
   /* background-color: #dfc597; */
   position: absolute;
   top: calc(-162px / 2);
@@ -43,7 +41,7 @@ body {
   content: '';
   width: 113px;
   height: 98px;
-  background-image: url('assets/darken-logo.svg');
+  background-image: url('assets/images/darken-logo.svg');
   background-position: center;
   background-size: contain;
   position: absolute;
@@ -80,22 +78,19 @@ body>section>div.is-relative>img {
 .card-content {
   height: 160px;
 }
-.navbar {
-  padding-right: 30px !important;
-  padding-left: 30px !important;
-}
+
 .card-background {
   width: 100%;
   height: 382px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('assets/rcard.png');
+  background-image: url('assets/images/rcard.png');
   border-radius: 20px 20px 0 0;
   position: relative;
 }
 
 .card-2 {
-  background-image: url('assets/rcard-2.png');
+  background-image: url('assets/images/rcard-2.png');
 }
 
 .card-background::after {
@@ -111,7 +106,7 @@ body>section>div.is-relative>img {
 }
 
 .card-3 {
-  background-image: url('assets/rcard-3.png');
+  background-image: url('assets/images/rcard-3.png');
 }
 
 .has-border-top {
@@ -240,7 +235,7 @@ li {
   content: '';
   width: 407px;
   height: 100%;
-  background-image: url('assets/larg-side-bg.png');
+  background-image: url('assets/images/larg-side-bg.png');
   background-position: right;
   background-repeat: no-repeat;
   position: absolute;
@@ -249,11 +244,13 @@ li {
   left: 25%;
 }
 
-
+.navbar {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
 @media screen and (min-width:1023px) and (max-width:1920px) {
   .hero-title {
     letter-spacing: 10px;
-    width: 70%;
   }
 
   .has-ciecule::before {
@@ -291,27 +288,21 @@ li {
 }
 
 @media screen and (max-width:1023px) {
-  .contact span.has-text-weight-bold {
-    display: block;
-  }
-
-  .contact .block-on-mobile {
-    display: block;
-    height: 25px;
-  }
-.card-content {
-  height: 210px;
-}
-  .has-side-background::after {
+  .contact span.has-text-weight-bold  {
+      display: block;
+    }
+  .contact  .block-on-mobile {
+      display: block;
+      height: 25px;
+    }
+  .has-side-background::after{
     display: none;
   }
-
-  ul {
+  ul{
     width: 75%;
   }
-
   .card-content {
-    padding: 30px 28px !important;
+    padding: 5px !important;
   }
 
   .is-reverse-on-mobile {
@@ -348,14 +339,11 @@ li {
   .ml-0-mobile {
     margin-left: 0 !important;
   }
-.mt-46-mobile {
-  margin-top: 46px !important;
-}
-.last-title{
-  margin-top: 50px;
-}
 .mb-68-mobile{
   margin-bottom: 68px !important;
+}
+.mt-64-mobile{
+  margin-top: 64px !important;
 }
   .nav-custom-item {
     position: relative;
@@ -441,7 +429,7 @@ li {
   }
 
   .img-icon {
-    background-image: url('assets/bg-moble.png');
+    background-image: url('assets/images/bg-moble.png');
     width: 107px;
     top: calc(-107px / 2);
     height: 107px;

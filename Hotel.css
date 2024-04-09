@@ -268,6 +268,9 @@ li {
 }
 
 @media screen and (max-width:1366px) {
+  /* .hero-title {
+      letter-spacing: 2px;
+    } */
   .has-ciecule::before {
     margin-left: -10vw;
   }
@@ -276,7 +279,9 @@ li {
     font-size: 20px !important;
   }
 }
-
+.card-content {
+  height: 168px !important;
+}
 @media screen and (max-width:1023px) {
 
   .contact span.has-text-weight-bold {
@@ -303,6 +308,7 @@ ul {
 
 .card-content {
   padding: 30px 28px !important;
+  height: 210px !important;
 }
 
 .is-reverse-on-mobile {
@@ -429,6 +435,7 @@ ul {
     width: 100%;
     padding-left: 31px;
     padding-right: 40px;
+    letter-spacing: 2px !important;
   }
 
   .img-icon {

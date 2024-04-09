@@ -299,7 +299,9 @@ li {
     display: block;
     height: 25px;
   }
-
+.card-content {
+  height: 210px;
+}
   .has-side-background::after {
     display: none;
   }
@@ -348,6 +350,9 @@ li {
   }
 .mt-46-mobile {
   margin-top: 46px !important;
+}
+.last-title{
+  margin-top: 50px;
 }
 .mb-68-mobile{
   margin-bottom: 68px !important;

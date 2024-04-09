@@ -8,7 +8,12 @@
   <link rel="icon" href="assets/logo-nav.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css"
+    integrity="sha512-KYEnM30Gjf5tMbgsrQJsR0FSpufP9S4EiAYi168MvTjK6E83x3r6PTvLPlXYX350/doBXmTFUEnJr/nCsDovuw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="karaoke.css">
 </head>
@@ -76,31 +81,28 @@
   <section class="hero mt-6 pt-6 is-fullwidth is-clipped">
     <div class=" py-6 px-6">
       <div class="columns reverse-on-mobile">
-        <div class="column is-5">
-          <div class="is-flex is-align-items-center mb-3">
-            <img class="hidden-on-mobile" src="assets/green-logo.svg" width="62" height="54" alt="logo">
-            <span class="title is-2 has-text-white">Летний ресторан</span>
-          </div>
-          <div class="mb-2">
-            <div class="content is-size-5 has-text-white is-text-weight.bold">Погрузитесь в мир вкуса и красоты</div>
-          </div>
-          <div>
-            <span class="has-text-white">Шеф-повар ресторана "Афродита" создал неповторимое меню, где классические
-              рецепты искусно переплетаются с современными
-              трендами. Вас ждёт калейдоскоп вкусов, ароматов и текстур, способный удивить даже самых искушенных
-              гурманов.</span>
-          </div>
-          <div class="is-flex  is-align-items-center is-justify-content-flex-start visible-on-mobile pl-3 my-3">
-            <button class="button has-background-transparent has-text-white has-green-border mr-5">Смотреть
-              меню</button>
-            <a class="has-text-white" href="#">подробнее
-              <i class="fa-solid fa-chevron-right fs-10 ml-1"></i></a>
-            </div>
-            <img src="assets/Karaoke.png" alt="">
+        <div class="column is-5 is-reverse-on-mobile">
+        <div><div class="mb-2">
+          <div class="content is-size-5 has-text-white is-text-weight.bold">Погрузитесь в мир вкуса и красоты</div>
         </div>
-        <div class="column  is-7 is-flex is-flex-direction-row-reverse">
-          <div class="div-right" ><img class="right" src="assets/right.png" alt=""></div>
-          <div class="div-left" ><img class="left" src="assets/left.png" alt=""></div>
+        <div>
+          <span class="has-text-white">Шеф-повар ресторана "Афродита" создал неповторимое меню, где классические
+            рецепты искусно переплетаются с современными
+            трендами. Вас ждёт калейдоскоп вкусов, ароматов и текстур, способный удивить даже самых искушенных
+            гурманов.</span>
+        </div>
+        <div class="is-flex  is-align-items-center is-justify-content-flex-start visible-on-mobile pl-3 my-3">
+          <button class="button has-background-transparent has-text-white has-green-border mr-5">Смотреть
+            меню</button>
+          <a class="has-text-white" href="#">подробнее
+            <i class="fa-solid fa-chevron-right fs-10 ml-1"></i></a>
+        </div></div>
+          <img src="assets/Karaoke.png" alt="">
+        </div>
+        
+        <div class="column  is-7 is-12-mobile is-flex is-flex-direction-row-reverse">
+          <div class="div-right on-mobile-w240"><img class="right" src="assets/right.png" alt=""></div>
+          <div class="div-left on-mobile-w240 mt-n-38"><img class="left" src="assets/left.png" alt=""></div>
         </div>
       </div>
     </div>
@@ -108,65 +110,113 @@
 
 
 
-<section class="section  my-6 my-0-mobile py-0-mobile is-clipped has-side-background">
+  <section class="section  py-0 my-0-mobile py-0-mobile  is-clipped has-side-background">
 
-  <div class="columns is-centered is-reverse-on-mobile">
-    <div class="column is-4-desktop mb-6 mt-6 ml-6 ml-0-mobile r-33 ">
-      <div class="title is-size-6 has-text-white">Lorem, ipsum.</div>
-      <div class="title is-size-3 has-border-bottom lh-30 has-text-white">Неповторимая атмосфера</div>
-      <div class="title fs-20 lh-30 has-text-white">
-        Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение,
-        изящная
-        мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.
+    <div
+      class="columns is-justify-content-space-around is-justify-content-center-on-xl is-centered is-reverse-on-mobile mb-5 pb-6">
+
+      <div class="column mb-6 is-5-desktop is-4-fullhd">
+        <div class="img-has-border">
+          <img class="br-20" src="assets/summer-card.png" alt="">
+        </div>
+
+        <div class="title is-size-4 has-text-white mt-5 pt-1">Неповторимая атмосфера</div>
+        <div class=" issize--6 lh-30 has-text-white w-70">
+          Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение,
+          изящная
+          мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.
+        </div>
+      </div>
+      <div class="column mb-6 is-5-desktop is-4-fullhd">
+        <div class="img-has-border">
+          <img class="br-20" src="assets/summer-card.png" alt="">
+        </div>
+
+        <div class="title is-size-4  has-text-white mt-5 pt-1">Неповторимая атмосфера</div>
+        <div class=" issize--6 lh-30 has-text-white w-70">
+          Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение,
+          изящная
+          мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.
+        </div>
       </div>
     </div>
-    <div class="column is-6-desktop is-4-fullhd">
-      <div class="img-has-border"><img class="br-20" src="assets/summer-card.png" alt=""></div>
-    </div>
-  </div>
+    <div
+      class="columns is-justify-content-space-around is-justify-content-center-on-xl	 is-centered is-reverse-on-mobile">
 
-  <div class="columns is-centered mt-6 mb-6  pb-6">
-    <div class="column is-6-desktop is-4-fullhd">
-      <div class="img-has-border mb-6"><img class="br-20" src="assets/image 2 (1).png" alt=""></div>
-    </div>
-    <div class="column is-4-desktop mb-6 pb-6 ml-6 py-0-mobile my-0-mobile ml-0-mobile r-33">
-      <div class="title is-size-6 has-text-white">Lorem, ipsum.</div>
-      <div class="title is-size-3 has-border-bottom" has-text-white>Идеальное место для романтического свидания</div>
-      <div class="title fs-20 lh-30 has-text-white">
-        Уютная атмосфера, приглушенный свет и изысканные блюда создадут неповторимую атмосферу для влюбленных.
-        Незабываемое застолье: Просторный зал ресторана "Афродита" отлично подходит для проведения банкетов, свадебных
-        торжеств
-        и корпоративных мероприятий.
+      <div class="column mb-6 is-5-desktop is-4-fullhd">
+        <div class="img-has-border">
+          <img class="br-20" src="assets/summer-card.png" alt="">
+        </div>
+
+        <div class="title is-size-4  has-text-white mt-5 pt-1">Неповторимая атмосфера</div>
+        <div class=" issize--6 lh-30 has-text-white w-70">
+          Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение,
+          изящная
+          мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.
+        </div>
+      </div>
+      <div class="column mb-6 is-5-desktop is-4-fullhd">
+        <div class="img-has-border">
+          <img class="br-20" src="assets/summer-card.png" alt="">
+        </div>
+
+        <div class="title is-size-4  has-text-white mt-5 pt-1">Неповторимая атмосфера</div>
+        <div class=" issize--6 lh-30 has-text-white w-70">
+          Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение,
+          изящная
+          мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="columns is-reverse-on-mobile is-centered">
-    <div class="column mt-6 is-5-desktop mb-6 ml-6 ml-0-mobile r-33">
-      <div class="title is-size-6 has-text-white">Lorem, ipsum.</div>
-      <div class="title is-size-3 has-border-bottom has-text-white">Идеальное место для романтического свидания</div>
-      <div class="title fs-20 lh-30 has-text-white">
-        Уютная атмосфера, приглушенный свет и изысканные блюда создадут неповторимую атмосферу для влюбленных.
-        Незабываемое застолье: Просторный зал ресторана "Афродита" отлично подходит для проведения банкетов, свадебных
-        торжеств
-        и корпоративных мероприятий.
+  </section>
+
+
+
+  <section class="section is-medium pt-4">
+    <div class="title is-4 has-text-white mb-6 has-text-center has-text-weight-bold">
+      Фотогалерея
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide has-background-transparent">
+          <!-- empty for destance -->
+        </div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
       </div>
+      <div class="swiper-button-next"><i class="fa-regular fa-circle-right" style="font-size: 45px;"></i></div>
+      <div class="swiper-button-prev"><i class="fa-regular fa-circle-left" style="font-size: 45px;"></i></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="column is-6-desktop is-4-fullhd">
-      <div class="img-has-border"><img class="br-20" src="assets/image 2 (2).png" alt=""></div>
-    </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-
-
-
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
   <!-- start of footer section -->
-  <footer class="section">
+  <footer class="section has-background-color">
     <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
 
       <div class="column is-2 has-text-center">

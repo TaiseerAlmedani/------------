@@ -48,14 +48,29 @@
 .hero::before {
   top: 0;
   background-image: url('../images/home/top-clouds.png');
-  background-position-y: top;
+  background-position-y: -100%;
+  animation: fade-down 2s ease-in-out forwards;
+}
+
+@keyframes fade-down {
+  to {
+    background-position-y: top;
+  }
 }
 
 .hero::after {
   bottom: -1px;
   background-image: url('../images/home/bottom-clouds.png');
-  background-position-y: 120%;
+  background-position-y: 200%;
+  animation: fade-up 2s ease-in-out forwards;
 }
+
+@keyframes fade-up {
+  to {
+    background-position-y: 120%;
+  }
+}
+
 
 .hero .hero-body {
   padding-top: 164px;

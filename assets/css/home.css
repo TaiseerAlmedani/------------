@@ -1,0 +1,79 @@
+:root {
+  --bulma-body-background-color: var(--secandery-color);
+  --secondary-color: var(--secandery-color)
+}
+
+.has-text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.has-text-dark {
+  color: var(--dark);
+}
+
+.navbar {
+  --bulma-navbar-background-color: transparent;
+}
+
+.navbar .navbar-item {
+  color: var(--dark) !important;
+}
+
+.navbar-burger {
+  color: var(--dark);
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/home/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero::before, .hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  pointer-events: none;
+}
+
+.hero::before {
+  top: 0;
+  background-image: url('../images/home/top-clouds.png');
+  background-position-y: top;
+}
+
+.hero::after {
+  z-index: 0;
+  bottom: 0;
+  background-image: url('../images/home/bottom-clouds.png');
+  background-position-y: 120%;
+}
+
+.hero .hero-body {
+  padding-top: 164px;
+}
+
+.hero .hero-body .hero-logo {
+  filter: drop-shadow(0 0 20px var(--brown));
+}
+
+.button.is-circle {
+  border-radius: 50%;
+}
+
+.hero .button.show-more-button {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}

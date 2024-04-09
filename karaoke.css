@@ -1,0 +1,82 @@
+@import url(colors.css);
+
+body {
+  background-color: var(--purple) !important;
+  font-family: "Bellota", system-ui !important;
+}
+.has-background-color{
+  background-color: var(--purple-darken);
+}
+
+#lblCartCount {
+  width: 17px !important;
+  height: 17px !important;
+  font-size: 12px;
+  background: var(--warning-color);
+  vertical-align: top;
+  margin-left: -10px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+.has-text-green{
+  color: var(--dark-green) !important;
+}
+.right{
+border-radius: 10px 100px 10px 10px;
+
+}
+.left{
+  border-radius: 10px 100px 10px 100px;
+
+}
+.div-left{
+  align-self: flex-end;
+  position: relative;
+  left: 10%;
+}
+.div-right{
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width:1023px) {
+  .nav-custom-item {
+    position: relative;
+    left: 23vw;
+  }
+
+  .navbar {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+
+  #lblCartCount {
+    text-align: center;
+    padding: 0;
+    font-size: 12px !important;
+    margin-left: 14px;
+    margin-top: -14px;
+    margin-bottom: 0;
+    height: 18px !important;
+    width: 18px !important;
+  }
+
+  .navbar-burger.is-active span:nth-child(2) {
+    transform: rotate(0) !important;
+  }
+
+  .hidden-on-mobile {
+    display: none !important;
+  }
+
+  .pt-0-mobile {
+    padding-top: 0 !important;
+  }
+
+  .fs-24-mobile {
+    font-size: 24px !important;
+  }
+}

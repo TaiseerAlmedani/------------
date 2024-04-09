@@ -3,11 +3,16 @@
   --primary-color: #6d645a;
   --secandery-color: #f6f0e6;
   --warning-color: #a6763c;
-  --active-icon-color:#dfc59780;
-  --normal-icon-color:#eadabe;
-  --hovered-icon-color:#dfc597;
-  --dark : #1e1e1e !important;
-  --brown : #433e38 !important;
-  --green : #343a18 !important;
-  --dark-green : #a6763c !important;
+  --active-icon-color: #dfc59780;
+  --normal-icon-color: #eadabe;
+  --hovered-icon-color: #dfc597;
+  --dark: #1e1e1e !important;
+  --brown: #433e38 !important;
+  --green: #433e38 !important;
+  --light: #fdf4e3 !important;
+  --light-creem: #e7e3de !important;
+  --ligh-gray: #fafff3;
+  --gray: #A5A997;
+  --purple: #5f3869;
+  --purple-darken: #4d2a56;
 }

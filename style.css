@@ -329,6 +329,7 @@ cursor: pointer;
 /*?? media */
 /*?? phone */
 @media screen and (max-width:500px) {
+  
   body>footer>div.container.columns.my-3.has-z.is-justify-content-space-around.is-vcentered.is-centered>div:nth-child(3)>div.has-text-center.mt-3 {
       padding-bottom: 41px !important;
     }

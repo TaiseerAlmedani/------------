@@ -36,7 +36,6 @@
   content: '';
   display: block;
   position: absolute;
-  object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
   height: 100%;
@@ -53,8 +52,7 @@
 }
 
 .hero::after {
-  z-index: 0;
-  bottom: 0;
+  bottom: -1px;
   background-image: url('../images/home/bottom-clouds.png');
   background-position-y: 120%;
 }
@@ -76,4 +74,40 @@
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.hero+section::before {
+  content: '';
+  display: block;
+  height: 80px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  pointer-events: none;
+  background-image: url(../images/home/bottom-clouds.png);
+  background-position-y: 90%;
+}
+
+.about-images .column {
+  position: relative;
+  scale: 1.4;
+}
+
+.about-images .column .image {
+  box-shadow: -16px 4px 30px rgba(0, 0, 0, 0.25);
+}
+.about-images .column .image img{
+  object-fit: cover;
+}
+
+
+.about-images .column:nth-child(1) {
+  left: -25px;
+}
+.about-images .column:nth-child(2) {
+  z-index: 10;
+  top: 60px;
+}
+.about-images .column:nth-child(3) {
+  left: 25px;
 }

@@ -19,7 +19,9 @@ body {
   margin-bottom: 28px;
   border-radius: 50%;
 }
-
+body>section.section.py-6.py-0-mobile.mt-46-mobile.my-0-mobile.my-6>div>div:nth-child(1)>div{
+  font-size: 24px !important;
+}
 
 .horo-title {
   margin-top: 126px;
@@ -344,6 +346,9 @@ li {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
   }
+    .pt-55-mobile {
+      padding: 55px !important;
+    }
 
   .ml-0-mobile {
     margin-left: 0 !important;

@@ -54,6 +54,18 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .navbar {
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+    }
+    
+  .pb-0-mobile{
+    padding-bottom: 0 !important;
+  }
+  .mb-0-mobile
+  {
+    margin-bottom: 0 !important;
+  }
   body>section>div>div.columns.is-align-items-flex-start.is-justify-content-space-between>div.is-5-widescreen.column.is-6-desktop.pt-0>div>img {
     width: 144px;
   }

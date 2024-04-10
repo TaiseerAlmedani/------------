@@ -208,7 +208,10 @@ footer::before {
 .has-side-background {
   position: relative;
 }
-
+ .navbar {
+   padding-right: 30px !important;
+   padding-left: 30px !important;
+ }
 .has-side-background::after {
   display: block;
   content: '';
@@ -585,7 +588,12 @@ h2.fs-36 {
     height: 242px;
     transition: height 0.3s ease;
   }
+    .nav-custom-item {
+      position: relative;
+      left: 23vw;
+    }
 }
+
 .br-20{
   border-radius: 20px;
 }

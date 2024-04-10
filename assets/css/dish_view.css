@@ -109,6 +109,10 @@
 button.has-warning-bg-c{
   width: 100%;
 }
+
+.modal-card-body.for-desktop button.has-warning-bg-c {
+  width: 100% !important;
+}
 @media screen and (min-width: 801px){
   .for-desktop{
     display: block !important;
@@ -245,7 +249,9 @@ button.has-warning-bg-c {
   right: 50%;
   z-index: 10;
 }
-
+.has-gap{
+  gap: 30px !important;
+}
 .g-20 {
   column-gap: 20px !important;
 }

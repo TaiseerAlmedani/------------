@@ -126,3 +126,59 @@
 .about-images .column:nth-child(3) {
   left: 25px;
 }
+
+/* SERVICES SLIDER */
+#services {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image .7s ease-in-out;
+}
+
+#services::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+}
+
+#services .is-position-relative {
+  z-index: 10;
+}
+
+#services .swiper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+  padding-bottom: 100px;
+  --swiper-navigation-top-offset: 85%;
+  --swiper-navigation-sides-offset: 40%;
+}
+
+#services .swiper .swiper-slide {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: color-mix(in srgb, var(--light) 80%, transparent);
+}
+
+#services .swiper .swiper-slide .image img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#services .description {
+  backdrop-filter: blur(14px);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, .18)
+}
+
+#services .swiper .swiper-slide.swiper-slide-active {
+  /*display: none;*/
+}

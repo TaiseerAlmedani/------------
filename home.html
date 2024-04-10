@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/style.css"/>
   <link rel="stylesheet" href="assets/css/home.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -134,8 +135,88 @@
   </div>
 </section>
 
-<script src="index.js"></script>
+<section id="services" class="is-fullheight pt-6">
+  <div class="mx-3 is-position-relative">
+    <div class="title mx-3 pt-6"></div>
+    <div class="mb-3">
+      <svg width="200" height="2" viewBox="0 0 200 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1H201" stroke="#A6763C" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="description has-text-white p-3"></div>
+    <a href="#" class="button is-large is-rounded is-outlined is-white mt-3">
+      Read More
+    </a>
+  </div>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="image is-4by5"><img src="assets/images/home/services/summer-restaurant.jpg"></div>
+        <div class="has-text-centered has-text-weight-bold has-text-dark mt-2">Летний ресторан</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image is-4by5"><img src="assets/images/home/services/restaurant.jpg"></div>
+        <div class="has-text-centered has-text-weight-bold has-text-dark mt-2">Ресторан</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image is-4by5"><img src="assets/images/home/services/karaoke.jpg"></div>
+        <div class="has-text-centered has-text-weight-bold has-text-dark mt-2">Караоке</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image is-4by5"><img src="assets/images/home/services/hotel.jpg"></div>
+        <div class="has-text-centered has-text-weight-bold has-text-dark mt-2">Гостиница</div>
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+  import { gsap } from 'https://cdn.skypack.dev/gsap'
+
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 2.25,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
+  const updateServicesSectionBackground = () => {
+    const currentSlide = swiper.slides[swiper.activeIndex]
+    const currentImage = currentSlide.querySelector('img').src
+    const servicesSection = document.querySelector('#services')
+    servicesSection.style.backgroundImage = `url(${currentImage})`
+    const servicesTitle = servicesSection.querySelector('.title')
+    const servicesDescription = servicesSection.querySelector('.description')
+    const newTextTitle = currentSlide.querySelector('.has-text-weight-bold').textContent
+    const newDescriptionText = 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.'
+
+    // Update text content smoothly using TweenMax
+    gsap.to([servicesTitle, servicesDescription], {
+      duration: 0.5, opacity: 0, onComplete: () => {
+        servicesTitle.textContent = newTextTitle;
+        servicesDescription.textContent = newDescriptionText;
+        gsap.to([servicesTitle, servicesDescription], { duration: 0.5, opacity: 1 });
+      },
+    });
+  }
+
+  updateServicesSectionBackground()
+  swiper.on('slideChange', updateServicesSectionBackground)
+</script>
+
+<script src="index.js"></script>
 <script>
   AOS.init();
 </script>

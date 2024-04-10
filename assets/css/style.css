@@ -595,3 +595,7 @@ h2.fs-36 {
 .btn-active {
   color: var(--warning-color) !important;
 }
+
+.navbar-menu{
+  box-shadow: none !important;
+}

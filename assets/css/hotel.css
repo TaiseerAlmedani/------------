@@ -24,16 +24,14 @@ body {
   width: 80%;
   letter-spacing: 4px;
   margin-top: 120px;
-  margin-bottom: 49px;
+margin-bottom: 101px;
 }
 
 .img-icon {
   width: 162px;
   height: 162px;
   border-radius: 50%;
-  /* background-color: red; */
   background-image: url('../rounded-hero.png');
-  /* background-color: #dfc597; */
   position: absolute;
   top: calc(-162px / 2);
   right: 10VW;
@@ -413,7 +411,10 @@ ul {
     height: 18px !important;
     width: 18px !important;
   }
-
+.navbar {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
   .navbar-burger.is-active span:nth-child(2) {
     transform: rotate(0) !important;
   }
@@ -442,6 +443,7 @@ ul {
     background-image: url('../bg-moble.png');
     width: 107px;
     height: 107px;
+    top: calc(-107px / 2);
   }
 
   .img-mobile {

@@ -28,9 +28,7 @@ body {
   width: 162px;
   height: 162px;
   border-radius: 50%;
-  /* background-color: red; */
   background-image: url('../rounded-hero.png');
-  /* background-color: #dfc597; */
   position: absolute;
   top: calc(-162px / 2);
   right: 10VW;

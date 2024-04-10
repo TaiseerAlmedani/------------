@@ -118,6 +118,9 @@ button.has-warning-bg-c{
   }
 }
 @media screen and (max-width: 800px){
+  #modal-js-example>div.modal-card>section.card-body-body.for-mobile>div>div>div.mt-5.pb-5>button {
+      margin-left: 6px;
+    }
   .left , .right{
     display: none;
   }
@@ -215,7 +218,7 @@ button.has-warning-bg-c {
 .main-container {
   position: relative;
   margin-top: -30px;
-  border-radius: 30px !important;
+  border-radius: 30px 30px 0 0  !important;
   background-color: var(--secandery-color);
 }
 

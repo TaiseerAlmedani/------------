@@ -21,7 +21,7 @@ body {
 
 .horo-title {
   margin-top: 126px;
-  margin-bottom: 101px;
+  margin-bottom: 80px;
 }
 
 .img-icon {
@@ -137,11 +137,13 @@ body>section.section.py-6.py-0-mobile.e.my-0-mobile.my-6>div>div:nth-child(1)>di
 .fs-36 {
   font-size: 36px !important;
 }
-
+.br{
+  display: block !important;
+}
 .has-border-bottom::after {
   display: block;
   content: '';
-  width: 65%;
+  width: 70%;
   margin: 14px 0 40px 0;
   border-bottom: solid 1px var(--warning-color);
 }
@@ -422,7 +424,9 @@ li {
   .pt-0-mobile {
     padding-top: 0 !important;
   }
-
+.mt-70-mobile{
+  margin-top: 70px !important;
+}
   .horo-title {
     width: 100%;
     padding-left: 31px;

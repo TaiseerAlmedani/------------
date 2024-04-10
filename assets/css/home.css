@@ -14,7 +14,16 @@
 .navbar {
   --bulma-navbar-background-color: transparent;
 }
-
+#lblCartCount {
+  width: 17px !important;
+  height: 17px !important;
+  font-size: 12px;
+  background: var(--warning-color);
+  vertical-align: top;
+  margin-left: -10px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+}
 .navbar .navbar-item {
   color: var(--dark) !important;
 }

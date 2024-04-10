@@ -236,7 +236,7 @@ button.has-warning-bg-c {
   width: 128px;
   overflow: hidden;
   height: 437px;
-  background-image: url('/assets/Vector.png');
+  background-image: url('../Vector.png');
   background-position: right;
   background-repeat: no-repeat;
   position: absolute;

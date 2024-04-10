@@ -31,7 +31,7 @@ body {
   height: 162px;
   border-radius: 50%;
   /* background-color: red; */
-  background-image: url('assets/images/rounded-hero.png');
+  background-image: url('/assets/rounded-hero.png');
   /* background-color: #dfc597; */
   position: absolute;
   top: calc(-162px / 2);
@@ -43,7 +43,7 @@ body {
   content: '';
   width: 113px;
   height: 98px;
-  background-image: url('assets/images/darken-logo.svg');
+  background-image: url('/assets/darken-logo.svg');
   background-position: center;
   background-size: contain;
   position: absolute;
@@ -89,13 +89,13 @@ body>section>div.is-relative>img {
   height: 382px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('assets/images/rcard.png');
+  background-image: url('/assets/rcard.png');
   border-radius: 20px 20px 0 0;
   position: relative;
 }
 
 .card-2 {
-  background-image: url('assets/images/rcard-2.png');
+  background-image: url('/assets/rcard-2.png');
 }
 
 .card-background::after {
@@ -111,7 +111,7 @@ body>section>div.is-relative>img {
 }
 
 .card-3 {
-  background-image: url('assets/images/rcard-3.png');
+  background-image: url('/assets/rcard-3.png');
 }
 
 .has-border-top {
@@ -240,7 +240,7 @@ li {
   content: '';
   width: 407px;
   height: 100%;
-  background-image: url('assets/images/larg-side-bg.png');
+  background-image: url('/assets/larg-side-bg.png');
   background-position: right;
   background-repeat: no-repeat;
   position: absolute;
@@ -441,7 +441,7 @@ li {
   }
 
   .img-icon {
-    background-image: url('assets/images/bg-moble.png');
+    background-image: url('/assets/bg-moble.png');
     width: 107px;
     top: calc(-107px / 2);
     height: 107px;

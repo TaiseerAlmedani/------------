@@ -123,10 +123,9 @@ button.has-warning-bg-c{
   }
   .close {
      top: 100px;
-     right: 50%;
+     right: 90%;
      z-index: 1;
      transition: all 200ms;
-     box-shadow: 0 0 5px 1px white;
    }
   .for-desktop {
       display: none !important;
@@ -136,6 +135,7 @@ button.has-warning-bg-c{
   }
     #modal-js-example{
     margin-top: -40px !important;
+    height: 120vh;
   }
 }
 .modal-background{
@@ -179,7 +179,9 @@ button.has-warning-bg-c {
 }
 
 
-
+.nav-title{
+  margin-top: 65px !important;
+}
 .has-background-color {
   transition: all 500ms;
   background-color: var(--primary-color) !important;
@@ -188,6 +190,9 @@ button.has-warning-bg-c {
 @media screen and (max-width: 500px) {
   #navMenu {
     background-color: rgba(0, 0, 0, 0.373) !important;
+  }
+  .ml-8-mobile{
+    margin-left: 8px !important;
   }
 }
 

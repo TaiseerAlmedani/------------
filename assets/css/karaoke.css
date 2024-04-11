@@ -297,9 +297,9 @@ body {
     flex-direction: column-reverse;
   }
 
-  .navbar-burger.is-active span:nth-child(2) {
+  /* .navbar-burger.is-active span:nth-child(2) {
     transform: rotate(0) !important;
-  }
+  } */
 
   .hidden-on-mobile {
     display: none !important;

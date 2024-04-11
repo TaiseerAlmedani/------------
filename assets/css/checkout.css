@@ -84,9 +84,9 @@ input[type=radio] {
     width: 18px !important;
   }
 
-  .navbar-burger.is-active span:nth-child(2) {
+  /* .navbar-burger.is-active span:nth-child(2) {
     transform: rotate(0) !important;
-  }
+  } */
 }
 
 .bordered {

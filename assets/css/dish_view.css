@@ -140,6 +140,10 @@ button.has-warning-bg-c {
     display: none !important;
   }
 
+  #modal-js-example .modal-card {
+    max-height: unset;
+  }
+
   .for-mobile > img {
     height: calc(100vh - 430px);
     object-fit: cover;

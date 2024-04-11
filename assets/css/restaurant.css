@@ -123,9 +123,11 @@ body>section>div.is-relative>img {
   background-color: var(--hovered-icon-color);
   margin-bottom: 30px;
 }
-body>section.section.py-6.py-0-mobile.e.my-0-mobile.my-6>div>div:nth-child(1)>div{
+
+body>section.section.py-6.py-0-mobile.e.my-0-mobile.my-6>div>div:nth-child(1)>div {
   font-size: 32px !important;
 }
+
 .fs-20 {
   font-size: 20px !important;
 }
@@ -137,9 +139,11 @@ body>section.section.py-6.py-0-mobile.e.my-0-mobile.my-6>div>div:nth-child(1)>di
 .fs-36 {
   font-size: 36px !important;
 }
-.br{
+
+.br {
   display: block !important;
 }
+
 .has-border-bottom::after {
   display: block;
   content: '';
@@ -188,7 +192,7 @@ li {
 
 .box {
   position: relative;
-  max-width: 70%;
+  max-width: 69%;
   margin: auto;
   background-color: #fefaf1;
 }
@@ -247,11 +251,17 @@ li {
 }
 
 .navbar {
-  padding-right: 30px !important;
-  padding-left: 30px !important;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
 }
 
+
 @media screen and (min-width:1023px) and (max-width:1920px) {
+  footer .container {
+      max-width: 80% !important;
+      justify-content: space-between !important;
+    }
+
   .horo-title {
     letter-spacing: 10px;
   }
@@ -291,19 +301,23 @@ li {
 }
 
 @media screen and (max-width:1023px) {
-  .contact span.has-text-weight-bold  {
-      display: block;
-    }
-  .contact  .block-on-mobile {
-      display: block;
-      height: 25px;
-    }
-  .has-side-background::after{
+  .contact span.has-text-weight-bold {
+    display: block;
+  }
+
+  .contact .block-on-mobile {
+    display: block;
+    height: 25px;
+  }
+
+  .has-side-background::after {
     display: none;
   }
-  ul{
+
+  ul {
     width: 75%;
   }
+
   .card-content {
     padding: 5px !important;
   }
@@ -342,20 +356,23 @@ li {
   .ml-0-mobile {
     margin-left: 0 !important;
   }
-.mb-68-mobile{
-  margin-bottom: 68px !important;
-}
-.mt-64-mobile{
-  margin-top: 64px !important;
-}
+
+  .mb-68-mobile {
+    margin-bottom: 68px !important;
+  }
+
+  .mt-64-mobile {
+    margin-top: 64px !important;
+  }
+
   .nav-custom-item {
     position: relative;
-    left: 23vw;
+    left: 26vw;
   }
 
   .navbar {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
   }
 
   .box {
@@ -363,7 +380,9 @@ li {
     padding-top: 80px !important;
     padding-bottom: 150px !important;
   }
-
+footer>div.container {
+  max-width: 100% !important;
+}
   .box::before,
   .box::after {
     width: 70px;
@@ -424,9 +443,10 @@ li {
   .pt-0-mobile {
     padding-top: 0 !important;
   }
-.mt-70-mobile{
-  margin-top: 70px !important;
-}
+
+  .mt-70-mobile {
+    margin-top: 70px !important;
+  }
 
   .horo-title {
     width: 100%;
@@ -459,4 +479,15 @@ li {
 .r-33 {
   position: relative;
   bottom: 33px;
+}
+
+@media screen and (min-width:1366px) {
+  .box {
+    width: 63%;
+  }
+
+  footer>div.container {
+    max-width: 69% !important;
+    justify-content: space-between !important;
+  }
 }

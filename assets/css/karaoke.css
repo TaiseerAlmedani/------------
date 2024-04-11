@@ -123,12 +123,13 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
+  width: 57px;
   top: 94%;
   left: 75%;
 }
 
 .swiper-button-next {
-  left: 80%;
+  left: 85%;
 }
 
 .swiper-button-next::after,
@@ -164,11 +165,25 @@ body {
 .swiper-pagination-fraction {
   width: 30%;
 }
+@media screen and (min-width: 1216px) {
+  nav > div.container:not(.is-max-desktop) {
+    max-width: 1090px !important;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1440px) {
+  .div-left{
+    top: -18% !important;
+  }
+}
 
 @media screen and (max-width:1023px) {
   body>section.hero.mt-6.pt-6.is-fullwidth.is-clipped>div>div>div.column.is-7.is-12-mobile.is-flex.is-flex-direction-row-reverse {
     display: block !important;
   }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 22px;
+    }
 .swiper-slide:first-of-type {
  display: none;
 }
@@ -183,7 +198,7 @@ body {
   }
 
   .on-mobile-w240 {
-    width: 240px;
+    width: 240px !important;
   }
 
   .pt-80 {
@@ -211,21 +226,29 @@ body {
     margin-top: -38%;
   }
 
-  .left {
+  .div-left {
     position: relative;
-    bottom: 10%;
-    left: -26%;
+    left: -25%;
+    width: 240px !important;
+    height: 240px !important;
   }
-
-  .right {
+.left{
+  border-radius: 10px 10px 10px 100px ;
+}
+  .div-right {
     
     position: relative;
-    left: 37%;
+    left: 27%;
+    width: 240px !important;
+    height: 240px !important;
   }
-
+.img-container{
+  flex-direction: column !important;
+  height: 415px;
+}
   .nav-custom-item {
     position: relative;
-    left: 23vw;
+    left: 26vw;
   }
 
   .img-has-border::after {
@@ -233,8 +256,8 @@ body {
   }
 
   .navbar {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
   }
 
   #lblCartCount {
@@ -283,7 +306,12 @@ body {
   .mt-46-mobile {
     margin-top: 46px !important;
   }
-
+  .mt-64-mobile {
+    margin-top: 46px !important;
+  }
+  .mb-42-mobile{
+    margin-bottom: 42px !important;
+  }
   .last-title {
     margin-top: 50px;
   }
@@ -324,6 +352,6 @@ body {
     height: 10px !important;
   }
     .swiper-button-prev{
-      left: 60%;
+      left: 75%;
     }
 }

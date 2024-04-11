@@ -201,8 +201,8 @@ footer::before {
   position: relative;
 }
  .navbar {
-   padding-right: 30px !important;
-   padding-left: 30px !important;
+   padding-right: 24px !important;
+   padding-left: 24px !important;
  }
 .has-side-background::after {
   display: block;
@@ -281,7 +281,7 @@ cursor: pointer;
 
 @media screen and (min-width:850px) and (max-width:1367px) {
   .has-gap {
-    column-gap: 10px !important;
+    column-gap: 5px !important;
   }
 
   .w-350 {
@@ -509,7 +509,7 @@ h2.fs-36 {
 }
 
 .nav-title {
-  margin-top: 75px !important;
+  margin-top: 70px !important;
   padding-top: 25px !important;
   padding-bottom: 5px;
 }
@@ -582,7 +582,7 @@ h2.fs-36 {
   }
     .nav-custom-item {
       position: relative;
-      left: 23vw;
+      left: 26vw;
     }
 }
 

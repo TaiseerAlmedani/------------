@@ -5,7 +5,7 @@ body {
   font-family: "Bellota", system-ui !important;
 }
 
-.has-background-color{
+.has-background-color {
   background-color: var(--gray) !important;
 }
 
@@ -19,13 +19,14 @@ body {
   margin-bottom: 28px;
   border-radius: 50%;
 }
-body>section.section.py-6.py-0-mobile.mt-46-mobile.my-0-mobile.my-6>div>div:nth-child(1)>div{
+
+body>section.section.py-6.py-0-mobile.mt-46-mobile.my-0-mobile.my-6>div>div:nth-child(1)>div {
   font-size: 24px !important;
 }
 
 .horo-title {
   margin-top: 126px;
-  margin-bottom:90px;
+  margin-bottom: 90px;
 }
 
 .img-icon {
@@ -33,7 +34,7 @@ body>section.section.py-6.py-0-mobile.mt-46-mobile.my-0-mobile.my-6>div>div:nth-
   height: 162px;
   border-radius: 50%;
   /* background-color: red; */
-  background-image: url('../rounded-hero.png');
+  background-image: url('../sr-badge.png');
   /* background-color: #dfc597; */
   position: absolute;
   top: calc(-162px / 2);
@@ -74,7 +75,6 @@ body>section>div.is-relative>img {
 .card {
   position: relative;
   z-index: 1;
-  width: 411px;
   border-radius: 20px;
   background-color: #f6f0e6;
 }
@@ -82,17 +82,18 @@ body>section>div.is-relative>img {
 .card-content {
   height: 160px;
 }
+
 .navbar {
-  padding-right: 30px !important;
-  padding-left: 30px !important;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
 }
+
 .card-background {
-  width: 100%;
   height: 382px;
   background-position: center;
-  background-repeat: no-repeat;
   background-image: url('../rcard.png');
   border-radius: 20px 20px 0 0;
+  background-size: cover;
   position: relative;
 }
 
@@ -193,9 +194,9 @@ li {
 
 .box {
   position: relative;
-  max-width: 70%;
+  max-width: 69%;
   margin: auto;
-  background-color: #fefaf1;
+  background-color: #f6f0e6;
 }
 
 .box::before,
@@ -253,6 +254,11 @@ li {
 
 
 @media screen and (min-width:1023px) and (max-width:1920px) {
+  footer .container {
+    max-width: 88% !important;
+    justify-content: space-between !important;
+  }
+
   .hero-title {
     letter-spacing: 10px;
     width: 70%;
@@ -301,9 +307,11 @@ li {
     display: block;
     height: 25px;
   }
-.card-content {
-  height: 210px;
-}
+
+  .card-content {
+    height: 210px;
+  }
+
   .has-side-background::after {
     display: none;
   }
@@ -346,30 +354,35 @@ li {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
   }
-    .pt-55-mobile {
-      padding: 55px !important;
-    }
+
+  .pt-55-mobile {
+    padding: 55px !important;
+  }
 
   .ml-0-mobile {
     margin-left: 0 !important;
   }
-.mt-46-mobile {
-  margin-top: 46px !important;
-}
-.last-title{
-  margin-top: 50px;
-}
-.mb-68-mobile{
-  margin-bottom: 68px !important;
-}
+
+  .mt-46-mobile {
+    margin-top: 46px !important;
+  }
+
+  .last-title {
+    margin-top: 50px;
+  }
+
+  .mb-68-mobile {
+    margin-bottom: 68px !important;
+  }
+
   .nav-custom-item {
     position: relative;
-    left: 23vw;
+    left: 26vw;
   }
 
   .navbar {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
   }
 
   .box {
@@ -422,10 +435,6 @@ li {
     width: 18px !important;
   }
 
-  /* .navbar-burger.is-active span:nth-child(2) {
-    transform: rotate(0) !important;
-  } */
-
   .hero-img {
     padding-left: 10px;
     padding-right: 10px;
@@ -470,4 +479,15 @@ li {
 .r-33 {
   position: relative;
   bottom: 33px;
+}
+
+@media screen and (min-width:1366px) {
+  .box {
+    width: 63%;
+  }
+
+  footer>div.container {
+    max-width: 69% !important;
+    justify-content: space-between !important;
+  }
 }

@@ -66,7 +66,7 @@
   </nav>
 
   <h2 class="container title fs-36 nav-title pl-5 is-size-3-mobile mb-mobile-0">Доставка еды</h2>
-  
+
   <!-- slider -->
   <div class="reverse-on-mobile">
     <div class="container hero-with-background">
@@ -305,7 +305,8 @@
                         <div class="is-flex is-flex-direction-column mt-0 is-justify-content-space-between">
                           <div class="has-text-weight-bolder is-size-5 menu-card-title is-size-5">
                           </div>
-                          <div class="is-flex is-justify-content-flex-start has-gap is-align-items-flex-end detilsTable py-4">
+                          <div
+                            class="is-flex is-justify-content-flex-start has-gap is-align-items-flex-end detilsTable py-4">
                             <div>
                               <div>Вес</div>
                               <div>200 г</div>
@@ -1775,6 +1776,7 @@
   <script>
     var modelElement = document.querySelector('.img-trigger');
     var navElement = document.querySelector('.navbar');
+    var bodyFooter = document.querySelector('body > footer');
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     modelElement.addEventListener('click', function () {
 
@@ -1788,8 +1790,15 @@
         navElement.classList.remove('has-background-color');
         navElement.classList.add('mobile-menu')
         if (modelElement.classList.contains('is-active')) {
-        } else {
+
+          bodyFooter.classList.add('d-none');
+          document.body.classList.add('hide-body-element');
+        }
+        else {
           navElement.classList.add('has-background-color');
+          navElement.classList.remove('mobile-menu');
+          bodyFooter.classList.remove('d-none');
+          document.body.classList.remove('hide-body-element');
         }
       }
     }

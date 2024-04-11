@@ -4,15 +4,11 @@
 body {
   font-family: "Bellota", system-ui !important;
   background-color: var(--secandery-color) !important;
+  margin: 0
 }
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0
 }
 
 /* start slid */
@@ -179,10 +175,6 @@ body {
   z-index: 3;
 }
 
-.has-background {
-  background-image: url("../footer-bg.png");
-}
-
 footer {
   position: relative;
 }
@@ -332,7 +324,7 @@ cursor: pointer;
 /*?? media */
 /*?? phone */
 @media screen and (max-width:500px) {
-  
+
   body>footer>div.container.columns.my-3.has-z.is-justify-content-space-around.is-vcentered.is-centered>div:nth-child(3)>div.has-text-center.mt-3 {
       padding-bottom: 41px !important;
     }

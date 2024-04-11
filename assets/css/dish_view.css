@@ -19,8 +19,8 @@
   opacity: 1;
 }
 
- .right,
- .left {
+.right,
+.left {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -38,21 +38,20 @@
   text-align: center;
 }
 
- .left {
+.left {
   right: 0;
   left: 20px;
 }
 
- .right:hover,
+.right:hover,
 .left:hover {
   color: #ffffff;
 }
 
- .content {
+.content {
   max-height: 30%;
   overflow: auto;
 }
-
 
 
 .br-20 {
@@ -60,7 +59,7 @@
 }
 
 
- .close {
+.close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -71,7 +70,7 @@
   color: #333;
 }
 
- .close:hover {
+.close:hover {
   color: var(--warning-color);
 }
 
@@ -80,7 +79,7 @@
 }
 
 
-@media screen and (min-width: 700px) and (max-width:1366) {
+@media screen and (min-width: 700px) and (max-width: 1366px) {
   .is-justify-content-space-between-on-lg {
     justify-content: space-between !important;
   }
@@ -91,77 +90,84 @@
     justify-content: center !important;
     column-gap: 40px !important;
   }
-   
+
 }
 
 @media screen and (min-width: 800px) {
-      .modal-card {
-          width: 75%;
-          border-radius: 20px;
-        }
-      
-        .modal-card-head,
-        .modal-card-foot {
-          display: none;
-        }
+  .modal-card {
+    width: 75%;
+    border-radius: 20px;
+  }
+
+  .modal-card-head,
+  .modal-card-foot {
+    display: none;
+  }
 }
-button.has-warning-bg-c{
+
+button.has-warning-bg-c {
   width: 100%;
 }
 
 .modal-card-body.for-desktop button.has-warning-bg-c {
   width: 100% !important;
 }
-@media screen and (min-width: 801px){
-  .for-desktop{
-    display: block !important;
-  }
-  .for-mobile{
+
+@media screen and (min-width: 801px) {
+  .for-mobile {
     display: none !important;
   }
 }
-@media screen and (max-width: 800px){
-  #modal-js-example>div.modal-card>section.card-body-body.for-mobile>div>div>div.mt-5.pb-5>button {
-      margin-left: 6px;
-    }
-  .left , .right{
+
+@media screen and (max-width: 800px) {
+  #modal-js-example > div.modal-card > section.card-body-body.for-mobile > div > div > div.mt-5.pb-5 > button {
+    margin-left: 6px;
+  }
+
+  .left, .right {
     display: none;
   }
+
   .close {
-     top: 10px;
-     right: 92%;
-     z-index: 1;
-     box-shadow:  0 0 5px 1px white;
-     transition: all 200ms;
-   }
-  .for-desktop {
-      display: none !important;
-    }
-  .for-mobile{
-    display: block !important;
+    top: 10px;
+    right: 92%;
+    z-index: 1;
+    box-shadow: 0 0 5px 1px white;
+    transition: all 200ms;
   }
-    #modal-js-example{
-    margin-top: -40px !important;
-    height: 120vh;
+
+  .for-desktop {
+    display: none !important;
+  }
+
+  .for-mobile > img {
+    height: calc(100vh - 430px);
+    object-fit: cover;
   }
 }
-.modal-background{
-  background-color:rgba(166, 118, 60, 47%);
+
+.modal-background {
+  background-color: rgba(166, 118, 60, 47%);
   backdrop-filter: blur(6px);
 }
-#modal-js-example>div.modal-card>section.modal-card-body.for-desktop>div>div.px-4.column.is-6-desktop.is-5-widescreen>div.has-text-center>button{
+
+#modal-js-example > div.modal-card > section.modal-card-body.for-desktop > div > div.px-4.column.is-6-desktop.is-5-widescreen > div.has-text-center > button {
   width: 100%;
 }
-.desktop-popup-img{
-width: 630px;
-height: 500px;
+
+.desktop-popup-img {
+  width: 630px;
+  height: 500px;
 }
-.h-100{
-height: 100%;
+
+.h-100 {
+  height: 100%;
 }
+
 .for-desktop > .columns > .column {
   width: 50%;
 }
+
 .mobile-menu {
   background: rgba(0, 0, 0, 0.373);
 }
@@ -185,28 +191,31 @@ button.has-warning-bg-c {
   background: rgba(0, 0, 0, 0.442);
 }
 
-.hide-body-element{
+.hide-body-element {
   height: 100vh;
   overflow: hidden;
 }
-.nav-title{
+
+.nav-title {
   margin-top: 65px !important;
 }
+
 .has-background-color {
   transition: all 500ms;
   background-color: var(--primary-color) !important;
 }
 
 @media screen and (max-width: 500px) {
-  .d-none{
+  .d-none {
     display: none !important;
   }
+
   .overlay-mobile-menu {
     background-color: rgba(0, 0, 0, 0.373) !important;
   }
 
 
-  .ml-8-mobile{
+  .ml-8-mobile {
     margin-left: 8px !important;
   }
 }
@@ -230,7 +239,7 @@ button.has-warning-bg-c {
 .main-container {
   position: relative;
   margin-top: -30px;
-  border-radius: 30px 30px 0 0  !important;
+  border-radius: 30px 30px 0 0 !important;
   background-color: var(--secandery-color);
 }
 
@@ -257,9 +266,11 @@ button.has-warning-bg-c {
   right: 50%;
   z-index: 10;
 }
-.has-gap{
+
+.has-gap {
   gap: 30px !important;
 }
+
 .g-20 {
   column-gap: 20px !important;
 }

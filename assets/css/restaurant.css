@@ -68,20 +68,18 @@ body>section>div.is-relative>img {
 .card {
   position: relative;
   z-index: 1;
-  width: 411px;
   border-radius: 20px;
   background-color: #f6f0e6;
 }
 
 .card-content {
-  height: 160px;
+  height: 175px;
 }
 
 .card-background {
-  width: 100%;
   height: 382px;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-image: url('../rcard.png');
   border-radius: 20px 20px 0 0;
   position: relative;
@@ -255,7 +253,6 @@ li {
   padding-left: 24px !important;
 }
 
-
 @media screen and (min-width:1023px) and (max-width:1920px) {
   footer .container {
       max-width: 80% !important;
@@ -360,6 +357,7 @@ li {
   .mb-68-mobile {
     margin-bottom: 68px !important;
   }
+  
 
   .mt-64-mobile {
     margin-top: 64px !important;

@@ -26,24 +26,24 @@ const listViewButton = document.querySelector('.list-view-button');
 const gridViewButton = document.querySelector('.grid-view-button');
 const list = document.querySelector('.list-items');
 const listItem = document.querySelectorAll('.listItem');
-const detils = document.querySelectorAll('.detils');
+const details = document.querySelectorAll('.details');
 const priceSection = document.querySelectorAll('.priceSection');
 const menuCardPrice = document.querySelectorAll('.menu-card-price');
-const detilsTable = document.querySelectorAll('.detilsTable');
+const detailsTable = document.querySelectorAll('.detailsTable');
 const btnList = document.querySelector('.btnList');
 
 listViewButton.onclick = function () {
   listItem.forEach(element => {
     element.classList.remove('is-6-mobile');
   });
-  detils.forEach(element => {
+  details.forEach(element => {
     element.classList.remove('is-flex-wrap-wrap');
   });
   priceSection.forEach(element => {
     element.classList.remove('has-gap-20' , 'mt-4');
     element.classList.add('is-flex-direction-column');
   });
-  detilsTable.forEach(element => {
+  detailsTable.forEach(element => {
     element.classList.remove('fs-10');
   });
   menuCardPrice.forEach(element => {
@@ -55,14 +55,14 @@ gridViewButton.onclick = function () {
   listItem.forEach(element => {
     element.classList.add('is-6-mobile');
   });
-  detils.forEach(element => {
+  details.forEach(element => {
     element.classList.add('is-flex-wrap-wrap');
   });  
   priceSection.forEach(element => {
     element.classList.remove('is-flex-direction-column');
     element.classList.add('has-gap-20' , 'mt-4');
   });
-  detilsTable.forEach(element => {
+  detailsTable.forEach(element => {
     element.classList.add('fs-10');
   });
   menuCardPrice.forEach(element => {

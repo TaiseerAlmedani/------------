@@ -37,7 +37,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('../images/home/hero.png');
+  background-image: url('../images/home/hero/mobile/hero.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -54,13 +54,16 @@
   background-repeat: no-repeat;
   background-position-x: center;
   pointer-events: none;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .hero::before {
   top: 0;
-  background-image: url('../images/home/top-clouds.png');
+  background-image: url('../images/home/hero/mobile/top-clouds.png');
   background-position-y: -100%;
-  animation: fade-down 2s ease-in-out forwards;
+  animation-name: move-down;
 }
 
 @media screen and (max-width: 1023px) {
@@ -76,7 +79,7 @@
   }
 }
 
-@keyframes fade-down {
+@keyframes move-down {
   to {
     background-position-y: top;
   }
@@ -84,12 +87,12 @@
 
 .hero::after {
   bottom: -1px;
-  background-image: url('../images/home/bottom-clouds.png');
+  background-image: url('../images/home/hero/mobile/bottom-clouds.png');
   background-position-y: 200%;
-  animation: fade-up 2s ease-in-out forwards;
+  animation-name: move-up;
 }
 
-@keyframes fade-up {
+@keyframes move-up {
   to {
     background-position-y: 120%;
   }
@@ -101,6 +104,8 @@
 }
 
 .hero .hero-body .hero-logo {
+  width: 100%;
+  max-width: 350px;
   filter: drop-shadow(0 0 20px var(--brown));
 }
 
@@ -123,7 +128,7 @@
   background-repeat: no-repeat;
   background-position-x: center;
   pointer-events: none;
-  background-image: url(../images/home/bottom-clouds.png);
+  background-image: url(../images/home/hero/mobile/bottom-clouds.png);
   background-position-y: 90%;
 }
 
@@ -290,9 +295,42 @@
 }
 
 @media screen and (min-width: 1366px) {
+  .hero {
+    background-image: url('../images/home/hero/hero.webp');
+  }
+
+  .hero .hero-body .hero-logo {
+    max-width: 750px;
+  }
+
+  .hero::before {
+    background-image: url('../images/home/hero/top-clouds.png');
+    background-size: 250%;
+    background-position-y: 100%;
+    animation-name: move-up;
+  }
+
+  .hero::after {
+    background-image: url('../images/home/hero/bottom-clouds.png');
+    background-position-y: 100%;
+    animation-name: move-down;
+  }
+
   footer > div.container {
     max-width: 69% !important;
     justify-content: space-between !important;
+  }
+
+  @keyframes move-down {
+    to {
+      background-position-y: 120%;
+    }
+  }
+
+  @keyframes move-up {
+    to {
+      background-position-y: 230%;
+    }
   }
 }
 

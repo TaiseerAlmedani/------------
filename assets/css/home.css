@@ -34,6 +34,7 @@
   color: var(--dark);
 }
 
+/* HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -132,6 +133,7 @@
   background-position-y: 90%;
 }
 
+/* ABOUT */
 .about-images .column {
   position: relative;
   scale: 1.4;
@@ -314,6 +316,66 @@
     background-image: url('../images/home/hero/bottom-clouds.png');
     background-position-y: 100%;
     animation-name: move-down;
+  }
+
+  .hero + section::before {
+    background-image: none;
+  }
+
+  /* ABOUT */
+  #about {
+    position: relative;
+  }
+
+  #about .lines {
+    --offset: 10%;
+  }
+
+  #about .lines::before,
+  #about .lines::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--warning-color);
+    top: 0
+  }
+
+  #about .lines::before {
+    left: var(--offset);
+  }
+
+  #about .lines::after {
+    right: var(--offset);
+  }
+
+  .about-images {
+    justify-content: space-around;
+  }
+
+  .about-images::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--warning-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: expand 0.7s 2s ease forwards;
+  }
+
+  @keyframes expand {
+    to {
+      width: 80%;
+    }
+  }
+
+  .about-images .column {
+    position: static;
+    scale: 1;
   }
 
   footer > div.container {

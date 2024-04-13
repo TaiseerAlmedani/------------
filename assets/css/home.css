@@ -239,6 +239,52 @@
   background-color: rgba(255, 255, 255, .18)
 }
 
-#services .swiper .swiper-slide.swiper-slide-active {
-  /*display: none;*/
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#delivery {
+  position: relative;
+}
+
+#delivery .button.is-primary {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+#delivery .order-now-btn {
+  max-width: 250px;
+  min-height: 60px;
+}
+
+#delivery .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  --start-transparent: 0%;
+  --start-brown: 5%;
+  --start-transparent-2: 40%;
+  --start-gold: 46%;
+  --start-transparent-3: 54%;
+  --end-gradient: 100%;
+
+  background: linear-gradient(90deg,
+  rgba(0, 0, 0, 0) var(--start-transparent),
+  rgba(0, 0, 0, 0) var(--start-brown),
+  rgba(166, 118, 60, 1) var(--start-brown),
+  rgba(166, 118, 60, 1) var(--start-transparent-2),
+  rgba(160, 121, 67, 0) var(--start-transparent-2),
+  rgba(144, 109, 60, 0) var(--start-gold),
+  rgba(223, 197, 151, 1) var(--start-gold),
+  rgba(223, 197, 151, 1) var(--start-transparent-3),
+  rgba(218, 193, 148, 0) var(--start-transparent-3),
+  rgba(0, 0, 0, 0) var(--end-gradient)
+  );
+  transform: rotate(90deg) scaleX(-1);
+}
+
+#delivery .dishes::-webkit-scrollbar {
+  background-color: transparent;
 }

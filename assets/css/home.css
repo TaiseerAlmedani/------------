@@ -269,7 +269,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 50px;
+  top: -70px;
   --start-transparent: 0%;
   --start-brown: 5%;
   --start-transparent-2: 40%;
@@ -377,6 +377,26 @@
     position: static;
     scale: 1;
   }
+
+  .title.is-size-96-desktop {
+    font-size: 6rem;
+  }
+
+  #delivery .background {
+    transform: scaleX(-.4);
+    top: 0;
+    right: -320px;
+  }
+
+  .column:has(> .dishes) {
+    height: 10px;
+  }
+
+  .dishes {
+    position: relative;
+    top: -280px;
+  }
+
 
   footer > div.container {
     max-width: 69% !important;

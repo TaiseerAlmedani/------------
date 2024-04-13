@@ -288,3 +288,17 @@
 #delivery .dishes::-webkit-scrollbar {
   background-color: transparent;
 }
+
+@media screen and (min-width: 1366px) {
+  footer > div.container {
+    max-width: 69% !important;
+    justify-content: space-between !important;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1920px) {
+  footer .container {
+    max-width: 88% !important;
+    justify-content: space-between !important;
+  }
+}

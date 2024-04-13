@@ -14,6 +14,7 @@
 .navbar {
   --bulma-navbar-background-color: transparent;
 }
+
 #lblCartCount {
   width: 17px !important;
   height: 17px !important;
@@ -24,6 +25,7 @@
   margin-bottom: 28px;
   border-radius: 50%;
 }
+
 .navbar .navbar-item {
   color: var(--dark) !important;
 }
@@ -60,18 +62,20 @@
   background-position-y: -100%;
   animation: fade-down 2s ease-in-out forwards;
 }
-@media screen and (max-width:1023px){
-    #lblCartCount {
-        text-align: center;
-        padding: 0;
-        font-size: 12px !important;
-        margin-left: 14px;
-        margin-top: -14px;
-        margin-bottom: 0;
-        height: 16px !important;
-        width: 16px !important;
-      }
+
+@media screen and (max-width: 1023px) {
+  #lblCartCount {
+    text-align: center;
+    padding: 0;
+    font-size: 12px !important;
+    margin-left: 14px;
+    margin-top: -14px;
+    margin-bottom: 0;
+    height: 16px !important;
+    width: 16px !important;
+  }
 }
+
 @keyframes fade-down {
   to {
     background-position-y: top;
@@ -111,7 +115,7 @@
   transform: translateX(-50%);
 }
 
-.hero+section::before {
+.hero + section::before {
   content: '';
   display: block;
   height: 80px;
@@ -131,7 +135,8 @@
 .about-images .column .image {
   box-shadow: -16px 4px 30px rgba(0, 0, 0, 0.25);
 }
-.about-images .column .image img{
+
+.about-images .column .image img {
   object-fit: cover;
 }
 
@@ -139,10 +144,12 @@
 .about-images .column:nth-child(1) {
   left: -25px;
 }
+
 .about-images .column:nth-child(2) {
   z-index: 10;
   top: 60px;
 }
+
 .about-images .column:nth-child(3) {
   left: 25px;
 }
@@ -165,7 +172,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 #services .is-position-relative {
@@ -179,7 +186,40 @@
   height: 350px;
   padding-bottom: 100px;
   --swiper-navigation-top-offset: 85%;
-  --swiper-navigation-sides-offset: 40%;
+  --swiper-navigation-color: 'white';
+  --swiper-navigation-size: 46px;
+}
+
+#services .swiper .swiper-button-next svg,
+#services .swiper .swiper-button-prev svg {
+  width: unset;
+  height: unset;
+}
+
+#services .swiper .swiper-button-next,
+#services .swiper .swiper-button-prev {
+  border-radius: 50%;
+  border: currentColor solid 2px;
+  width: 46px;
+  height: 46px;
+}
+
+#services .swiper .swiper-button-prev,
+#services .swiper .swiper-rtl .swiper-button-next {
+  right: 88px;
+  left: auto;
+}
+
+#services .swiper .swiper-button-next,
+#services .swiper .swiper-rtl .swiper-button-prev {
+  right: 20px;
+  left: auto;
+}
+
+#services .swiper .swiper-button-next::after,
+#services .swiper .swiper-button-prev::after {
+  content: '';
+  display: none;
 }
 
 #services .swiper .swiper-slide {

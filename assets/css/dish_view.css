@@ -67,7 +67,8 @@
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #fff !important;
+  background-color: var(--warning-color);
 }
 
 .close:hover {
@@ -120,20 +121,19 @@ button.has-warning-bg-c {
 }
 
 @media screen and (max-width: 800px) {
-  #modal-js-example > div.modal-card > section.card-body-body.for-mobile > div > div > div.mt-5.pb-5 > button {
+  #modal-js-example>div.modal-card>section.card-body-body.for-mobile>div>div>div.mt-5.pb-5>button {
     margin-left: 6px;
   }
 
-  .left, .right {
+  .left,
+  .right {
     display: none;
   }
 
   .close {
-    top: 10px;
-    right: 92%;
+    top: 52%;
+    right: 6%;
     z-index: 1;
-    box-shadow: 0 0 5px 1px white;
-    transition: all 200ms;
   }
 
   .for-desktop {
@@ -144,7 +144,7 @@ button.has-warning-bg-c {
     max-height: unset;
   }
 
-  .for-mobile > img {
+  .for-mobile>img {
     height: calc(100vh - 430px);
     object-fit: cover;
   }
@@ -155,7 +155,7 @@ button.has-warning-bg-c {
   backdrop-filter: blur(6px);
 }
 
-#modal-js-example > div.modal-card > section.modal-card-body.for-desktop > div > div.px-4.column.is-6-desktop.is-5-widescreen > div.has-text-center > button {
+#modal-js-example>div.modal-card>section.modal-card-body.for-desktop>div>div.px-4.column.is-6-desktop.is-5-widescreen>div.has-text-center>button {
   width: 100%;
 }
 
@@ -168,7 +168,7 @@ button.has-warning-bg-c {
   height: 100%;
 }
 
-.for-desktop > .columns > .column {
+.for-desktop>.columns>.column {
   width: 50%;
 }
 
@@ -281,4 +281,69 @@ button.has-warning-bg-c {
 
 img.mobile-overlay {
   width: 100%;
+}
+
+/* Slide up animation for mobile */
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide down animation for mobile */
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Fade in animation for desktop */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade out animation for desktop */
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply the animations to the modal */
+.modal {
+  animation: slide-down 0.5s ease-out forwards;
+}
+
+.modal.is-active {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+@media (min-width: 1020px) {
+  .modal {
+    animation: fade-out 0.5s ease-out forwards;
+  }
+
+  .modal.is-active {
+    animation: fade-in 0.5s ease-out forwards;
+  }
 }

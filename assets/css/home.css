@@ -452,6 +452,14 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  @keyframes move-up {
+    to {
+      background-position-y: 160%;
+    }
+  }
+}
+
 @media screen and (min-width: 1023px) and (max-width: 1920px) {
   footer .container {
     max-width: 88% !important;

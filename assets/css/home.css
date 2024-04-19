@@ -334,7 +334,7 @@
   }
 
   #about .lines {
-    --offset: 10%;
+    --offset: 20%;
   }
 
   #about .lines::before,

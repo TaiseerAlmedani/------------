@@ -297,13 +297,13 @@
   background-color: transparent;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1216px) {
   .hero {
     background-image: url('../images/home/hero/hero.webp');
   }
 
   .hero .hero-body .hero-logo {
-    max-width: 750px;
+    max-width: 350px;
   }
 
   .hero::before {
@@ -317,6 +317,10 @@
     background-image: url('../images/home/hero/bottom-clouds.png');
     background-position-y: 100%;
     animation-name: move-down;
+  }
+
+  .hero .button.show-more-button {
+    bottom: 10%;
   }
 
   .hero + section::before {
@@ -416,6 +420,24 @@
   footer > div.container {
     max-width: 69% !important;
     justify-content: space-between !important;
+  }
+
+  @keyframes move-down {
+    to {
+      background-position-y: 120%;
+    }
+  }
+
+  @keyframes move-up {
+    to {
+      background-position-y: 155%;
+    }
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .hero .hero-body .hero-logo {
+    max-width: 750px;
   }
 
   @keyframes move-down {

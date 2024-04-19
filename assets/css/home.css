@@ -307,7 +307,7 @@
   background-color: transparent;
 }
 
-@media screen and (min-width: 1216px) {
+@media screen and (min-width: 1024px) {
   .hero {
     background-image: url('../images/home/hero/hero.webp');
   }

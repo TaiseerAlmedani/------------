@@ -354,7 +354,7 @@
   function setLinesPositionInDeliverySection() {
     const screenWidth = getScreenWidth();
 
-    if (screenWidth > 1216) {
+    if (screenWidth >= 1024) {
       const mainDishElement = document.getElementById('main-dish');
       const linesBackgroundElement = document.querySelector('#lines-background');
       const mainDishRect = mainDishElement.getBoundingClientRect();

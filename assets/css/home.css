@@ -407,16 +407,6 @@
     right: -320px;
   }
 
-  .column:has(> .dishes) {
-    height: 10px;
-  }
-
-  .dishes {
-    position: relative;
-    top: -280px;
-  }
-
-
   footer > div.container {
     max-width: 69% !important;
     justify-content: space-between !important;
@@ -438,6 +428,15 @@
 @media screen and (min-width: 1408px) {
   .hero .hero-body .hero-logo {
     max-width: 750px;
+  }
+
+  .column:has(> .dishes) {
+    height: 10px;
+  }
+
+  .dishes {
+    position: relative;
+    top: -280px;
   }
 
   @keyframes move-down {

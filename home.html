@@ -201,7 +201,7 @@
 </section>
 
 <section id="delivery" class="py-100">
-  <div class="background"></div>
+  <div id="lines-background" class="background"></div>
   <div class="container px-3">
     <div class="columns is-multiline">
       <div class="column is-12 is-7-desktop">
@@ -218,7 +218,7 @@
 
       <div class="column is-12 is-5-desktop">
         <div class="image is-1by1 mt-6">
-          <img src="assets/images/home/delivery/main-dish.png" class="p-5">
+          <img id="main-dish" src="assets/images/home/delivery/main-dish.png" class="p-5">
         </div>
       </div>
 
@@ -345,6 +345,25 @@
 
   updateServicesSectionBackground()
   swiper.on('slideChange', updateServicesSectionBackground)
+</script>
+<script>
+  function getScreenWidth() {
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  }
+
+  function setLinesPositionInDeliverySection() {
+    const screenWidth = getScreenWidth();
+
+    if (screenWidth > 1216) {
+      const mainDishElement = document.getElementById('main-dish');
+      const linesBackgroundElement = document.querySelector('#lines-background');
+      const mainDishRect = mainDishElement.getBoundingClientRect();
+      linesBackgroundElement.style.left = mainDishRect.left + mainDishRect.width / 2 + 'px';
+    }
+  }
+
+  setLinesPositionInDeliverySection();
+  window.addEventListener('resize', setLinesPositionInDeliverySection);
 </script>
 
 <script src="index.js"></script>

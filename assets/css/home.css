@@ -414,7 +414,15 @@
   #delivery .background {
     transform: scaleX(-.4);
     top: 0;
-    right: -320px;
+    right: 0;
+    --start-transparent: 0%;
+    --start-brown: 0;
+    --start-transparent-2: 65%;
+    --start-gold: 80%;
+    --start-transparent-3: 100%;
+    --end-gradient: 100%;
+    width: 600px;
+    margin-left: -300px;
   }
 
   footer > div.container {

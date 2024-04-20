@@ -15,11 +15,16 @@
   --bulma-navbar-background-color: transparent;
 }
 
+.navbar .container {
+  margin-right: 2vw;
+}
+
 #lblCartCount {
   width: 17px !important;
   height: 17px !important;
   font-size: 12px;
-  background: var(--warning-color);
+  background: #a6763c84;
+  color: white !important;
   vertical-align: top;
   margin-left: -10px;
   margin-bottom: 28px;
@@ -32,6 +37,20 @@
 
 .navbar-burger {
   color: var(--dark);
+}
+
+@media screen and (min-width:1024px) {
+  .navbar-end {
+    width: 60%;
+    justify-content: space-around;
+  }
+
+  .navbar {
+    position: relative;
+    top: 60px;
+    max-width: 90vw;
+    margin-left: auto;
+  }
 }
 
 /* HERO */
@@ -52,7 +71,8 @@
   pointer-events: none;
 }
 
-.hero::before, .hero::after {
+.hero::before,
+.hero::after {
   content: '';
   display: block;
   position: absolute;
@@ -70,11 +90,20 @@
   z-index: 2;
 }
 
+.mt-n-70 {
+  margin-top: -70px;
+}
+
 .hero::before {
   top: 0;
   background-image: url('../images/home/hero/mobile/top-clouds.png');
   background-position-y: -100%;
   animation-name: move-down;
+}
+
+.has-bga {
+  background-color: #1e1e1e7e;
+  border-color: transparent;
 }
 
 @media screen and (max-width: 1023px) {
@@ -137,17 +166,19 @@
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
   }
+
   50% {
     box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0.2);
     transform: translatey(-20px);
   }
+
   100% {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
   }
 }
 
-.hero + section::before {
+.hero+section::before {
   content: '';
   display: block;
   height: 80px;
@@ -305,17 +336,16 @@
   --end-gradient: 100%;
 
   background: linear-gradient(90deg,
-  rgba(0, 0, 0, 0) var(--start-transparent),
-  rgba(0, 0, 0, 0) var(--start-brown),
-  rgba(166, 118, 60, 1) var(--start-brown),
-  rgba(166, 118, 60, 1) var(--start-transparent-2),
-  rgba(160, 121, 67, 0) var(--start-transparent-2),
-  rgba(144, 109, 60, 0) var(--start-gold),
-  rgba(223, 197, 151, 1) var(--start-gold),
-  rgba(223, 197, 151, 1) var(--start-transparent-3),
-  rgba(218, 193, 148, 0) var(--start-transparent-3),
-  rgba(0, 0, 0, 0) var(--end-gradient)
-  );
+      rgba(0, 0, 0, 0) var(--start-transparent),
+      rgba(0, 0, 0, 0) var(--start-brown),
+      rgba(166, 118, 60, 1) var(--start-brown),
+      rgba(166, 118, 60, 1) var(--start-transparent-2),
+      rgba(160, 121, 67, 0) var(--start-transparent-2),
+      rgba(144, 109, 60, 0) var(--start-gold),
+      rgba(223, 197, 151, 1) var(--start-gold),
+      rgba(223, 197, 151, 1) var(--start-transparent-3),
+      rgba(218, 193, 148, 0) var(--start-transparent-3),
+      rgba(0, 0, 0, 0) var(--end-gradient));
   transform: rotate(90deg) scaleX(-1);
 }
 
@@ -349,7 +379,7 @@
     bottom: 10%;
   }
 
-  .hero + section::before {
+  .hero+section::before {
     background-image: none;
   }
 
@@ -441,7 +471,7 @@
     margin-left: -300px;
   }
 
-  footer > div.container {
+  footer>div.container {
     max-width: 69% !important;
     justify-content: space-between !important;
   }

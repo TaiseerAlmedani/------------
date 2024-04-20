@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/restaurant.css">
 </head>
 
 <body>
-  <!--start of navbar section -->
   <nav class="navbar is-fixed-top has-background-color is-clipped" role="navigation" aria-label="main navigation">
     <div class="container has-padding py-1">
       <div class="navbar-brand">
@@ -79,24 +79,20 @@
     </div>
   </section>
 
-
   <section class="section py-6 py-0-mobile e my-0-mobile my-6">
     <div class="columns is-justify-content-space-around">
       <div class="column is-5-desktop">
         <div class="content fs-20-mobile fs-32 has-text-weight-bold">Погрузитесь в мир вкуса и красоты</div>
       </div>
       <div class="column content is-size-6 is-5-desktop mb-68-mobile is-relative">
-        <span class="has-ciecule mb-68-mobile">Шеф-повар ресторана "Афродита" создал неповторимое меню, где классические рецепты
+        <span class="has-ciecule mb-68-mobile">Шеф-повар ресторана "Афродита" создал неповторимое меню, где классические
+          рецепты
           искусно переплетаются с современными
           трендами. Вас ждёт калейдоскоп вкусов, ароматов и текстур, способный удивить даже самых искушенных
           гурманов.</span>
       </div>
     </div>
   </section>
-
-
-
-
 
   <section class="section my-6 my-0-mobile py-0-mobile is-clipped has-side-background">
 
@@ -149,7 +145,6 @@
     </div>
   </section>
 
-
   <section class="section pt-0-mobile is-clipped">
     <div class="columns is-centered is-justify-content-space-evenly">
       <div class="column is-desktop-4 is-3-fullhd is-12-mobile">
@@ -182,7 +177,8 @@
       <div class="column is-desktop-4 is-3-fullhd is-12-mobile">
         <div class="card mx-auto">
           <div class="card-background card-3">
-            <div class="has-text-center title has-text-white fs-36 has-border-top">Идеальное <br> место для <br> романтического свидания</div>
+            <div class="has-text-center title has-text-white fs-36 has-border-top">Идеальное <br> место для <br>
+              романтического свидания</div>
           </div>
           <div class="card-content is-size-6 has-text-left has-text-black px-4  has-text-center has-text-weight-bold">
             Уютная
@@ -194,13 +190,13 @@
     </div>
   </section>
 
-
   <section class="section is-medium is-clipped contact">
     <div class="container">
       <div class="box px-0 py-6 has-text-center has-text-black">
         <p>Хотите узнать больше о наших номерах, услугах или возможности проведения мероприятий?
-          <span class="block-on-mobile"></span> </p>
-        <p>Не стесняйтесь  обращаться к нам!
+          <span class="block-on-mobile"></span>
+        </p>
+        <p>Не стесняйтесь обращаться к нам!
           <span class="block-on-mobile"></span>
         </p>
         <ul>
@@ -212,7 +208,7 @@
           <li>По электронной почте:
             <span class="has-text-weight-bold">
               oooargo2012@mail.ru</span>
-              <span class="block-on-mobile"></span>
+            <span class="block-on-mobile"></span>
           </li>
           <li>В социальных сетях:</li>
         </ul>
@@ -244,8 +240,30 @@
     </div>
   </section>
 
+  <section class="section is-medium pt-4">
+    <div class="title is-4 mb-6 has-text-center has-text-weight-bold">
+      Gallery
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide has-background-transparent">
+          <!-- empty for destance -->
+        </div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+      </div>
+      <div class="is-flex is-align-items-center">
+        <div class="swiper-button-next"><img src="assets/arrow-right-B.svg" alt="icon"></div>
+        <div class="swiper-button-prev"><img src="assets/arrow-left-B.svg" alt="icon"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
 
-  <!-- start of footer section -->
   <footer class="section has-background-color">
     <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
 
@@ -306,6 +324,34 @@
       <div>&copy; 2024 Афродита 🤍 от Roinext</div>
     </div>
   </footer>
-  <!-- start of footer section -->
 
   <script src="index.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>

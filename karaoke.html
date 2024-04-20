@@ -14,7 +14,6 @@
 </head>
 
 <body>
-  <!--start of navbar section -->
   <nav class="navbar is-fixed-top has-background-color is-clipped" role="navigation" aria-label="main navigation">
     <div class="container has-padding py-1">
       <div class="navbar-brand">
@@ -62,10 +61,8 @@
       </div>
     </div>
   </nav>
-  <!-- End of navbar section -->
 
   <!-- Hero Section -->
-
   <section class="hero mt-6 pt-6 mb-6 is-fullwidth is-clipped">
     <div class="container">
       <div class=" py-6 px-6">
@@ -73,7 +70,8 @@
           <div class="column is-5 is-reverse-on-mobile">
             <div>
               <div class="mb-2">
-                <div class="title content is-5 has-text-white is-text-weight.bold mt-64-mobile mb-42-mobile">Погрузитесь в мир вкуса и красоты</div>
+                <div class="title content is-5 has-text-white is-text-weight.bold mt-64-mobile mb-42-mobile">Погрузитесь
+                  в мир вкуса и красоты</div>
               </div>
               <div class="mb-42-mobile">
                 <span class="has-text-white">Шеф-повар ресторана "Афродита" создал неповторимое меню, где классические
@@ -90,7 +88,7 @@
             </div>
             <img src="assets/Karaoke.png" alt="">
           </div>
-      
+
           <div class="column img-container mt-64-mobile  is-7 is-12-mobile is-flex is-flex-direction-row-reverse">
             <div class="div-right on-mobile-w240"><img class="right" src="assets/right.png" alt=""></div>
             <div class="div-left on-mobile-w240 mt-n-38"><img class="left" src="assets/left.png" alt=""></div>
@@ -100,11 +98,10 @@
     </div>
   </section>
 
-
-
   <section class="section  py-0 my-0-mobile py-0-mobile mt-6 pt-6  is-clipped has-side-background">
 
-    <div class="columns pt-80 is-justify-content-space-around is-justify-content-center-on-xl is-centered is-reverse-on-mobile mb-5 pb-6">
+    <div
+      class="columns pt-80 is-justify-content-space-around is-justify-content-center-on-xl is-centered is-reverse-on-mobile mb-5 pb-6">
       <div class="column  is-5-desktop is-4-fullhd ">
         <div class="img-has-border ">
           <img class=" l-10 br-50" src="assets/rcard.png" alt="">
@@ -162,8 +159,6 @@
 
   </section>
 
-
-
   <section class="section is-medium pt-4">
     <div class="title is-4 has-text-white mb-6 has-text-center has-text-weight-bold">
       Фотогалерея
@@ -188,9 +183,6 @@
     </div>
   </section>
 
- 
-
-  <!-- start of footer section -->
   <footer class="section has-background-color">
     <div class="container columns my-3 has-z is-justify-content-space-between is-vcentered is-centered">
 
@@ -255,34 +247,33 @@
 
   <script src="index.js"></script>
 
-    <!-- Initialize Swiper -->
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
         },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-        },
-      });
-    </script>
+      },
+    });
+  </script>

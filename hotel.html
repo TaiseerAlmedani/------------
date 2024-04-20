@@ -8,13 +8,13 @@
   <link rel="icon" href="assets/logo-nav.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/bulma.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/hotel.css">
 </head>
 
 <body>
-  <!--start of navbar section -->
   <nav class="navbar is-fixed-top has-background-color is-clipped" role="navigation" aria-label="main navigation">
     <div class="container has-padding py-1">
       <div class="navbar-brand">
@@ -208,8 +208,30 @@
     </section>
   </div>
 
+  <section class="section is-medium pt-4">
+    <div class="title is-4 mb-6 has-text-center has-text-weight-bold">
+      Gallery
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide has-background-transparent">
+          <!-- empty for destance -->
+        </div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Mask group (2).png" alt=""></div>
+      </div>
+      <div class="is-flex is-align-items-center">
+        <div class="swiper-button-next"><img src="assets/arrow-right-B.svg" alt="icon"></div>
+        <div class="swiper-button-prev"><img src="assets/arrow-left-B.svg" alt="icon"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
 
-  <!-- start of footer section -->
   <footer class="section has-background-color">
     <div class="container columns my-3 has-z is-justify-content-space-around is-vcentered is-centered">
 
@@ -270,6 +292,33 @@
       <div>&copy; 2024 Афродита 🤍 от Roinext</div>
     </div>
   </footer>
-  <!-- start of footer section -->
 
   <script src="index.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>

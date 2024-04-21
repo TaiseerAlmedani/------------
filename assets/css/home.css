@@ -13,12 +13,18 @@
 
 .navbar {
   --bulma-navbar-background-color: transparent;
-  height: 70px;
-  transition: all 0.3s ease;
   backdrop-filter: blur(0px);
   align-items: center;
+  transform: translateY(30px) !important;
+  transition: all 500ms !important;
 }
 
+.blur {
+  backdrop-filter: blur(15px);
+  margin-top: 0;
+  transform: translateY(0) !important;
+  transition:  all 500ms !important;
+}
 #lblCartCount {
   width: 17px !important;
   height: 17px !important;
@@ -39,11 +45,6 @@
   color: var(--dark);
 }
 
-.blur {
-  backdrop-filter: blur(15px);
-  margin-top: 0;
-  animation: mt 2s ease linear forwards;
-}
 
 .darken-background {
   background: rgba(0, 0, 0, 0.678) !important;
@@ -260,6 +261,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .navbar{
+    height: 70px;
+  }
   .hero {
     background-image: url('../images/home/hero/hero.webp');
   }
@@ -434,7 +438,7 @@
 .container-gallery {
   position: relative;
   overflow: hidden;
-  height: 95vh;
+  height: 100vh;
   max-width: 100vw;
   margin: auto;
   border-radius: 25px;
@@ -653,6 +657,7 @@ nav > div:last-child > .active:after {
   left: 0px;
   top: 0px;
   display: inline-flex;
+  margin-top: 35px !important;
 }
 
 .pagination > .arrow {

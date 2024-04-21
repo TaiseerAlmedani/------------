@@ -2,32 +2,38 @@ const data = [
   {
     title: 'Летний ресторан',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.',
-    image: 'assets/images/home/services/summer-restaurant.jpg'
+    image: 'assets/images/home/services/summer-restaurant.jpg',
+    color: 'red',
   },
   {
     title: 'ресторан',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.',
-    image: 'assets/images/home/services/hotel.jpg'
+    image: 'assets/images/home/services/hotel.jpg',
+    color: 'brown',
   },
   {
     title: 'Летний ресторан',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
-    image: 'assets/images/home/services/karaoke.jpg'
+    image: 'assets/images/home/services/karaoke.jpg',
+    color: 'blue',
   },
   {
     title: 'ресторан',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
-    image: 'assets/images/home/services/restaurant.jpg'
+    image: 'assets/images/home/services/restaurant.jpg',
+    color: 'green',
   },
   {
     title: 'Летний ресторан',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
-    image: 'assets/images/home/services/summer-restaurant.jpg'
+    image: 'assets/images/home/services/summer-restaurant.jpg',
+    color: 'gray',
   },
   {
     title: 'ресторан',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
-    image: 'assets/images/home/services/hotel.jpg'
+    image: 'assets/images/home/services/hotel.jpg',
+    color: 'purple',
   },
 ]
 
@@ -35,13 +41,9 @@ const _ = (id) => document.getElementById(id)
 const cards = data.map((i, index) => `<div class="card" id="card${index}" style="background-image:url(${i.image})"  ></div> `).join('')
 
 
-
 const cardContents = data.map((i, index) => `<div class="card-content" id="card-content-${index}">
 <div class="content-title-1">${i.title}</div>
-
-</div>
-
-`).join('')
+</div>`).join('')
 
 
 const sildeNumbers = data.map((_, index) => `<div class="item" id="slide-item-${index}" >${index + 1}</div>`).join('')
@@ -75,9 +77,11 @@ const set = gsap.set;
 function getCard(index) {
   return `#card${index}`;
 }
+
 function getCardContent(index) {
   return `#card-content-${index}`;
 }
+
 function getSliderItem(index) {
   return `#slide-item-${index}`;
 }
@@ -101,24 +105,24 @@ let cardWidth = 200;
 let cardHeight = 300;
 let gap = 40;
 let numberSize = 50;
-const ease = "sine.inOut";
+const ease = 'sine.inOut';
 
 function init() {
   const [active, ...rest] = order;
-  const detailsActive = detailsEven ? "#details-even" : "#details-odd";
-  const detailsInactive = detailsEven ? "#details-odd" : "#details-even";
+  const detailsActive = detailsEven ? '#details-even' : '#details-odd';
+  const detailsInactive = detailsEven ? '#details-odd' : '#details-even';
   const { innerHeight: height, innerWidth: width } = window;
   offsetTop = height - 430;
   offsetLeft = width - 830;
 
-  gsap.set("#pagination", {
+  gsap.set('#pagination', {
     top: offsetTop + 330,
     left: offsetLeft,
     y: 200,
     opacity: 0,
     zIndex: 60,
   });
-  gsap.set("nav", { y: -200, opacity: 0 });
+  gsap.set('nav', { y: -200, opacity: 0 });
 
   gsap.set(getCard(active), {
     x: 0,
@@ -135,7 +139,7 @@ function init() {
   gsap.set(`${detailsInactive} .desc`, { y: 50 });
   gsap.set(`${detailsInactive} .cta`, { y: 60 });
 
-  gsap.set(".progress-sub-foreground", {
+  gsap.set('.progress-sub-foreground', {
     width: 500 * (1 / order.length) * (active + 1),
   });
 
@@ -159,15 +163,10 @@ function init() {
 
   const startDelay = 0.6;
 
-  gsap.to(".cover", {
+  gsap.to('.cover', {
     x: width + 400,
     delay: 0.5,
     ease,
-    onComplete: () => {
-      setTimeout(() => {
-        loop();
-      }, 500);
-    },
   });
   rest.forEach((i, index) => {
     gsap.to(getCard(i), {
@@ -185,8 +184,8 @@ function init() {
       delay: startDelay,
     });
   });
-  gsap.to("#pagination", { y: 0, opacity: 1, ease, delay: startDelay });
-  gsap.to("nav", { y: 0, opacity: 1, ease, delay: startDelay });
+  gsap.to('#pagination', { y: 0, opacity: 1, ease, delay: startDelay });
+  gsap.to('nav', { y: 0, opacity: 1, ease, delay: startDelay });
   gsap.to(detailsActive, { opacity: 1, x: 0, ease, delay: startDelay });
 }
 
@@ -197,8 +196,8 @@ function step() {
     order.push(order.shift());
     detailsEven = !detailsEven;
 
-    const detailsActive = detailsEven ? "#details-even" : "#details-odd";
-    const detailsInactive = detailsEven ? "#details-odd" : "#details-even";
+    const detailsActive = detailsEven ? '#details-even' : '#details-odd';
+    const detailsInactive = detailsEven ? '#details-odd' : '#details-even';
 
     document.querySelector(`${detailsActive} .place-box .text`).textContent =
       data[order[0]].place;
@@ -208,6 +207,7 @@ function step() {
       data[order[0]].title2;
     document.querySelector(`${detailsActive} .desc`).textContent =
       data[order[0]].description;
+    _('services').style.backgroundColor = data[order[0]].color
 
     gsap.set(detailsActive, { zIndex: 22 });
     gsap.to(detailsActive, { opacity: 1, delay: 0.4, ease });
@@ -259,7 +259,7 @@ function step() {
     });
     gsap.to(getSliderItem(active), { x: 0, ease });
     gsap.to(getSliderItem(prv), { x: -numberSize, ease });
-    gsap.to(".progress-sub-foreground", {
+    gsap.to('.progress-sub-foreground', {
       width: 500 * (1 / order.length) * (active + 1),
       ease,
     });
@@ -331,8 +331,6 @@ function step() {
   });
 }
 
-
-
 async function loadImage(src) {
   return new Promise((resolve, reject) => {
     let img = new Image();
@@ -352,7 +350,7 @@ async function start() {
     await loadImages();
     init();
   } catch (error) {
-    console.error("One or more images failed to load", error);
+    console.error('One or more images failed to load', error);
   }
 }
 

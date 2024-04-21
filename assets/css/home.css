@@ -174,7 +174,7 @@
   }
 }
 
-.hero+section::before {
+.hero + section::before {
   content: '';
   display: block;
   height: 80px;
@@ -246,16 +246,16 @@
   --end-gradient: 100%;
 
   background: linear-gradient(90deg,
-      rgba(0, 0, 0, 0) var(--start-transparent),
-      rgba(0, 0, 0, 0) var(--start-brown),
-      rgba(166, 118, 60, 1) var(--start-brown),
-      rgba(166, 118, 60, 1) var(--start-transparent-2),
-      rgba(160, 121, 67, 0) var(--start-transparent-2),
-      rgba(144, 109, 60, 0) var(--start-gold),
-      rgba(223, 197, 151, 1) var(--start-gold),
-      rgba(223, 197, 151, 1) var(--start-transparent-3),
-      rgba(218, 193, 148, 0) var(--start-transparent-3),
-      rgba(0, 0, 0, 0) var(--end-gradient));
+  rgba(0, 0, 0, 0) var(--start-transparent),
+  rgba(0, 0, 0, 0) var(--start-brown),
+  rgba(166, 118, 60, 1) var(--start-brown),
+  rgba(166, 118, 60, 1) var(--start-transparent-2),
+  rgba(160, 121, 67, 0) var(--start-transparent-2),
+  rgba(144, 109, 60, 0) var(--start-gold),
+  rgba(223, 197, 151, 1) var(--start-gold),
+  rgba(223, 197, 151, 1) var(--start-transparent-3),
+  rgba(218, 193, 148, 0) var(--start-transparent-3),
+  rgba(0, 0, 0, 0) var(--end-gradient));
   transform: rotate(90deg) scaleX(-1);
 }
 
@@ -289,7 +289,7 @@
     bottom: 10%;
   }
 
-  .hero+section::before {
+  .hero + section::before {
     background-image: none;
   }
 
@@ -381,7 +381,7 @@
     margin-left: -300px;
   }
 
-  footer>div.container {
+  footer > div.container {
     max-width: 69% !important;
     justify-content: space-between !important;
   }
@@ -460,7 +460,7 @@
 .card {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 40px;
   background-position: center;
   background-size: cover;
   outline: solid 14px #e2d3be8c;
@@ -503,7 +503,7 @@
   color: white;
 }
 
-div.title-box-1>div::after {
+div.title-box-1 > div::after {
   width: 20%;
   display: block;
   height: 2px;
@@ -549,19 +549,19 @@ div.title-box-1>div::after {
   overflow: hidden;
 }
 
-.details>.desc {
+.details > .desc {
   margin-top: 16px;
   width: 50%;
 }
 
-.details>.cta {
+.details > .cta {
   width: 50%;
   margin-top: 24px;
   display: flex;
   align-items: center;
 }
 
-.details>.cta>.bookmark {
+.details > .cta > .bookmark {
   border: none;
   background-color: #ff0000;
   width: 36px;
@@ -572,7 +572,7 @@ div.title-box-1>div::after {
   place-items: center;
 }
 
-.details>.cta>.star {
+.details > .cta > .star {
   border: none;
   background-color: #ffbf00;
   width: 36px;
@@ -583,12 +583,12 @@ div.title-box-1>div::after {
   place-items: center;
 }
 
-.details>.cta>.bookmark svg {
+.details > .cta > .bookmark svg {
   width: 20px;
   height: 20px;
 }
 
-.details>.cta>.discover {
+.details > .cta > .discover {
   border: 1px solid #ffffff;
   background-color: transparent;
   border-radius: 25px;
@@ -622,26 +622,26 @@ nav .svg-container {
   height: 20px;
 }
 
-nav>div {
+nav > div {
   display: inline-flex;
   align-items: center;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-nav>div:first-child {
+nav > div:first-child {
   gap: 10px;
 }
 
-nav>div:last-child {
+nav > div:last-child {
   gap: 24px;
 }
 
-nav>div:last-child>.active {
+nav > div:last-child > .active {
   position: relative;
 }
 
-nav>div:last-child>.active:after {
+nav > div:last-child > .active:after {
   bottom: -8px;
   left: 0;
   right: 0;
@@ -659,7 +659,7 @@ nav>div:last-child>.active:after {
   display: inline-flex;
 }
 
-.pagination>.arrow {
+.pagination > .arrow {
   z-index: 60;
   width: 50px;
   height: 50px;
@@ -669,16 +669,16 @@ nav>div:last-child>.active:after {
   place-items: center;
 }
 
-.pagination>.arrow:nth-child(1) {
+.pagination > .arrow:nth-child(1) {
   margin-left: 600px;
 }
 
-.pagination>.arrow:nth-child(2) {
+.pagination > .arrow:nth-child(2) {
   margin-left: 40px;
 }
 
 
-.pagination>.arrow svg {
+.pagination > .arrow svg {
   width: 24px;
   height: 24px;
   stroke-width: 2;
@@ -704,8 +704,8 @@ nav>div:last-child>.active:after {
   color: white;
 }
 
-@media screen and (min-width:1024px) and (max-width:1366px) {
-  .details>.desc {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .details > .desc {
     width: 30%;
   }
 
@@ -715,8 +715,8 @@ nav>div:last-child>.active:after {
   }
 }
 
-@media screen and (max-width:700px) {
-  .details>.desc {
+@media screen and (max-width: 700px) {
+  .details > .desc {
     width: 100%;
   }
 
@@ -725,16 +725,16 @@ nav>div:last-child>.active:after {
     left: 0;
   }
 
-  .details>.cta>.discover {
+  .details > .cta > .discover {
     padding: 10px 20px;
     font-size: 14px;
   }
 
-  div.title-box-1>div::after {
+  div.title-box-1 > div::after {
     width: 60%;
   }
 
-  .details>.cta {
+  .details > .cta {
     margin-top: 5px !important;
   }
 

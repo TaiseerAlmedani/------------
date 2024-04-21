@@ -86,10 +86,6 @@
   z-index: 2;
 }
 
-.mt-n-70 {
-  margin-top: -100px;
-}
-
 .hero::before {
   top: 0;
   background-image: url('../images/home/hero/mobile/top-clouds.png');
@@ -430,7 +426,7 @@
 
 /* slider */
 #services {
-  background-color: var(--warning-color);
+  /* background-color: var(--warning-color); */
   border-radius: 5px;
   padding: 20px;
 }

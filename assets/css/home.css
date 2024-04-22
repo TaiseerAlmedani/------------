@@ -768,5 +768,7 @@ nav>div:last-child>.active:after {
   .details>.cta {
     margin-top: 5px !important;
   }
-
+.navbar{
+  padding: 0;
+}
 }

@@ -13,7 +13,7 @@
 
 .navbar {
   --bulma-navbar-background-color: transparent;
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(2px);
   align-items: center;
   transform: translateY(30px) !important;
   transition: all 500ms !important;
@@ -467,9 +467,11 @@
   background-color: rgba(0, 0, 0, 0.432) !important;
   border-radius: 10px;
 }
-.card:first-of-type::before{
+
+.card:first-of-type::before {
   border-radius: 24px;
 }
+
 .card {
   position: absolute;
   left: 0;
@@ -746,6 +748,10 @@ nav>div:last-child>.active:after {
 }
 
 @media screen and (max-width: 700px) {
+  .hero .button.show-more-button {
+    left: 42%;
+  }
+
   .details>.desc {
     width: 100%;
   }
@@ -768,7 +774,10 @@ nav>div:last-child>.active:after {
   .details>.cta {
     margin-top: 5px !important;
   }
-.navbar{
-  padding: 0;
-}
+
+  .navbar {
+    padding: 0;
+    backdrop-filter: blur(14px);
+  }
+
 }

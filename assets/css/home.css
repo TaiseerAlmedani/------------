@@ -465,7 +465,7 @@
   content: '';
   display: block;
   background-color: rgba(0, 0, 0, 0.432) !important;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .card:first-of-type::before {
@@ -481,6 +481,12 @@
   border-radius: 25px;
 }
 
+.card:not(:first-of-type) {
+  border-width: 6px 6px 50px 6px;
+  border-style: solid;
+  border-color: #eadabe9c;
+}
+
 #btn {
   position: absolute;
   top: 690px;
@@ -491,20 +497,21 @@
 .card-content {
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 100px;
   color: #fff;
-  padding-left: 16px;
+  text-align: center;
+  width: 200px;
 }
 
 @media screen and (max-width:700px) {
   .card-content {
-    top: 11%;
+    top: 100px;
   }
 }
 
 @media screen and (min-width:1024px) and (max-width:1366px) {
   .card-content {
-    top: 12%;
+    top: 100px;
   }
 
   .details>.desc {
@@ -525,8 +532,9 @@
 .content-title-1,
 .content-title-2 {
   font-weight: 600;
-  font-size: 20px;
-  color: white;
+  font-size: 16px;
+  color: black;
+  text-align: center;
 }
 
 .title-1,

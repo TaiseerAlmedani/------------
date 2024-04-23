@@ -150,7 +150,7 @@ function init() {
       width: cardWidth,
       height: cardHeight,
       zIndex: 30,
-      borderRadius: 10,
+      borderRadius: 15,
     });
     gsap.set(getCardContent(i), {
       x: offsetLeft + 400 + index * (cardWidth + gap),
@@ -276,7 +276,7 @@ function step(reverse = false) {
       ease,
       width: window.innerWidth,
       height: window.innerHeight,
-      borderRadius: 14,
+      borderRadius: 15,
       onComplete: () => {
         const xNew = offsetLeft + (rest.length - 1) * (cardWidth + gap);
         gsap.set(getCard(prv), {
@@ -285,7 +285,7 @@ function step(reverse = false) {
           width: cardWidth,
           height: cardHeight,
           zIndex: 30,
-          borderRadius: 10,
+          borderRadius: 15,
           scale: 1,
         });
 

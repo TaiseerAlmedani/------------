@@ -264,7 +264,6 @@ function step(reverse = false) {
     const [active, ...rest] = order;
     const prv = rest[rest.length - 1];
 
-    document.querySelector(`.desc`).classList.add('has-blur');
     document.querySelector(`#card${active}`).classList.remove('has-border-card');
 
     // Add 'has-border-card' class back to the previous active card

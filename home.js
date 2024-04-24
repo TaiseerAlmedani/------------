@@ -38,7 +38,15 @@ const data = [
 ]
 
 const _ = (id) => document.getElementById(id)
-const cards = data.map((i, index) => `<div class="card" id="card${index}" style="background-image:url(${i.image})"  ></div> `).join('')
+// const cards = data.map((i, index) => `<div class="card has-border-card" id="card${index}" style="background-image:url(${i.image})"  ></div> `).join('');
+const cards = data.map((i, index) => {
+  if (index === 0) {
+    return `<div class="card" id="card${index}" style="background-image:url(${i.image})"></div>`;
+  } else {
+    return `<div class="card has-border-card" id="card${index}" style="background-image:url(${i.image})"></div>`;
+  }
+}).join('');
+
 
 
 const cardContents = data.map((i, index) => `<div class="card-content" id="card-content-${index}">
@@ -223,6 +231,7 @@ function step(reverse = false) {
       duration: 0.7,
       ease,
     });
+
     gsap.to(`${detailsActive} .title-1`, {
       y: 0,
       delay: 0.15,
@@ -253,6 +262,17 @@ function step(reverse = false) {
     const [active, ...rest] = order;
     const prv = rest[rest.length - 1];
 
+    document.querySelector(`.desc`).classList.add('has-blur');
+    document.querySelector(`#card${active}`).classList.remove('has-border-card');
+
+    // Add 'has-border-card' class back to the previous active card
+    document.querySelector(`#card${prv}`).classList.add('has-border-card');
+
+    rest.forEach((i) => {
+      document.querySelector(`#card${i}`).classList.add('has-border-card');
+    });
+
+    
     gsap.set(getCard(prv), { zIndex: 10 });
     gsap.set(getCard(active), { zIndex: 20 });
     gsap.to(getCard(prv), { scale: 1.5, ease });

@@ -481,10 +481,10 @@
   border-radius: 20px;
 }
 
-.card:not(:first-of-type) {
+.has-border-card {
   border-width: 6px 6px 50px 6px;
   border-style: solid;
-  border-color: rgba(253, 244, 227, 0.836);
+  border-color: #FDF4E3;
   border-radius: 20px !important;
 }
 
@@ -719,7 +719,6 @@ nav>div:last-child>.active:after {
   margin-left: 40px;
 }
 
-
 .pagination>.arrow svg {
   width: 24px;
   height: 24px;
@@ -739,12 +738,27 @@ nav>div:last-child>.active:after {
 }
 
 .desc {
-  backdrop-filter: blur(15px);
   border-radius: 25px;
   background-color: rgba(255, 255, 255, .18);
   padding: 20px;
   color: white;
+  position: relative;
+  backdrop-filter: blur(5px);
 }
+
+.desc::before {
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
 
 @media screen and (max-width: 700px) {
   .details>.desc {
@@ -755,9 +769,7 @@ nav>div:last-child>.active:after {
   .details .title-2 {
     font-size: 50px;
   }
-}
 
-@media screen and (max-width: 700px) {
   .hero .button.show-more-button {
     left: 42%;
   }
@@ -791,4 +803,9 @@ nav>div:last-child>.active:after {
     backdrop-filter: blur(14px);
   }
 
+}
+@media screen and (min-width:1366px) and (max-width:1600px) {
+   .details>.desc {
+    width: 40%;
+  }
 }

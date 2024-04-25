@@ -1,5 +1,5 @@
 const data = [
-  
+
   {
     title: 'hotel',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления.',
@@ -19,20 +19,20 @@ const data = [
     image: 'assets/images/home/services/restaurant.jpg',
     color: '#fdf4e3',
   },
-  // {
-  //   title: 'Летний ресторан',
-  //   description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
-  //   image: 'assets/images/home/services/summer-restaurant.jpg',
-  //   color: '#fafff3',
-  // },
-  // {
-  //   title: 'ресторан',
-  //   description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
-  //   image: 'assets/images/home/services/hotel.jpg',
-  //   color: '#fdf4e3',
-  // },
-    {
-      title: 'karaoke',
+  {
+    title: 'Летний ресторан',
+    description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
+    image: 'assets/images/home/services/summer-restaurant.jpg',
+    color: '#fafff3',
+  },
+  {
+    title: 'ресторан',
+    description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
+    image: 'assets/images/home/services/hotel.jpg',
+    color: '#fdf4e3',
+  },
+  {
+    title: 'karaoke',
     description: 'Стильный интерьер, созданный по мотивам мифов Древней Греции, очаровывает с первого взгляда. Мягкое освещение, изящная мебель и ненавязчивая музыка создают атмосферу уюта и расслабления',
     image: 'assets/images/home/services/karaoke.jpg',
     color: '#fafff3',
@@ -106,7 +106,7 @@ function animate(target, duration, properties) {
   });
 }
 
-let order = [0, 1, 2, 3];
+let order = [0, 1, 2, 3,4,5];
 let detailsEven = true;
 
 let offsetTop = 200;
@@ -273,7 +273,7 @@ function step(reverse = false) {
       document.querySelector(`#card${i}`).classList.add('has-border-card');
     });
 
-    
+
     gsap.set(getCard(prv), { zIndex: 10 });
     gsap.set(getCard(active), { zIndex: 20 });
     gsap.to(getCard(prv), { scale: 1.5, ease });

@@ -50,7 +50,6 @@ const cards = data.map((i, index) => {
 }).join('');
 
 
-
 const cardContents = data.map((i, index) => `<div class="card-content" id="card-content-${index}">
 <div class="content-title-1">${i.title}</div>
 </div>`).join('')
@@ -106,7 +105,7 @@ function animate(target, duration, properties) {
   });
 }
 
-let order = [0, 1, 2, 3,4,5];
+let order = [0, 1, 2, 3, 4, 5];
 let detailsEven = true;
 
 let offsetTop = 200;
@@ -299,6 +298,9 @@ function step(reverse = false) {
       height: window.innerHeight,
       borderRadius: 15,
       onComplete: () => {
+        gsap.to(`${detailsActive} .desc`, { y: 1 });
+        gsap.to(`${detailsActive} .desc`, { y: 0 });
+
         const xNew = offsetLeft + (rest.length - 1) * (cardWidth + gap);
         gsap.set(getCard(prv), {
           x: xNew,
@@ -357,6 +359,7 @@ function step(reverse = false) {
     });
   });
 }
+
 // Modify the handlePagination function to pass a parameter to step function
 function handlePagination(event) {
   if (event.currentTarget.classList.contains('arrow-left')) {

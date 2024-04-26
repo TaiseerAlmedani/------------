@@ -296,7 +296,7 @@
   }
 
   .hero .button.show-more-button {
-    bottom: 10%;
+    bottom: 8%;
   }
 
   .hero+section::before {

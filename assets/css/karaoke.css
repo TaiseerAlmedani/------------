@@ -93,6 +93,7 @@ body {
 .br-50 {
   border-radius: 50px;
 }
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -363,5 +364,62 @@ body {
 
   .swiper-button-prev {
     left: 75%;
+  }
+}
+
+/* Add this CSS for the modal */
+.modal {
+  display: none;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #4d2a56be;
+  z-index: 100;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  transition: all 200ms ease-in-out;
+  max-width: 40%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 100%;
   }
 }

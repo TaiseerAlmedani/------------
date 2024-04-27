@@ -324,7 +324,6 @@ li {
 .swiper-pagination-fraction {
   width: 30%;
 }
-
 @media screen and (min-width:1023px) and (max-width:1920px) {
   footer .container {
     max-width: 80% !important;
@@ -332,7 +331,7 @@ li {
   }
 
   .horo-title {
-    letter-spacing: 10px;
+    letter-spacing: 8px;
   }
 
   .has-ciecule::before {

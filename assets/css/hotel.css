@@ -318,7 +318,7 @@ li {
   }
 
   .hero-title {
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     width: 70%;
   }
 
@@ -348,9 +348,7 @@ li {
 
 @media screen and (max-width:1366px) {
 
-  /* .hero-title {
-      letter-spacing: 2px;
-    } */
+ 
   .has-ciecule::before {
     margin-left: -10vw;
   }

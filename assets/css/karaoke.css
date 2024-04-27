@@ -382,7 +382,14 @@ body {
   background-color: #4d2a56be;
   z-index: 100;
 }
-
+.has-padding-left{
+  padding-left: 83px;
+}
+@media screen and (max-width:700px) {
+  .has-padding-left{
+    padding-left: 58px;
+  }
+}
 .modal-content {
   margin: auto;
   display: block;

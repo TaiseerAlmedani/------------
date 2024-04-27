@@ -154,10 +154,33 @@ body>section:nth-child(4)>div.columns>div:nth-child(3) .card-background {
 
 .has-text-gray {
   color: #433e38;
+  transition: all 200ms;
+}
+.phone-link {
+  color: black;
+  position: relative;
+  text-decoration: none;
 }
 
+.phone-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.phone-link:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
 ul {
-  width: 40%;
+  width: 50%;
   margin: auto;
   text-align: left;
 }

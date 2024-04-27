@@ -178,11 +178,33 @@ body>section.section.py-6.py-0-mobile.e.my-0-mobile.my-6>div>div:nth-child(1)>di
 }
 
 ul {
-  width: 52%;
+  width: 50%;
   margin: auto;
   text-align: left;
 }
+.phone-link {
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
 
+.phone-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.phone-link:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
 ul,
 li {
   list-style-type: disc;

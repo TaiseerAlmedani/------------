@@ -472,7 +472,15 @@ button.has-warning-bg-c {
   border-color: white;
   width: 95px;
 }
+.has-padding-left {
+  padding-left: 83px;
+}
 
+@media screen and (max-width:700px) {
+  .has-padding-left {
+    padding-left: 58px;
+  }
+}
 
 .btn-card {
   width: 94px !important;

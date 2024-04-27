@@ -382,9 +382,7 @@ body {
   background-color: #4d2a56be;
   z-index: 100;
 }
-.has-padding-left{
-  padding-left: 83px;
-}
+
 .box {
   position: relative;
   max-width: 69%;
@@ -444,15 +442,18 @@ body {
   margin-left: -35%;
   left: 25%;
 }
+
 .phone-link {
   color: black;
   position: relative;
   text-decoration: none;
 }
+
 .has-text-gray {
   color: #433e38;
   transition: all 200ms;
 }
+
 .phone-link::after {
   content: '';
   position: absolute;
@@ -470,6 +471,7 @@ body {
   transform: scaleX(0);
   transform-origin: bottom left;
 }
+
 @media screen and (min-width:1023px) and (max-width:1920px) {
 
   .has-ciecule::before {
@@ -495,46 +497,52 @@ body {
     top: -45px;
   }
 }
-@media screen and (max-width:1023px){
+
+@media screen and (max-width:1023px) {
   .contact span.has-text-weight-bold {
-      display: block;
-    }
-  
-    .contact .block-on-mobile {
-      display: block;
-      height: 25px;
-    }
-         .box {
-           max-width: 100%;
-           padding-top: 80px !important;
-           padding-bottom: 150px !important;
-         }
-    
-         .box::before,
-         .box::after {
-           width: 70px;
-           height: 70px;
-         }
-    
-         .box::before {
-           bottom: -25px;
-           left: -50px;
-         }
-    
-         .box::after {
-           right: -50px;
-           top: -25px;
-         }
-    
-         .has-side-circule::after {
-           display: none;
-         }
+    display: block;
+  }
+
+  .contact .block-on-mobile {
+    display: block;
+    height: 25px;
+  }
+
+  .box {
+    max-width: 100%;
+    padding-top: 80px !important;
+    padding-bottom: 150px !important;
+  }
+
+  .box::before,
+  .box::after {
+    width: 70px;
+    height: 70px;
+  }
+
+  .box::before {
+    bottom: -25px;
+    left: -50px;
+  }
+
+  .box::after {
+    right: -50px;
+    top: -25px;
+  }
+
+  .has-side-circule::after {
+    display: none;
+  }
+}
+.has-padding-left {
+  padding-left: 83px;
 }
 @media screen and (max-width:700px) {
-  .has-padding-left{
+  .has-padding-left {
     padding-left: 58px;
   }
 }
+
 .modal-content {
   margin: auto;
   display: block;

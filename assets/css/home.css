@@ -751,6 +751,7 @@ nav>div:last-child>.active:after {
 
 @media screen and (max-width: 700px) {
   .details>.desc {
+    padding: 10px;
     width: 30%;
   }
 

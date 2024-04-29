@@ -493,12 +493,13 @@ background: rgba(0, 0, 0, 0.335);
   box-sizing: border-box;
   color: #fff;
 }
-@media screen and (min-width:1900px) {
+@media screen and (min-width:1800px) {
   .carousel .list .item .content-carosel{
-    left: 34%;
-    width: 1400px;
+    left: 37%;
+    width: 1300px;
   }
 }
+
 .item::before {
   display: block;
   content: '';

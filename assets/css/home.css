@@ -487,13 +487,18 @@ background: rgba(0, 0, 0, 0.335);
   top: 20%;
   width: 1140px;
   max-width: 80%;
-  left: 50%;
+  left: 39%;
   transform: translateX(-50%);
   padding-right: 30%;
   box-sizing: border-box;
   color: #fff;
 }
-
+@media screen and (min-width:1900px) {
+  .carousel .list .item .content-carosel{
+    left: 34%;
+    width: 1400px;
+  }
+}
 .item::before {
   display: block;
   content: '';

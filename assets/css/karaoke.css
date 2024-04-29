@@ -387,7 +387,6 @@ body {
   position: relative;
   max-width: 69%;
   margin: auto;
-  background-color: var(--secandery-color);
 }
 
 .box::before,
@@ -444,7 +443,7 @@ body {
 }
 
 .phone-link {
-  color: black;
+  color: white;
   position: relative;
   text-decoration: none;
 }
@@ -462,7 +461,7 @@ body {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: black;
+  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

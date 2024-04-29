@@ -10,7 +10,7 @@ let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 500;
-let timeAutoNext = 7000;
+
 
 nextDom.onclick = function () {
   showSlider('next');
@@ -20,9 +20,6 @@ prevDom.onclick = function () {
   showSlider('prev');
 }
 let runTimeOut;
-let runNextAuto = setTimeout(() => {
-  nextDom.click();
-}, timeAutoNext)
 
 function showSlider(type) {
   let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
@@ -43,11 +40,7 @@ function showSlider(type) {
     carouselDom.classList.remove('prev');
   }, timeRunning);
 
-  clearTimeout(runNextAuto);
-  runNextAuto = setTimeout(() => {
-    nextDom.click();
-  }, timeAutoNext)
-}
+
 
 
 thumbnailItemsDom.forEach(card => {
@@ -67,10 +60,7 @@ thumbnailItemsDom.forEach(card => {
       carouselDom.classList.remove('prev');
     }, timeRunning);
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-      nextDom.click();
-    }, timeAutoNext)
+
   })
 })
 
@@ -112,4 +102,5 @@ function findChildWithImage(children, filename) {
 
   // Return null if no child with the specified image filename is found
   return null;
+}
 }

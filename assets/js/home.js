@@ -43,64 +43,64 @@ function showSlider(type) {
 
 
 
-thumbnailItemsDom.forEach(card => {
-  card.addEventListener('click', () => {
-    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+  thumbnailItemsDom.forEach(card => {
+    card.addEventListener('click', () => {
+      let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+      let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
 
-    const index = getOrderAmongSiblings(card)
-    const image = card.querySelector('img').src.split('/').pop()
-    SliderDom.prepend(findChildWithImage(SliderItemsDom, image));
-    thumbnailBorderDom.appendChild(thumbnailItemsDom[index]);
-    carouselDom.classList.add('next');
+      const index = getOrderAmongSiblings(card)
+      const image = card.querySelector('img').src.split('/').pop()
+      SliderDom.prepend(findChildWithImage(SliderItemsDom, image));
+      thumbnailBorderDom.appendChild(thumbnailItemsDom[index]);
+      carouselDom.classList.add('next');
 
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-      carouselDom.classList.remove('next');
-      carouselDom.classList.remove('prev');
-    }, timeRunning);
+      clearTimeout(runTimeOut);
+      runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+      }, timeRunning);
 
 
+    })
   })
-})
 
-function getOrderAmongSiblings(element) {
-  // Get the parent node of the element
-  let parent = element.parentNode;
+  function getOrderAmongSiblings(element) {
+    // Get the parent node of the element
+    let parent = element.parentNode;
 
-  // Get all children of the parent node
-  let siblings = parent.children;
+    // Get all children of the parent node
+    let siblings = parent.children;
 
-  // Loop through the siblings to find the index of the given element
-  for (let i = 0; i < siblings.length; i++) {
-    if (siblings[i] === element) {
-      // Return the index of the element among its siblings
-      return i;
-    }
-  }
-
-  // If the element is not found among the siblings, return -1
-  return -1;
-}
-
-function findChildWithImage(children, filename) {
-  // Loop through the children
-  for (var i = 0; i < children.length; i++) {
-    var child = children[i];
-
-    // Check if the child contains an image element
-    var images = child.getElementsByTagName('img');
-    for (var j = 0; j < images.length; j++) {
-      var src = images[j].getAttribute('src');
-      // Check if the image src contains the specified filename
-      if (src && src.includes(filename)) {
-        // Return the child element if found
-        return child;
+    // Loop through the siblings to find the index of the given element
+    for (let i = 0; i < siblings.length; i++) {
+      if (siblings[i] === element) {
+        // Return the index of the element among its siblings
+        return i;
       }
     }
+
+    // If the element is not found among the siblings, return -1
+    return -1;
   }
 
-  // Return null if no child with the specified image filename is found
-  return null;
-}
+  function findChildWithImage(children, filename) {
+    // Loop through the children
+    for (var i = 0; i < children.length; i++) {
+      var child = children[i];
+
+      // Check if the child contains an image element
+      var images = child.getElementsByTagName('img');
+      for (var j = 0; j < images.length; j++) {
+        var src = images[j].getAttribute('src');
+        // Check if the image src contains the specified filename
+        if (src && src.includes(filename)) {
+          // Return the child element if found
+          return child;
+        }
+      }
+    }
+
+    // Return null if no child with the specified image filename is found
+    return null;
+  }
 }

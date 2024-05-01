@@ -62,8 +62,6 @@
       </div>
     </div>
   </nav>
-  <!-- End of navbar section -->
-
 
   <section class="section mt-6">
     <div class="container">
@@ -98,13 +96,11 @@
               </div>
               <div class="is-flex is-justify-content-space-between">
                 <div class="is-flex is-justify-content-space-between is-align-items-center">
-                  <button class="button has-text-white counter-btn mr-2" 
-                  onclick="modifyCount(-1)" id="minus">
+                  <button class="button has-text-white counter-btn mr-2" onclick="modifyCount(-1)" id="minus">
                     <i class="fa-solid fa-minus"></i>
                   </button>
                   <div id="counter">1</div>
-                  <button class="button ml-2 has-text-white counter-btn" 
-                  onclick="modifyCount(1)" id="plus">
+                  <button class="button ml-2 has-text-white counter-btn" onclick="modifyCount(1)" id="plus">
                     <i class="fa-solid fa-plus"></i>
                   </button>
 
@@ -143,7 +139,6 @@
     </div>
     </div>
   </section>
-
 
   <!-- start of footer section -->
   <footer class="section  is-small has-background-color">
@@ -217,23 +212,22 @@
       <div>&copy; 2024 Афродита 🤍 от Roinext</div>
     </div>
   </footer>
-  <!-- start of footer section -->
 
   <script src="index.js"></script>
 
-
   <!-- counter script -->
-<script>
-  function modifyCount(val) {
-    const counter = document.getElementById('counter');
-    const currentValue = parseInt(counter.innerHTML);
-    const result = currentValue + val;
+  <script>
+    function modifyCount(val) {
+      const counter = document.getElementById('counter');
+      const currentValue = parseInt(counter.innerHTML);
+      const result = currentValue + val;
 
-    // Prevent counting below zero
-    if (result >= 0) {
-      counter.innerHTML = result;
+      // Prevent counting below zero
+      if (result >= 0) {
+        counter.innerHTML = result;
+      }
     }
-  }
-</script>
+  </script>
+</body>
 
 </html>

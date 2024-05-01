@@ -533,9 +533,11 @@ body {
     display: none;
   }
 }
+
 .has-padding-left {
   padding-left: 83px;
 }
+
 @media screen and (max-width:700px) {
   .has-padding-left {
     padding-left: 58px;

@@ -1,7 +1,9 @@
 @import url(colors.css);
-body{
+
+body {
   font-family: "Bellota", system-ui !important;
 }
+
 .input,
 .textarea {
   border-color: var(--warning-color) !important;

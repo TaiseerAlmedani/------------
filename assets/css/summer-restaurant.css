@@ -186,6 +186,7 @@ ul {
   margin: auto;
   text-align: left;
 }
+
 .phone-link {
   color: black;
   position: relative;
@@ -209,6 +210,7 @@ ul {
   transform: scaleX(0);
   transform-origin: bottom left;
 }
+
 ul,
 li {
   list-style-type: disc;
@@ -610,6 +612,7 @@ li {
     justify-content: space-between !important;
   }
 }
+
 /* Add this CSS for the modal */
 .modal {
   display: none;

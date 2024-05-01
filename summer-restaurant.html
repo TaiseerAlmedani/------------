@@ -252,11 +252,13 @@
       </div>
     </div>
   </section>
+
   <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
     <div id="caption"></div>
   </div>
+
   <section class="section is-medium pt-4">
     <div class="title is-4 mb-6 has-text-center has-text-weight-bold">
       Gallery
@@ -352,65 +354,69 @@
       <div>&copy; 2024 Афродита 🤍 от Roinext</div>
     </div>
   </footer>
-</body>
 
-</html>
 
-<script src="index.js"></script>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-    },
-  });
-</script>
-<!-- model script -->
-<script>
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  
+  <!-- model script -->
+  <script>
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
 
-  Array.from(document.querySelectorAll('.swiper-slide img')).forEach(img => {
-    img.onclick = function () {
-      modal.style.display = "block";
-      setTimeout(function () { modal.style.opacity = 1; }, 50);
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-  });
+    Array.from(document.querySelectorAll('.swiper-slide img')).forEach(img => {
+      img.onclick = function () {
+        modal.style.display = "block";
+        setTimeout(function () { modal.style.opacity = 1; }, 50);
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    });
 
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function () {
-    modal.style.opacity = 0;
-    setTimeout(function () { modal.style.display = "none"; }, 300);
-  }
-
-  window.onclick = function (event) {
-    if (event.target == modal) {
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
       modal.style.opacity = 0;
       setTimeout(function () { modal.style.display = "none"; }, 300);
     }
-  }
-</script>
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.opacity = 0;
+        setTimeout(function () { modal.style.display = "none"; }, 300);
+      }
+    }
+  </script>
+
+</body>
+
+</html>

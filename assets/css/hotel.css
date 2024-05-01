@@ -156,6 +156,7 @@ body>section:nth-child(4)>div.columns>div:nth-child(3) .card-background {
   color: #433e38;
   transition: all 200ms;
 }
+
 .phone-link {
   color: black;
   position: relative;
@@ -179,6 +180,7 @@ body>section:nth-child(4)>div.columns>div:nth-child(3) .card-background {
   transform: scaleX(0);
   transform-origin: bottom left;
 }
+
 ul {
   width: 50%;
   margin: auto;
@@ -371,7 +373,7 @@ li {
 
 @media screen and (max-width:1366px) {
 
- 
+
   .has-ciecule::before {
     margin-left: -10vw;
   }
@@ -660,7 +662,7 @@ li {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
   }
 }
 

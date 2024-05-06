@@ -271,7 +271,11 @@ li {
   position: relative;
   object-fit: contain;
 }
-
+.swiper-slide > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* .swiper-slide::before {
   display: block;
   content: '';
@@ -534,7 +538,6 @@ li {
   .img-mobile {
     width: 430px;
     height: 295px;
-    object-fit: contain !important;
   }
 
   .fs-24-mobile {
@@ -577,6 +580,8 @@ li {
   display: flex;
   justify-content: center;
   background: url('../hotel-bg.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   align-items: center;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.767);
 

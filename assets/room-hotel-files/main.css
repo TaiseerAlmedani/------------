@@ -1,9 +1,3 @@
-/*!
- * Bootstrap Grid v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 @-webkit-keyframes sheens {
   0% {
     left: -30%;
@@ -1151,14 +1145,6 @@ body {
   height: 100vh !important
 }
 
-@font-face {
-  font-family: "Buyan";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/Buyan/BuyanRegular.eot?#iefix) format("embedded-opentype"), url(../font/Buyan/BuyanRegular.woff) format("woff"), url(../font/Buyan/BuyanRegular.woff2) format("woff2"), url(../font/Buyan/BuyanRegular.ttf) format("truetype");
-  font-display: swap
-}
-
 body {
   min-width: 300px;
   font-family: "Montserrat", sans-serif;
@@ -1308,7 +1294,6 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-family: "Buyan", sans-serif
 }
 
 h1,
@@ -1335,7 +1320,6 @@ h5,
 h6 {
   margin: 0;
   line-height: 1.3;
-  font-family: "Buyan", sans-serif
 }
 
 h2,
@@ -2554,8 +2538,7 @@ button[type=submit] .form-load .lds-spinner {
   bottom: 68px;
   z-index: 33;
   display: flex;
-  align-items: center;
-  font-family: "Buyan", sans-serif;
+  align-items: center;;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2964,8 +2947,7 @@ button[type=submit] .form-load .lds-spinner {
 .room-sl__controll-counter {
   display: flex;
   align-items: baseline;
-  margin: 0 15px;
-  font-family: "Buyan", sans-serif;
+  margin: 0 15px;;
   font-size: 24px;
   line-height: 1.33;
   letter-spacing: 1px;
@@ -2976,8 +2958,7 @@ button[type=submit] .form-load .lds-spinner {
   display: none
 }
 
-.room-price {
-  font-family: "Buyan", sans-serif;
+.room-price {;
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: .02em;
@@ -3124,8 +3105,7 @@ button[type=submit] .form-load .lds-spinner {
 
 .anim-link {
   display: flex;
-  align-items: center;
-  font-family: "Buyan", sans-serif;
+  align-items: center;;
   font-size: 24px;
   line-height: 1.33;
   color: #de992c
@@ -3268,8 +3248,7 @@ button[type=submit] .form-load .lds-spinner {
 
 .insta__box-right span,
 .spec-list__item b {
-  display: block;
-  font-family: "Buyan", sans-serif;
+  display: block;;
   font-size: 64px;
   line-height: 1.12;
   letter-spacing: .02em;
@@ -3406,8 +3385,7 @@ button[type=submit] .form-load .lds-spinner {
   width: auto;
   display: flex;
   align-items: center;
-  margin: 0 18px;
-  font-family: "Buyan", sans-serif;
+  margin: 0 18px;;
   font-size: 24px;
   line-height: 1.33;
   letter-spacing: .02em
@@ -3489,8 +3467,7 @@ button[type=submit] .form-load .lds-spinner {
   text-align: right
 }
 
-.b-price {
-  font-family: "Buyan", sans-serif;
+.b-price {;
   font-size: 64px;
   line-height: 1.12;
   letter-spacing: .02em
@@ -3522,8 +3499,7 @@ button[type=submit] .form-load .lds-spinner {
   fill: #fff
 }
 
-.icon-box .top__option-title {
-  font-family: "Buyan", sans-serif;
+.icon-box .top__option-title {;
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: .02em

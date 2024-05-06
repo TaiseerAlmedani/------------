@@ -1,5 +1,7 @@
 @import url(colors.css);
-
+html{
+  background-color: var(--light) !important;
+}
 body {
   background-color: var(--light) !important;
   font-family: "Bellota", system-ui !important;

@@ -4,6 +4,7 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  background-color: var(--secandery-color) !important;
 }
 
 body {

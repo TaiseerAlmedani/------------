@@ -1404,8 +1404,8 @@ table {
 }
 
 .btn--empty-gold {
-  color: #de992c;
-  border-color: #de992c
+  color: #a6763c;
+  border-color: #a6763c
 }
 
 .btn--empty-gold:hover {
@@ -1418,7 +1418,7 @@ table {
 }
 
 .btn--empty-white:hover {
-  border-color: #de992c
+  border-color: #a6763c
 }
 
 .btn--gold {
@@ -1427,7 +1427,7 @@ table {
 
 .btn--gold,
 .btn--gold:hover {
-  background: #de992c
+  background: #a6763c
 }
 
 button[type=submit] .form-load {
@@ -2055,7 +2055,7 @@ button[type=submit] .form-load .lds-spinner {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
-  color: #de992c
+  color: #a6763c
 }
 
 .breadcrumbs a:hover,
@@ -2157,12 +2157,12 @@ button[type=submit] .form-load .lds-spinner {
 }
 
 .accordion__item--active {
-  border-color: #de992c
+  border-color: #a6763c
 }
 
 .accordion__item--active .accordion__title,
 .fixed-nav ul a:hover {
-  color: #de992c
+  color: #a6763c
 }
 
 .accordion__item--active .accordion__arrow {
@@ -2198,7 +2198,7 @@ button[type=submit] .form-load .lds-spinner {
 .form__item input:focus,
 .form__item textarea:focus {
   color: #000;
-  border-color: #de992c
+  border-color: #a6763c
 }
 
 .form__item textarea {
@@ -2547,7 +2547,7 @@ button[type=submit] .form-load .lds-spinner {
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
-  color: #de992c;
+  color: #a6763c;
   transform: rotate(-90deg)
 }
 
@@ -2564,7 +2564,7 @@ button[type=submit] .form-load .lds-spinner {
   height: 1px;
   flex-shrink: 0;
   margin-left: 10px;
-  background: #de992c
+  background: #a6763c
 }
 
 .to-top:hover span::after {
@@ -2745,7 +2745,7 @@ button[type=submit] .form-load .lds-spinner {
   line-height: 1;
   color: #fff;
   text-align: center;
-  background: #de992c;
+  background: #a6763c;
   transition: all .25s linear
 }
 
@@ -2926,7 +2926,7 @@ button[type=submit] .form-load .lds-spinner {
 }
 
 .room-sl__controll .sl-btn:hover svg {
-  fill: #de992c
+  fill: #a6763c
 }
 
 .room-sl__controll .sl-btn.slick-disabled {
@@ -2962,7 +2962,7 @@ button[type=submit] .form-load .lds-spinner {
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: .02em;
-  color: #de992c
+  color: #a6763c
 }
 
 .svg--rubl {
@@ -3003,7 +3003,7 @@ button[type=submit] .form-load .lds-spinner {
 }
 
 .link:hover {
-  color: #de992c
+  color: #a6763c
 }
 
 .articles {
@@ -3108,7 +3108,7 @@ button[type=submit] .form-load .lds-spinner {
   align-items: center;;
   font-size: 24px;
   line-height: 1.33;
-  color: #de992c
+  color: #a6763c
 }
 
 .anim-link::after {
@@ -3153,7 +3153,7 @@ button[type=submit] .form-load .lds-spinner {
 }
 
 .option:hover .option__icon {
-  border-color: #de992c
+  border-color: #a6763c
 }
 
 .option__icon {
@@ -3215,7 +3215,7 @@ button[type=submit] .form-load .lds-spinner {
   font-weight: 500;
   font-size: 13px;
   line-height: 1.54;
-  color: #de992c
+  color: #a6763c
 }
 
 .near__list-item span svg {
@@ -3252,7 +3252,7 @@ button[type=submit] .form-load .lds-spinner {
   font-size: 64px;
   line-height: 1.12;
   letter-spacing: .02em;
-  color: #de992c
+  color: #a6763c
 }
 
 .map {
@@ -3289,7 +3289,7 @@ button[type=submit] .form-load .lds-spinner {
   width: 30px;
   height: 30px;
   margin-bottom: 10px;
-  fill: #de992c
+  fill: #a6763c
 }
 
 .room-top {
@@ -3330,12 +3330,12 @@ button[type=submit] .form-load .lds-spinner {
 .breadcrumbs li::after {
   content: '/';
   margin: 0 10px;
-  color: #de992c
+  color: #a6763c
 }
 
 .breadcrumbs a {
   display: block;
-  color: #de992c
+  color: #a6763c
 }
 
 .room-top__sl {
@@ -3403,7 +3403,7 @@ button[type=submit] .form-load .lds-spinner {
   bottom: 0;
   left: 0;
   width: calc(50% - 155px);
-  background: #fff0de
+  background: #f6f0e6
 }
 
 .room-desc__item {
@@ -3425,7 +3425,7 @@ button[type=submit] .form-load .lds-spinner {
 }
 
 .room-desc__item .top__option .top__option-ico {
-  border-color: #de992c
+  border-color: #a6763c
 }
 
 .room-desc__item .top__option .top__option-title {
@@ -3456,7 +3456,7 @@ button[type=submit] .form-load .lds-spinner {
 }
 
 .sc__item:hover svg {
-  fill: #de992c
+  fill: #a6763c
 }
 
 .title-block {
@@ -3490,7 +3490,7 @@ button[type=submit] .form-load .lds-spinner {
 }
 
 .icon-box .top__option-ico {
-  background: #de992c
+  background: #a6763c
 }
 
 .icon-box .top__option-ico svg {

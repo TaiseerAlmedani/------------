@@ -19,7 +19,42 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+$(function () {
 
+  // show hide subnav depending on scroll direction
+  var position = $(window).scrollTop();
+  var headerHeight = $('.navbar').outerHeight();
+
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll > position) {
+
+      //only piece that matters
+      $('.navbar')
+        .stop(true, false)
+        .animate({ top: -headerHeight }, 400);
+
+
+      // scrolling downwards, only here for dev purposes
+      console.log('moving DOWN the page');
+
+    } else {
+
+      //only piece that matters
+      $('.navbar')
+        .stop(true, false)
+        .animate({ top: 0 }, 400);
+
+
+      // scrolling upwards
+      console.log('moving UP the page');
+    }
+
+    position = scroll;
+  });
+
+});
 // enable grid & list view
 const listViewButton = document.querySelector('.list-view-button');
 const gridViewButton = document.querySelector('.grid-view-button');

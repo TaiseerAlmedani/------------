@@ -258,7 +258,7 @@ li {
 
 .swiper {
   width: 100%;
-  height: 85vh;
+  height: 60vh;
 }
 
 .swiper-slide {
@@ -272,7 +272,7 @@ li {
   object-fit: contain;
 }
 
-.swiper-slide::before {
+/* .swiper-slide::before {
   display: block;
   content: '';
   position: absolute;
@@ -281,7 +281,7 @@ li {
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.404) !important;
-}
+} */
 
 .swiper-slide img {
   display: block;
@@ -296,7 +296,7 @@ li {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--warning-color) !important;
+  background-color: white !important;
 }
 
 .swiper-pagination-bullet {
@@ -440,7 +440,7 @@ li {
 
   .nav-custom-item {
     position: relative;
-    left: 26vw;
+    left: 23vw;
   }
 
   .navbar {
@@ -534,7 +534,7 @@ li {
   .img-mobile {
     width: 430px;
     height: 295px;
-    object-fit: cover;
+    object-fit: contain !important;
   }
 
   .fs-24-mobile {
@@ -569,4 +569,82 @@ li {
   .left-side-contant {
     width: 80%;
   }
+}
+
+.hero {
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  background: url('../hotel-bg.png') !important;
+  align-items: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.767);
+
+}
+
+.hero-title {
+  margin-top: 74px;
+}
+/* Add this CSS for the modal */
+.modal {
+  display: none;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #433e38d5;
+  z-index: 100;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  transition: all 200ms ease-in-out;
+  max-width: 40%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+.coustom-li{
+  list-style-type: none;
+  margin-right: 16px;
+}
+.coustom-li::before , .li-hidden::before{
+  display: none !important;
 }

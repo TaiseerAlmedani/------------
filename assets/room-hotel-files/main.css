@@ -2538,7 +2538,8 @@ button[type=submit] .form-load .lds-spinner {
   bottom: 68px;
   z-index: 33;
   display: flex;
-  align-items: center;;
+  align-items: center;
+  ;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2947,7 +2948,8 @@ button[type=submit] .form-load .lds-spinner {
 .room-sl__controll-counter {
   display: flex;
   align-items: baseline;
-  margin: 0 15px;;
+  margin: 0 15px;
+  ;
   font-size: 24px;
   line-height: 1.33;
   letter-spacing: 1px;
@@ -2958,7 +2960,7 @@ button[type=submit] .form-load .lds-spinner {
   display: none
 }
 
-.room-price {;
+.room-price {
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: .02em;
@@ -3105,7 +3107,8 @@ button[type=submit] .form-load .lds-spinner {
 
 .anim-link {
   display: flex;
-  align-items: center;;
+  align-items: center;
+  ;
   font-size: 24px;
   line-height: 1.33;
   color: #a6763c
@@ -3248,7 +3251,8 @@ button[type=submit] .form-load .lds-spinner {
 
 .insta__box-right span,
 .spec-list__item b {
-  display: block;;
+  display: block;
+  ;
   font-size: 64px;
   line-height: 1.12;
   letter-spacing: .02em;
@@ -3385,7 +3389,8 @@ button[type=submit] .form-load .lds-spinner {
   width: auto;
   display: flex;
   align-items: center;
-  margin: 0 18px;;
+  margin: 0 18px;
+  ;
   font-size: 24px;
   line-height: 1.33;
   letter-spacing: .02em
@@ -3467,7 +3472,7 @@ button[type=submit] .form-load .lds-spinner {
   text-align: right
 }
 
-.b-price {;
+.b-price {
   font-size: 64px;
   line-height: 1.12;
   letter-spacing: .02em
@@ -3499,7 +3504,7 @@ button[type=submit] .form-load .lds-spinner {
   fill: #fff
 }
 
-.icon-box .top__option-title {;
+.icon-box .top__option-title {
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: .02em

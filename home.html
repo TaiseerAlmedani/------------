@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <nav class="navbar is-transparent is-fixed-top is-clipped has-text-black" role="navigation"
+  <nav class="navbar blur is-fixed-top is-clipped has-text-black" role="navigation"
     aria-label="main navigation" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700">
     <div class="container">
       <div class="navbar-brand">
@@ -403,20 +403,7 @@
   </script>
 
   <script src="assets/js/home.js"></script>
-   
-  <script>
-    window.onscroll = function () {
-      var navbar = document.querySelector('.navbar');
-      var icon = document.querySelector('.badge');
-      if (window.pageYOffset > 100) {
-        navbar.classList.add('blur');
-        icon.classList.add('darken-background')
-      } else {
-        navbar.classList.remove('blur');
-        icon.classList.add('darken-background')
-      }
-    };
-  </script>
+ 
 </body>
 
 </html>

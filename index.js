@@ -36,8 +36,6 @@ $(function () {
         .animate({ top: -headerHeight }, 400);
 
 
-      // scrolling downwards, only here for dev purposes
-      console.log('moving DOWN the page');
 
     } else {
 
@@ -47,8 +45,6 @@ $(function () {
         .animate({ top: 0 }, 400);
 
 
-      // scrolling upwards
-      console.log('moving UP the page');
     }
 
     position = scroll;
